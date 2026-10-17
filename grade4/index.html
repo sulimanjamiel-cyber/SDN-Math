@@ -1,0 +1,2280 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>رياضيات الصف الرابع – ألعاب تفاعلية</title>
+<meta name="description" content="ألعاب تفاعلية لكل وحدات كتاب الرياضيات للصف الرابع (المنهج السوداني): الأعداد الكلية، العمليات، القياس، الكسور، النسبة، الهندسة. مع تحيات سليمان جميل.">
+<meta name="author" content="سليمان جميل">
+<meta name="theme-color" content="#2F80ED">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232F80ED'/%3E%3Ctext x='32' y='46' font-size='40' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3E%C3%B7%3C/text%3E%3C/svg%3E">
+<!-- Link preview (WhatsApp, Telegram, Facebook, X).
+     IMPORTANT: replace https://USERNAME.github.io/REPO/ below with your real GitHub Pages address (3 places). -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:site_name" content="رياضيات الصف الرابع">
+<meta property="og:title" content="رياضيات الصف الرابع – ألعاب تفاعلية">
+<meta property="og:description" content="ألعاب تفاعلية لكل وحدات كتاب الرياضيات للصف الرابع (المنهج السوداني): الأعداد الكلية، العمليات، القياس، الكسور، النسبة، الهندسة. مع تحيات سليمان جميل.">
+<meta property="og:url" content="https://USERNAME.github.io/REPO/grade4.html">
+<meta property="og:image" content="https://USERNAME.github.io/REPO/preview-grade4.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="رياضيات الصف الرابع – ألعاب تفاعلية">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="رياضيات الصف الرابع – ألعاب تفاعلية">
+<meta name="twitter:description" content="ألعاب تفاعلية لكل وحدات كتاب الرياضيات للصف الرابع (المنهج السوداني): الأعداد الكلية، العمليات، القياس، الكسور، النسبة، الهندسة. مع تحيات سليمان جميل.">
+<meta name="twitter:image" content="https://USERNAME.github.io/REPO/preview-grade4.png">
+<style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;700;800&family=Readex+Pro:wght@400;500;600&display=swap">
+<style>
+/* The digit ٢ drawn in the handwritten shape the teacher asked for (one-glyph font, used only for U+0662) */
+@font-face{font-family:"Two Sudan";src:url(data:font/ttf;base64,AAEAAAAKAIAAAwAgT1MvMmwJSf4AAAEoAAAAYGNtYXAADAa1AAABkAAAADRnbHlmcBAyawAAAcwAAACOaGVhZC8Kn+QAAACsAAAANmhoZWEFkQEpAAAA5AAAACRobXR4BAAARQAAAYgAAAAIbG9jYQBHAAAAAAHEAAAABm1heHAABAA1AAABCAAAACBuYW1lndiXGwAAAlwAAABmcG9zdAAZAAAAAALEAAAAJgABAAAAAQAAP50j7V8PPPUAAwPoAAAAAOb0riIAAAAA5vSuIgBFAAEBxgK/AAAAAwACAAAAAAAAAAEAAAOE/tQAAAIMAEUARgHGAAEAAAAAAAAAAAAAAAAAAAACAAEAAAACADMAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAwIAAZAABQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAPz8/PwAABmIGYgOE/tQAAAOEASwAAAAAAAAAAAAAAAAAAAAgAAAB9AAAAgwARQAAAAIAAAADAAAAFAADAAEAAAAUAAQAIAAAAAQABAABAAAGYv//AAAGYv//+Z8AAQAAAAAAAAAAAEcAAAABAEUAAQHGAr8AMgAAEycnPwgfBw8DLwUjDwYXFxMXDwQnJwMnTgcCBAkQFhsdJCQjJSAdHBQJCwUGCQ0QGBQJCwUXJBUTIBELBwMCCOoEAQYRDxgWCt0VAbMtHxwcGx0aExILBgEFChIUDxgYFw0JBQINDRcECAUHFBEPDg4TJf6EDxAPEQYBCwwBZiYAAAAAAAQANgABAAAAAAABAAkAAAABAAAAAAACAAcACQADAAEECQABABIAEAADAAEECQACAA4AIlR3byBTdWRhblJlZ3VsYXIAVAB3AG8AIABTAHUAZABhAG4AUgBlAGcAdQBsAGEAcgAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAABUAAA==) format("truetype");unicode-range:U+0662;font-display:block}
+/* Layout: a book-like map of 8 lesson "tabs" (yellow tab + green title, like the textbook), then one question card at a time */
+/* Colours shared with "Maaz's Maths Quest": light-blue ground, eight bright colours, golden accent */
+:root{
+  --paper:#EEF6FF; --card:#FFFFFF; --ink:#1A2233; --muted:#55607A; --line:#D3DDEB;
+  --c1:#F0505A; --c2:#2F80ED; --c3:#1E9E57; --c4:#8E44D9; --c5:#F2711C; --c6:#E0428C; --c7:#0E9AA7; --c8:#4B5BD6;
+  --gc:#2F80ED; --blob1:rgba(255,196,0,.30); --blob2:rgba(47,128,237,.20); --blob3:rgba(224,66,140,.16);
+  --yellow:#F2B705; --yellow-soft:#FCEFC2; --yellow-ink:#3A2C00;
+  --pink:#E0428C; --blue:#2F80ED; --ok:#1D7F62; --ok-soft:#DCF1E7; --bad:#C2423A; --bad-soft:#FBE4E0;
+  --shade:#F6C431; --empty:#FFFFFF;
+  --f-display:"Two Sudan","Baloo Bhaijaan 2","Readex Pro",system-ui,sans-serif;
+  --f-body:"Two Sudan","Readex Pro",system-ui,"Segoe UI",Tahoma,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#10141F; --card:#1A2030; --ink:#EEF2FA; --muted:#A1ABC2; --line:#323C52;
+  --c1:#F25F67; --c2:#4A8FEF; --c3:#2AAE66; --c4:#A266E6; --c5:#F47F2F; --c6:#E5559A; --c7:#1AAAB6; --c8:#6474EA;
+  --gc:#4A8FEF; --blob1:rgba(255,196,0,.10); --blob2:rgba(47,128,237,.16); --blob3:rgba(224,66,140,.12);
+  --yellow:#F5C434; --yellow-soft:#3A3115; --yellow-ink:#3A2C00;
+  --pink:#E5559A; --blue:#4A8FEF; --ok:#45C99D; --ok-soft:#14352A; --bad:#F27D70; --bad-soft:#3D1F1C;
+  --shade:#E0AE2A; --empty:#222A3C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10141F; --card:#1A2030; --ink:#EEF2FA; --muted:#A1ABC2; --line:#323C52;
+  --c1:#F25F67; --c2:#4A8FEF; --c3:#2AAE66; --c4:#A266E6; --c5:#F47F2F; --c6:#E5559A; --c7:#1AAAB6; --c8:#6474EA;
+  --gc:#4A8FEF; --blob1:rgba(255,196,0,.10); --blob2:rgba(47,128,237,.16); --blob3:rgba(224,66,140,.12);
+  --yellow:#F5C434; --yellow-soft:#3A3115; --yellow-ink:#3A2C00;
+  --pink:#E5559A; --blue:#4A8FEF; --ok:#45C99D; --ok-soft:#14352A; --bad:#F27D70; --bad-soft:#3D1F1C;
+  --shade:#E0AE2A; --empty:#222A3C; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background-color:var(--paper);background-image:radial-gradient(520px 380px at 0% 0%,var(--blob1),transparent 70%),radial-gradient(520px 420px at 100% 20%,var(--blob2),transparent 70%),radial-gradient(600px 420px at 40% 100%,var(--blob3),transparent 70%);background-attachment:fixed;color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 40px}
+.wrap{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,select:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{display:flex;flex-direction:column}
+.tab{display:inline-block;background:var(--yellow);color:var(--yellow-ink);font-family:var(--f-display);font-weight:700;
+  border-radius:999px 0 0 999px;padding:2px 16px 0;font-size:15px;align-self:flex-start}
+h1{font-family:var(--f-display);font-weight:800;color:var(--gc);font-size:clamp(34px,7vw,50px);line-height:1.1;margin:6px 0 0;text-wrap:balance}
+.tools{display:flex;gap:8px;align-items:center}
+.pill{display:flex;align-items:center;gap:6px;background:var(--card);border:1.5px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:600}
+.iconbtn{background:var(--card);border:1.5px solid var(--line);border-radius:999px;padding:6px 14px}
+.sub{color:var(--muted);margin:0}
+
+/* map */
+.map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:620px){.map{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.lesson{background:var(--card);border:1.5px solid var(--line);border-radius:16px;padding:12px 12px 10px;text-align:right;
+  display:flex;flex-direction:column;gap:6px;transition:transform .15s,border-color .15s;min-width:0}
+.lesson:hover{transform:translateY(-2px);border-color:var(--gc)}
+.lesson .ln{display:flex;justify-content:space-between;align-items:center;gap:6px}
+.lesson .tab{font-size:13px;padding:1px 12px 0}
+.lesson .pg{color:var(--muted);font-size:13px}
+.lesson .nm{font-family:var(--f-display);font-weight:700;color:var(--gc);font-size:19px;line-height:1.25}
+.lesson .pie-mini{height:44px}
+.stars{letter-spacing:2px;font-size:18px;color:var(--line)}
+.stars .on{color:#F5B400}
+.lesson.final{grid-column:1/-1;background:var(--gc);border-color:var(--gc);color:#fff}
+.lesson.final .nm{color:#fff;font-size:22px}
+.lesson.final .pg{color:#E6FFF2}
+.lesson.final .tab{background:var(--yellow)}
+.lesson.final .stars{color:rgba(255,255,255,.35)}
+
+/* play */
+.bar{display:flex;align-items:center;gap:10px}
+.back{background:none;border:1.5px solid var(--line);border-radius:999px;padding:4px 14px;background:var(--card)}
+.prog{flex:1;height:12px;background:var(--card);border:1.5px solid var(--line);border-radius:99px;overflow:hidden}
+.prog i{display:block;height:100%;background:var(--gc);border-radius:99px;transition:width .3s}
+.count{font-weight:600;min-width:52px;text-align:center}
+.card{background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:16px}
+.qhead{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap}
+.qhead .tab{font-size:14px}
+.qtype{color:var(--muted);font-size:14px}
+.q{font-size:21px;font-weight:600;margin:0;line-height:1.7}
+.vis{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:18px}
+.eq{direction:rtl;unicode-bidi:isolate;display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;
+  font-family:var(--f-display);font-size:28px;font-weight:700}
+.eqline{display:flex;justify-content:center}
+
+/* fractions: stacked numerator over denominator */
+.fr{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;font-family:var(--f-display);font-weight:700;line-height:1.05;margin:0 3px;direction:rtl}
+.fr>b{font-weight:inherit;padding:0 4px}
+.fr>i{font-style:normal;border-top:2.5px solid currentColor;padding:0 4px;min-width:1.2em;text-align:center}
+.q .fr{font-size:22px}
+
+/* selects */
+select.dd{font-family:var(--f-display);font-size:24px;font-weight:700;color:var(--ink);background:var(--yellow);background:color-mix(in srgb,var(--yellow) 35%,var(--card));
+  border:2px solid var(--line);border-radius:10px;padding:0 6px;min-width:62px;text-align:center;direction:rtl;height:44px}
+.fr select.dd{margin:3px 0}
+select.dd.right{border-color:var(--ok);background:var(--ok-soft)}
+select.dd.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.fix{font-size:15px;color:var(--ok);font-family:var(--f-body);font-weight:600;display:block;text-align:center}
+
+/* mcq */
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;align-items:center;gap:14px;direction:rtl;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:8px 14px;text-align:right;min-height:62px}
+.opt:hover:not(:disabled){border-color:var(--gc)}
+.opt .L{font-family:var(--f-display);font-weight:800;font-size:20px;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--gc) 14%,var(--card));color:var(--gc);flex:none}
+.opt .C{direction:rtl;flex:1;font-size:20px;font-weight:600;display:flex;justify-content:flex-start;align-items:center}
+.opt .C .fr{font-size:26px}
+.opt.right{border-color:var(--ok);background:var(--ok-soft)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt:disabled{cursor:default}
+
+/* compare */
+.cmp{display:flex;align-items:center;justify-content:center;gap:16px;direction:rtl}
+.cmp .fr{font-size:40px}
+.slot{width:64px;height:64px;border:3px dashed var(--line);border-radius:16px;display:grid;place-items:center;font-family:var(--f-display);font-size:38px;font-weight:800}
+.slot.right{border:3px solid var(--ok);background:var(--ok-soft)}
+.slot.wrong{border:3px solid var(--bad);background:var(--bad-soft)}
+.signs{display:flex;gap:12px;justify-content:center;direction:rtl}
+.sign{width:74px;height:62px;border-radius:14px;border:2px solid var(--line);background:var(--card);font-family:var(--f-display);font-size:34px;font-weight:800}
+.sign:hover:not(:disabled){border-color:var(--gc);background:color-mix(in srgb,var(--gc) 14%,var(--card))}
+
+/* chips (order / match / multi) */
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;direction:rtl}
+.chip{min-width:72px;min-height:78px;border-radius:14px;border:2px solid var(--line);background:var(--card);display:grid;place-items:center;padding:6px 10px}
+.chip .fr{font-size:28px}
+.chip.sel{border-color:var(--blue);background:color-mix(in srgb,var(--blue) 14%,var(--card))}
+.chip.used{opacity:.25;pointer-events:none}
+.chip.right{border-color:var(--ok);background:var(--ok-soft)}
+.chip.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.chip.shake{animation:shake .35s}
+@keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.slots{display:flex;gap:10px;justify-content:center;direction:rtl;align-items:center;flex-wrap:wrap}
+.slots .chip{border-style:dashed}
+.slots .arrow{font-family:var(--f-display);font-size:26px;color:var(--muted)}
+.dirnote{text-align:center;color:var(--muted);font-weight:600}
+.match{display:grid;grid-template-columns:1fr 1fr;gap:12px 40px;direction:rtl;max-width:360px;margin:0 auto;width:100%}
+.match .col{display:flex;flex-direction:column;gap:10px}
+.match .chip{width:100%}
+.pair1{border-color:var(--ok)!important;background:var(--ok-soft)!important}
+
+/* shapes */
+svg.shape{max-width:100%;height:auto;display:block}
+svg .part{stroke:var(--ink);stroke-width:2.5;stroke-linejoin:round}
+svg.click .part{cursor:pointer}
+svg.click .part:hover{opacity:.85}
+.shape-wrap{display:flex;flex-direction:column;align-items:center;gap:6px}
+.caption{font-size:15px;color:var(--muted);font-weight:600}
+.set{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;border:2px solid var(--line);border-radius:16px;padding:10px;max-width:420px;direction:rtl}
+.set .grp{display:flex;gap:4px;border:1.5px solid var(--line);border-radius:10px;padding:4px}
+.item{width:52px;height:52px;display:grid;place-items:center;font-size:36px;border-radius:12px;border:2.5px solid transparent;background:none;padding:0;line-height:1}
+.set.small .item{width:38px;height:38px;font-size:26px}
+.item.pick{border-color:var(--blue);background:color-mix(in srgb,var(--blue) 16%,transparent)}
+.item[disabled]{cursor:default}
+.counter{text-align:center;font-weight:600;color:var(--muted)}
+.wall{width:100%;max-width:440px;direction:rtl;display:flex;flex-direction:column;border:2px solid var(--ink);border-radius:4px;overflow:hidden}
+.wall .row{display:flex}
+.wall .cell{flex:1;border:1px solid var(--ink);display:grid;place-items:center;padding:3px 0;background:var(--card)}
+.wall .cell .fr{font-size:15px}
+.wall .row:nth-child(1) .cell{background:color-mix(in srgb,var(--yellow) 45%,var(--card))}
+.wall .row:nth-child(2) .cell{background:color-mix(in srgb,var(--gc) 22%,var(--card))}
+.wall .row:nth-child(3) .cell{background:color-mix(in srgb,var(--blue) 18%,var(--card))}
+.wall .row:nth-child(4) .cell{background:color-mix(in srgb,var(--pink) 16%,var(--card))}
+
+/* feedback */
+.fb{border-radius:14px;padding:12px 16px;font-weight:600;display:flex;gap:10px;align-items:flex-start}
+.fb.ok{background:var(--ok-soft);color:var(--ok)}
+.fb.no{background:var(--bad-soft);color:var(--bad)}
+.fb .tip{color:var(--ink);font-weight:500;display:block}
+.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn{background:var(--gc);color:#fff;border:none;border-radius:999px;padding:10px 30px;font-weight:700;font-size:19px;font-family:var(--f-display)}
+.btn:disabled{opacity:.4;cursor:default}
+.btn.ghost{background:var(--card);color:var(--gc);border:2px solid var(--gc)}
+
+/* result */
+.result{text-align:center;align-items:center}
+.result .big{font-family:var(--f-display);font-size:64px;font-weight:800;color:var(--gc);line-height:1;direction:rtl}
+.result .stars{font-size:44px}
+.result h2{font-family:var(--f-display);font-size:30px;margin:0;color:var(--ink)}
+
+@media (max-width:480px){
+  body{font-size:16px}
+  .card{padding:16px}
+  .q{font-size:19px}
+  .eq{font-size:24px}
+  .cmp .fr{font-size:34px}
+  .sign{width:64px}
+}
+/* clock + words */
+:root{--hourhand:#D9342B;--minhand:#1F3F8F}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--hourhand:#FF6B5E;--minhand:#8FB0FF}}
+:root[data-theme="dark"]{--hourhand:#FF6B5E;--minhand:#8FB0FF}
+svg.clock .cnum{font-family:var(--f-display);font-weight:700;font-size:20px;fill:var(--ink)}
+svg.clock.click{cursor:pointer;touch-action:manipulation}
+.lesson .pie-mini{height:52px}
+.word{font-family:var(--f-display);font-weight:700;font-size:26px;line-height:1.3;padding:0 4px}
+.cmp .word{font-size:32px}
+.handbtns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.hb{border:2px solid var(--line);background:var(--card);border-radius:999px;padding:8px 16px;font-weight:600}
+.hb[data-h="h"].on{border-color:var(--hourhand);background:color-mix(in srgb,var(--hourhand) 14%,var(--card))}
+.hb[data-h="m"].on{border-color:var(--minhand);background:color-mix(in srgb,var(--minhand) 14%,var(--card))}
+.hb .dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin-inline-end:6px;vertical-align:middle}
+/* unit cards on the home screen */
+.units{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+@media (max-width:560px){.units{grid-template-columns:1fr}}
+.unit{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:16px;display:flex;gap:14px;align-items:center;text-align:right;transition:transform .15s,border-color .15s;min-width:0}
+.unit:hover{transform:translateY(-2px);border-color:var(--gc)}
+.unit .uicon{flex:none}
+.unit .ubody{display:flex;flex-direction:column;gap:4px;min-width:0}
+.unit .nm{font-family:var(--f-display);font-weight:800;color:var(--gc);font-size:30px;line-height:1.2}
+.unit .tab{font-size:14px}
+.unit .pg{color:var(--muted);font-size:14px}
+.bar .sub{font-weight:600}
+/* interactive activities */
+.card.fx-ok{animation:bounce .45s}
+.card.fx-no{animation:shake .35s}
+@keyframes bounce{40%{transform:scale(1.02)}70%{transform:scale(.995)}}
+.confetti{position:fixed;inset:0;pointer-events:none;z-index:50}
+.streak{font-weight:700;color:#E8590C;background:color-mix(in srgb,#FF8A3D 18%,var(--card));border-radius:999px;padding:2px 10px;white-space:nowrap}
+.part.pop-in{animation:popin .25s}
+@keyframes popin{50%{opacity:.6}}
+.steppers{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.stepper{display:flex;flex-direction:column;align-items:center;gap:6px;background:color-mix(in srgb,var(--gc) 14%,var(--card));border-radius:16px;padding:10px 14px}
+.slabel{font-weight:600;font-size:15px}
+.srow{display:flex;align-items:center;gap:12px}
+.sbtn{width:48px;height:48px;border-radius:50%;border:2px solid var(--gc);background:var(--card);color:var(--gc);font-family:var(--f-display);font-size:30px;font-weight:800;line-height:1}
+.sbtn:active{transform:scale(.92)}
+.sval{font-family:var(--f-display);font-size:34px;font-weight:800;min-width:40px;text-align:center}
+svg.nline .tl{font-family:var(--f-display);font-weight:700;font-size:30px;fill:var(--ink)}
+svg.nline .tl.s{font-size:24px}
+svg.nline .jl{font-family:var(--f-display);font-weight:700;font-size:22px;fill:var(--ink)}
+svg.nline .hit{cursor:pointer}
+svg.nline .hit:hover{fill:color-mix(in srgb,var(--blue) 12%,transparent)}
+.pond{position:relative;display:flex;flex-wrap:wrap;gap:12px 10px;justify-content:center;padding:14px 6px 24px;border-radius:18px;
+  background:linear-gradient(180deg,color-mix(in srgb,var(--blue) 14%,var(--card)),var(--card))}
+.balloon{position:relative;border:none;background:none;padding:0;width:92px;height:118px;animation:float 3.2s ease-in-out infinite;animation-delay:var(--d)}
+.balloon .bl{position:absolute;inset:0 0 22px 0;border-radius:50% 50% 46% 46%;background:radial-gradient(circle at 32% 28%,rgba(255,255,255,.55),transparent 34%),var(--c);
+  display:grid;place-items:center;color:#fff;box-shadow:inset -6px -8px 0 rgba(0,0,0,.12)}
+.balloon .bl .fr{font-size:24px}
+.balloon .bl .word{font-size:19px;color:#fff;line-height:1.15;padding:0 6px}
+.balloon .str{position:absolute;left:50%;bottom:0;width:2px;height:24px;background:var(--muted)}
+.balloon.popped{animation:burst .35s forwards;pointer-events:none}
+.balloon.shake{animation:shake .35s}
+@keyframes float{50%{transform:translateY(-10px)}}
+@keyframes burst{60%{transform:scale(1.25);opacity:.7}100%{transform:scale(0);opacity:0}}
+.chip.drag{cursor:grab}
+.chip.lifting{opacity:.35}
+.dragghost{position:fixed;z-index:60;pointer-events:none;margin:0;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+/* geometry */
+svg.geo .pl, svg.rulerbox .pl{font-family:var(--f-display);font-weight:700;font-size:24px;fill:var(--ink)}
+svg.geo .hitseg{cursor:pointer}
+#gv{touch-action:none}
+.seg{display:inline-block;border-top:2px solid currentColor;line-height:1.25;padding:1px 3px 0;margin:0 2px;white-space:nowrap;word-spacing:.2em;font-family:var(--f-display);font-weight:700}
+.rulerbox .rn{font-family:var(--f-display);font-weight:700;font-size:15px;fill:#3B2410}
+.rulerbox .rmm{font-family:var(--f-body);font-size:11px;fill:#3B2410}
+.nudge{display:flex;align-items:center;justify-content:center;gap:10px}
+.nudge .sbtn{width:42px;height:42px;font-size:22px}
+.mini-shape{max-width:100%;height:auto}
+.balloon .bl .mini-shape{width:66px}
+.balloon .bl .mini-shape polygon{stroke:#fff}
+.shapecard{min-width:96px;min-height:70px}
+.shapecard .mini-shape{width:86px}
+.bins{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.bin{border:2.5px dashed var(--line);border-radius:16px;min-height:96px;padding:8px;display:flex;flex-direction:column;gap:6px;background:var(--card);cursor:pointer}
+.bin.nope{border-color:var(--bad);background:var(--bad-soft)}
+.binl{font-family:var(--f-display);font-weight:800;font-size:20px;color:var(--gc)}
+.bini{display:flex;flex-wrap:wrap;gap:4px}
+.bini .placed .mini-shape{width:52px}
+/* developer credit */
+.credit[hidden]{display:none!important}
+.credit{margin-top:8px;border-top:1.5px dashed var(--line);padding-top:14px;display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:center;color:var(--muted);font-size:15px;text-align:center}
+.credit b{color:var(--gc);font-family:var(--f-display);font-size:18px}
+.credit .phone{font-family:var(--f-display);font-weight:700;color:var(--ink);user-select:all;letter-spacing:.03em}
+/* Maaz-style colour touches */
+h1 .hl{background:linear-gradient(transparent 64%, var(--yellow) 64%, var(--yellow) 90%, transparent 90%)}
+.lesson,.unit{border-top:6px solid var(--tc,var(--gc)) !important;box-shadow:0 5px 0 rgba(0,0,0,.05)}
+.lesson:hover,.unit:hover{border-color:var(--tc,var(--gc))}
+.lesson .nm,.unit .nm{color:var(--tc,var(--gc))}
+.lesson .tab,.unit .tab{background:var(--tc,var(--gc));color:#fff;border-radius:6px;padding:1px 9px 0}
+.lesson.final{background:var(--gc);border-color:var(--gc)}
+.lesson.final .nm{color:#fff}
+.lesson.final .tab{background:var(--yellow);color:var(--yellow-ink)}
+.card{border-top:6px solid var(--gc);box-shadow:0 6px 0 rgba(0,0,0,.05)}
+.qhead .tab{background:var(--gc);color:#fff;border-radius:6px;padding:1px 10px 0}
+.prog i{background:repeating-linear-gradient(45deg,var(--gc) 0 12px,var(--yellow) 12px 24px)}
+.opt:nth-child(4n+1) .L{background:var(--c1);color:#fff}
+.opt:nth-child(4n+2) .L{background:var(--c2);color:#fff}
+.opt:nth-child(4n+3) .L{background:var(--c3);color:#fff}
+.opt:nth-child(4n+4) .L{background:var(--c5);color:#fff}
+.opt:hover:not(:disabled){border-color:var(--yellow)}
+.opt.right .L{background:var(--ok)}
+.opt.wrong .L{background:var(--bad)}
+.btn{box-shadow:0 4px 0 rgba(0,0,0,.15)}
+.result .btn:not(.ghost){background:var(--yellow);color:var(--yellow-ink)}
+.stars .on{color:var(--yellow)}
+.pill span[style]{color:var(--yellow)!important}
+.top .tab{background:var(--yellow);color:var(--yellow-ink)}
+/* units 1–3 */
+.mbadge{display:inline-grid;place-items:center;min-width:46px;height:40px;padding:0 8px;border-radius:10px;background:var(--tc,var(--gc));color:#fff;font-family:var(--f-display);font-weight:800;font-size:18px;box-shadow:0 3px 0 rgba(0,0,0,.15);white-space:nowrap}
+.ubadge{display:grid;place-items:center;width:84px;height:84px;border-radius:20px;color:#fff;font-family:var(--f-display);font-weight:800;font-size:54px;box-shadow:0 5px 0 rgba(0,0,0,.15)}
+svg.abacus .alab{font-family:var(--f-display);font-weight:700;font-size:15px;fill:var(--ink)}
+svg.abacus .rodhit{cursor:pointer}
+.abtns{display:flex;justify-content:center;gap:6px;direction:ltr;width:100%;max-width:300px;margin:0 auto}
+.abtn{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px}
+.abtn .sbtn{width:44px;height:44px;font-size:26px}
+.colbox{overflow-x:auto}
+.colt,.divt{border-collapse:collapse;font-family:var(--f-display);font-weight:700;font-size:30px;margin:0 auto}
+.colt td,.divt td{width:52px;height:56px;text-align:center;padding:2px}
+.colt td.op{width:34px;color:var(--gc)}
+.colt td.lab{width:auto;font-size:15px;color:var(--muted);text-align:left;white-space:nowrap;padding-left:8px}
+.colt tr.line td:not(.lab){border-bottom:3px solid var(--ink)}
+select.dd.sm{min-width:50px;height:46px;font-size:24px;padding:0 2px}
+.divt td.dv{border-right:3px solid var(--ink);color:var(--gc)}
+.divt td.dn{border-top:3px solid var(--ink)}
+.pvt{border-collapse:collapse;font-size:18px;direction:rtl}
+.pvt th{background:color-mix(in srgb,var(--yellow) 35%,var(--card));border:1.5px solid var(--line);padding:4px 10px;font-family:var(--f-body)}
+.pvt td{border:1.5px solid var(--line);padding:6px;text-align:center}
+.gbox{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;min-height:70px;align-items:center}
+.grpbox{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:color-mix(in srgb,var(--yellow) 30%,var(--card));border:2px solid var(--line);border-radius:12px;padding:6px;font-size:20px;line-height:1.1}
+.pool{display:flex;flex-wrap:wrap;gap:2px;justify-content:center;font-size:24px;min-height:44px;align-items:center;border:2px dashed var(--line);border-radius:14px;padding:8px}
+.pool.shake{animation:shake .35s}
+.plabel{width:100%;text-align:center;font-size:15px;font-weight:600;color:var(--muted)}
+.plates{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.plate{width:96px;min-height:96px;border-radius:50%;border:3px solid var(--gc);background:color-mix(in srgb,var(--gc) 10%,var(--card));display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8px;gap:2px}
+.plate .pc{font-family:var(--f-display);font-weight:800;font-size:20px;color:var(--gc)}
+.plate .pitems{font-size:14px;line-height:1.05;max-width:76px;word-break:break-all;text-align:center}
+.racebar{display:flex;justify-content:space-between;font-weight:700;color:var(--muted);font-family:var(--f-display);font-size:20px}
+.sign.wide{width:auto;min-width:90px;padding:0 14px}
+.sign.shake{animation:shake .35s}
+/* ---------- grade 4 additions ---------- */
+.deg,.rat{unicode-bidi:isolate;white-space:nowrap;font-family:var(--f-display);font-weight:700}
+.ang{white-space:nowrap;font-family:var(--f-display);font-weight:700;word-spacing:.15em}
+.seg.ray,.seg.line{border-top:none;position:relative;padding-top:5px;background:linear-gradient(currentColor,currentColor) no-repeat 50% 0/calc(100% - 4px) 2px}
+.seg.ray::after,.seg.line::after{content:"";position:absolute;left:-3px;top:-4px;border-style:solid;border-width:5px 8px 5px 0;border-color:transparent currentColor transparent transparent}
+.seg.line::before{content:"";position:absolute;right:-3px;top:-4px;border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent currentColor}
+svg.abacus .alab{font-size:13px}
+.abtns{max-width:none}
+.pvt th{font-size:14px;padding:4px 6px}
+.pvt td select.dd{min-width:48px}
+.divt td.dv{width:auto;padding:0 10px}
+.sieve{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:4px;direction:rtl;max-width:520px;margin:0 auto;width:100%}
+.sv{aspect-ratio:1;border:1.5px solid var(--line);background:var(--card);border-radius:8px;font-family:var(--f-display);font-weight:700;font-size:clamp(14px,3.6vw,20px);padding:0;position:relative}
+.sv.pre{opacity:.35;text-decoration:line-through;cursor:default}
+.sv.x{background:var(--bad-soft);color:var(--bad);text-decoration:line-through;border-color:var(--bad)}
+.sv.o{border:3px solid var(--ok);border-radius:50%;background:var(--ok-soft);color:var(--ok)}
+.ladder{border-collapse:collapse;font-family:var(--f-display);font-weight:700;font-size:28px;direction:rtl}
+.ladder td{padding:4px 14px;min-width:70px;text-align:center}
+.ladder td.ln{border-left:3px solid var(--ink)}
+.ladder td.lp{color:var(--gc)}
+.crows{display:flex;flex-direction:column;gap:12px}
+.crow{display:flex;flex-direction:column;gap:6px}
+.clab{font-weight:700;color:var(--gc)}
+.cvals{display:flex;flex-wrap:wrap;gap:6px;direction:rtl}
+.cv{min-width:46px;height:44px;border-radius:12px;border:2px solid var(--line);background:var(--card);font-family:var(--f-display);font-weight:700;font-size:20px;padding:0 6px}
+.cv.sel{border-color:var(--blue);background:color-mix(in srgb,var(--blue) 18%,var(--card))}
+.ynt{border-collapse:collapse;font-size:17px;direction:rtl}
+.ynt th{background:color-mix(in srgb,var(--yellow) 35%,var(--card));border:1.5px solid var(--line);padding:6px 10px;font-family:var(--f-display)}
+.ynt td{border:1.5px solid var(--line);padding:4px;text-align:center}
+.yn{min-width:64px;height:44px;border-radius:10px;border:2px dashed var(--line);background:var(--card);font-weight:700;font-size:18px}
+.yn.yes{border-style:solid;border-color:var(--blue);color:var(--blue)}
+.yn.no{border-style:solid;border-color:var(--c5);color:var(--c5)}
+.yn.right{border-color:var(--ok);background:var(--ok-soft);color:var(--ok)}
+.yn.wrong{border-color:var(--bad);background:var(--bad-soft);color:var(--bad)}
+.pmark{font-family:var(--f-display);font-weight:700;font-size:15px;fill:var(--ink)}
+.rboxes{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;direction:rtl}
+.rbox{flex:1;min-width:150px;max-width:260px;display:flex;flex-direction:column;align-items:center;gap:8px;background:color-mix(in srgb,var(--gc) 10%,var(--card));border-radius:16px;padding:10px}
+.rpile{min-height:64px;display:flex;flex-wrap:wrap;gap:2px;justify-content:center;font-size:22px;line-height:1.1}
+.picbox{display:flex;flex-direction:column;align-items:center;gap:4px;border:2px solid var(--line);border-radius:16px;padding:8px 10px;background:var(--card)}
+svg.prot .po{font-family:var(--f-display);font-size:16px;font-weight:700;fill:var(--ink)}
+svg.prot .pi{font-family:var(--f-display);font-size:12.5px;fill:var(--muted)}
+svg.board{touch-action:manipulation}
+svg.board .dot{cursor:pointer}
+svg.geo .hitpt{cursor:pointer}
+.drawc{stroke-dasharray:700;stroke-dashoffset:700;animation:drawc 1.2s ease forwards}
+@keyframes drawc{to{stroke-dashoffset:0}}
+.ftree{display:flex;flex-direction:column;gap:14px;align-items:center;direction:rtl;font-size:22px}
+.ftree>div{display:flex;gap:10px;justify-content:center}
+.ftree .fr0 .fb{min-width:80px}
+.ftree .fr1{gap:90px}
+.ftree .fb{min-width:58px;min-height:46px;padding:2px 6px;border:2px solid var(--line);border-radius:8px;background:color-mix(in srgb,var(--pink) 10%,var(--card));display:grid;place-items:center}
+.ftree .fr3 .fb{background:var(--card)}
+.shapecard .word{font-size:22px}
+.balloon .bl .mini-shape line{stroke:#fff}
+.balloon .bl .mini-shape path,.balloon .bl .mini-shape polyline{stroke:#fff}
+.balloon .bl .mini-shape circle{fill:#fff}
+.colt.tight{font-size:24px}
+.colt.tight td{width:38px;height:50px;padding:1px}
+.colt.tight td.op{width:22px}
+.colt.tight td.lab{font-size:13px;padding-left:4px}
+.colt.tight select.dd.sm{min-width:34px;width:36px;height:42px;font-size:21px;padding:0;-webkit-appearance:none;appearance:none;text-align:center;text-align-last:center}
+.ynt{width:100%;max-width:520px}
+.yn{min-width:0;width:100%;max-width:70px}
+.ftree .fg{display:flex;gap:4px}
+.match .word{font-size:20px}
+.pmark{font-size:16px}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.drawc{stroke-dashoffset:0}}
+</style>
+
+</head>
+<body>
+<div class="wrap" id="app" dir="rtl" lang="ar">
+  <header class="top">
+    <div class="brand">
+      <span class="tab" id="unitTab">كتاب الرياضيات · المنهج السوداني</span>
+      <h1><span style="color:var(--c2)">رياضيات</span> <span style="color:var(--c6)">الصف</span> <span class="hl" style="color:var(--c3)">الرابع</span></h1>
+    </div>
+    <div class="tools">
+      <span class="pill" title="مجموع النجوم"><span style="color:#F5B400">★</span> <span id="totalStars">0 / 0</span></span>
+      <button class="iconbtn" id="soundBtn" aria-pressed="true">الصوت: يعمل</button>
+    </div>
+  </header>
+  <main id="view"></main>
+  <footer class="credit">
+    <span>مع تحيات <b>سليمان جميل</b></span>
+    <span>رقم الجوال: <bdi dir="ltr" class="phone">00974&lrm; 5108&lrm; 5117</bdi></span>
+  </footer>
+</div>
+
+<script>
+(function(){
+"use strict";
+/* ---------- helpers ---------- */
+const $ = (s,r=document)=>r.querySelector(s);
+const F = (n,d)=>`<span class="fr"><b>${n}</b><i>${d}</i></span>`;
+const shuffle = a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+const range=(a,b)=>{const r=[];for(let i=a;i<=b;i++)r.push(i);return r;};
+const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v);}catch(e){return d;}},
+             set(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}};
+
+/* ---------- sound ---------- */
+let soundOn = store.get("g3-sound",true), actx=null;
+function beep(good){
+  if(!soundOn) return;
+  try{
+    actx = actx || new (window.AudioContext||window.webkitAudioContext)();
+    const notes = good? [523,659,784] : [330,247];
+    notes.forEach((f,i)=>{
+      const o=actx.createOscillator(), g=actx.createGain();
+      o.type = good? "triangle":"sine"; o.frequency.value=f;
+      const t=actx.currentTime+i*0.11;
+      g.gain.setValueAtTime(0.0001,t); g.gain.exponentialRampToValueAtTime(0.18,t+0.02); g.gain.exponentialRampToValueAtTime(0.0001,t+0.2);
+      o.connect(g).connect(actx.destination); o.start(t); o.stop(t+0.22);
+    });
+  }catch(e){}
+}
+function paintSound(){const b=$("#soundBtn");b.textContent= soundOn?"الصوت: يعمل":"الصوت: متوقف";b.setAttribute("aria-pressed",soundOn);}
+$("#soundBtn").addEventListener("click",()=>{soundOn=!soundOn;store.set("g3-sound",soundOn);paintSound();});
+paintSound();
+
+/* ---------- shapes ---------- */
+const COL={shade:"var(--shade)",pink:"var(--pink)",blue:"var(--blue)",green:"var(--gc)",empty:"var(--empty)"};
+// shaded: array of colour keys per part (or null)
+function pie(n,shaded=[],opt={}){
+  const size=opt.size||170, r=size/2-4, cx=size/2, cy=size/2;
+  let s="";
+  for(let i=0;i<n;i++){
+    const fill=COL[shaded[i]]||COL.empty;
+    if(n===1){s+=`<circle class="part" data-i="0" cx="${cx}" cy="${cy}" r="${r}" fill="${fill}"/>`;continue;}
+    const a0=-Math.PI/2+i*2*Math.PI/n, a1=a0+2*Math.PI/n;
+    const x0=cx+r*Math.cos(a0), y0=cy+r*Math.sin(a0), x1=cx+r*Math.cos(a1), y1=cy+r*Math.sin(a1);
+    const large=(a1-a0)>Math.PI?1:0;
+    s+=`<path class="part" data-i="${i}" d="M${cx},${cy} L${x0.toFixed(2)},${y0.toFixed(2)} A${r},${r} 0 ${large} 1 ${x1.toFixed(2)},${y1.toFixed(2)} Z" fill="${fill}"/>`;
+  }
+  return `<svg class="shape${opt.click?" click":""}" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" role="img" aria-label="دائرة مقسمة إلى ${n} أجزاء">${s}</svg>`;
+}
+function bar(n,shaded=[],opt={}){
+  const w=opt.w||Math.min(380,n*56), h=opt.h||70, pw=(w-4)/n; let s="";
+  for(let i=0;i<n;i++){const fill=COL[shaded[i]]||COL.empty;
+    s+=`<rect class="part" data-i="${i}" x="${(2+i*pw).toFixed(2)}" y="2" width="${pw.toFixed(2)}" height="${h-4}" fill="${fill}"/>`;}
+  return `<svg class="shape${opt.click?" click":""}" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="شريط مقسم إلى ${n} أجزاء">${s}</svg>`;
+}
+function grid(r,c,shaded=[],opt={}){
+  const cw=opt.cell||54, w=c*cw+4, h=r*cw+4; let s="",k=0;
+  for(let y=0;y<r;y++)for(let x=0;x<c;x++,k++){const fill=COL[shaded[k]]||COL.empty;
+    s+=`<rect class="part" data-i="${k}" x="${2+x*cw}" y="${2+y*cw}" width="${cw}" height="${cw}" fill="${fill}"/>`;}
+  return `<svg class="shape${opt.click?" click":""}" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="مستطيل مقسم إلى ${r*c} أجزاء">${s}</svg>`;
+}
+const sh=(k,c="shade")=>Array(k).fill(c);
+function fish(color){
+  return `<svg width="44" height="30" viewBox="0 0 44 30" aria-hidden="true"><path d="M30 15 L43 5 L43 25 Z" fill="${color}" stroke="#1C2A22" stroke-width="1.5"/><ellipse cx="18" cy="15" rx="17" ry="11" fill="${color}" stroke="#1C2A22" stroke-width="1.5"/><circle cx="9" cy="12" r="2.6" fill="#fff"/><circle cx="8.6" cy="12" r="1.3" fill="#1C2A22"/></svg>`;
+}
+const FISH={red:fish("#F2662B"),green:fish("#3BB54A"),blue:fish("#5A8FE0")};
+// items: array of strings (emoji or svg); groups: optional number of boxes
+function setVis(items,opt={}){
+  const cls="set"+(opt.small?" small":"");
+  const btn=(it,i)=> opt.click? `<button class="item" data-i="${i}" aria-label="عنصر ${i+1}">${it}</button>` : `<span class="item">${it}</span>`;
+  if(opt.groups){
+    const per=items.length/opt.groups; let s="";
+    for(let g=0;g<opt.groups;g++) s+=`<div class="grp">${items.slice(g*per,(g+1)*per).map((it,j)=>btn(it,g*per+j)).join("")}</div>`;
+    return `<div class="${cls}">${s}</div>`;
+  }
+  return `<div class="${cls}">${items.map(btn).join("")}</div>`;
+}
+const rep=(it,n)=>Array(n).fill(it);
+function wall(dens){
+  return `<div class="wall">${dens.map(d=>`<div class="row">${range(1,d).map(()=>`<div class="cell">${d===1?'<b style="font-family:var(--f-display)">1</b>':F(1,d)}</div>`).join("")}</div>`).join("")}</div>`;
+}
+const cap=(html,c)=>`<div class="shape-wrap">${html}<span class="caption">${c}</span></div>`;
+
+function ruler(){
+  let t=""; for(let i=0;i<=10;i++){const x=6+i*7.2; t+=`<line x1="${x}" y1="10" x2="${x}" y2="${i%5===0?26:19}" stroke="var(--ink)" stroke-width="1.5"/>`;}
+  return `<svg width="84" height="40" viewBox="0 0 84 40" aria-hidden="true"><rect x="1.5" y="8" width="81" height="26" rx="3" fill="var(--yellow)" stroke="var(--ink)" stroke-width="2"/>${t}</svg>`;
+}
+// show a segment name with its letters apart (ج د, not جد), "هـ" counts as one letter
+const SEG=n=>`<span class="seg">${(n.match(/هـ|./g)||[]).join(" ")}</span>`;
+const SW=n=>W(SEG(n));
+// small outline shapes for classifying / balloons
+function poly(points,opt={}){ const w=opt.w||110,h=opt.h||80;
+  return `<svg class="mini-shape" viewBox="0 0 ${w} ${h}" width="${opt.size||w}" aria-hidden="true"><polygon points="${points}" fill="${opt.fill||"none"}" stroke="${opt.stroke||"var(--ink)"}" stroke-width="3" stroke-linejoin="round"/></svg>`; }
+const SH={
+  square:  ()=>poly("30,8 90,8 90,68 30,68",{w:120}),
+  rect:    ()=>poly("8,14 112,14 112,66 8,66",{w:120}),
+  tall:    ()=>poly("42,4 78,4 78,76 42,76",{w:120}),
+  rtri:    ()=>poly("8,72 104,72 104,8",{w:120}),
+  tri:     ()=>poly("60,6 104,72 16,72",{w:120}),
+  trap:    ()=>poly("28,10 92,8 112,70 8,72",{w:120}),
+  para:    ()=>poly("26,10 114,10 94,70 6,70",{w:120}),
+  pent:    ()=>poly("10,26 72,6 114,14 98,56 50,74 22,62",{w:120}),
+  hex:     ()=>poly("30,8 92,10 112,40 92,72 30,72 10,40",{w:120}),
+};
+// a ruler in millimetres (3px = 1mm), drawn like the book's wooden ruler
+function rulerSvg(){
+  let t=""; for(let mm=0;mm<=100;mm++){ const x=10+mm*3, h=mm%10===0?22:mm%5===0?15:9;
+    t+=`<line x1="${x}" y1="0" x2="${x}" y2="${h}" stroke="#3B2410" stroke-width="${mm%10===0?1.6:1}"/>`;
+    if(mm%10===0) t+=`<text x="${x}" y="38" text-anchor="middle" class="rn">${mm/10}</text>`; }
+  return `<rect x="0" y="0" width="320" height="52" rx="4" fill="#D98B4A" stroke="#7A4A22" stroke-width="2"/>${t}<text x="306" y="49" text-anchor="end" class="rmm">سم</text>`;
+}
+function pencilSvg(x0,len,y){ const x1=x0+len; return `<rect x="${x0+14}" y="${y-8}" width="${len-30}" height="16" fill="#F6B92B" stroke="#7A4A22" stroke-width="1.5"/>
+  <rect x="${x1-16}" y="${y-8}" width="16" height="16" fill="#F05D7A" stroke="#7A4A22" stroke-width="1.5"/>
+  <polygon points="${x0},${y} ${x0+14},${y-8} ${x0+14},${y+8}" fill="#F3D2A2" stroke="#7A4A22" stroke-width="1.5"/><polygon points="${x0},${y} ${x0+5},${y-3} ${x0+5},${y+3}" fill="#333"/>`; }
+function nailSvg(x0,len,y){ const x1=x0+len; return `<rect x="${x0+10}" y="${y-4}" width="${len-16}" height="8" fill="#B9C0C7" stroke="#555" stroke-width="1.2"/>
+  <polygon points="${x0},${y} ${x0+10},${y-4} ${x0+10},${y+4}" fill="#9AA2AA" stroke="#555" stroke-width="1.2"/><rect x="${x1-6}" y="${y-12}" width="6" height="24" rx="2" fill="#6F777F"/>`; }
+
+
+/* ================= Units 1–3: numbers, multiplication, division ================= */
+/* ---------- helpers for building questions ---------- */
+const uniqSort=a=>[...new Set(a)].filter(x=>x>=0).sort((x,y)=>x-y);
+// a small set of plausible choices around n for dropdowns
+const near=n=>uniqSort([n,n+1,n-1,n+10,n-10,n+2]).slice(0,6);
+const FL=(q,expr,ans,opts,extra={})=>({t:"fill",q,expr,ans,opts:opts||ans.map(near),...extra});
+// column (vertical) arithmetic. rows: [{p:"34?2", a:"3462", op:"+", line:true}]
+function VCOL(a,b,op,extra={}){
+  const res= op==="+"?a+b : op==="−"?a-b : a*b, rows=[{p:String(a)},{p:String(b),op,line:true}];
+  if(op==="×" && b>=10){
+    const t=Math.floor(b/10)%10, o=b%10, h=Math.floor(b/100);
+    if(h===0){ rows.push({p:"?".repeat(String(a*t*10).length),a:String(a*t*10),lab:`${a} × ${t*10}`},{p:"?".repeat(String(a*o).length),a:String(a*o),lab:`${a} × ${o}`,line:true}); }
+  }
+  rows.push({p:"?".repeat(String(res).length),a:String(res)});
+  return {t:"column",q:extra.q||"أوجد الناتج:",rows,tip:extra.tip,hint:extra.hint||(op==="−"?"ابدأ بالآحاد. إذا كان الرقم العلوي أصغر فاستلف من الخانة التي على يساره.":op==="×"?"اضرب الآحاد أولاً، ثم العشرات، ولا تنسَ ما تحمله.":"ابدأ بالآحاد، ولا تنسَ ما تحمله إلى الخانة التالية.")};
+}
+const LD=(a,b,q)=>({t:"longdiv",a,b,q:q||`اقسم: ${a} ÷ ${b}`});
+const DIVR=(a,b,q)=>FL(q||"أكمل:",`${a} ÷ ${b} = {0} والباقي {1}`,[Math.floor(a/b),a%b],[near(Math.floor(a/b)),range(0,b-1)]);
+const MUL=(a,b,q)=>FL(q||"أكمل:",`${a} × ${b} = {0}`,[a*b]);
+const OPS=(l,r,res)=>({t:"opsign",q:"ضع العلامة المناسبة: (+) أو (−) أو (×) أو (÷)",l,r,res});
+const ab=(n)=>String(n).padStart(4,"0").split("").map(Number);
+const WORDS={ // book readings
+  2001:"واحد وألفان", 1260:"ستون ومئتان وألف", 1510:"عشرة وخمسمئة وألف", 2073:"ثلاثة وسبعون وألفان", 3210:"عشرة ومئتان وثلاثة آلاف", 4303:"ثلاثة وثلاثمئة وأربعة آلاف",
+  4563:"ثلاثة وستون وخمسمئة وأربعة آلاف", 8390:"تسعون وثلاثمئة وثمانية آلاف"};
+const badge=t=>`<span class="mbadge">${t}</span>`;
+function race(table,n=10){ const facts=shuffle(range(1,10)).slice(0,n).map(k=>[k,table]); return {t:"race",facts,q:`سباق جدول ${table}: اختر الناتج الصحيح بأسرع ما يمكن`}; }
+/* ================= Grade 4 helpers ================= */
+const W=(l,v)=>({l,v});           // a word / number with a value used for comparing and ordering
+const N=n=>W(String(n),n);         // a number chip
+const wd=t=>`<span class="word">${t}</span>`;
+const DEG=n=>`<bdi dir="rtl" class="deg">${n}°</bdi>`;
+const RAT=(a,b)=>`<bdi dir="rtl" class="rat">${a} : ${b}</bdi>`;
+const FRB=(n,d)=>`<span class="fr"><b>${n}</b><i>${d}</i></span>`;   // fraction that may hold {k} slots
+const gcd=(a,b)=>b?gcd(b,a%b):a, lcm=(a,b)=>a/gcd(a,b)*b;
+const divisors=n=>range(1,n).filter(d=>n%d===0);
+const isPrime=n=>n>1&&range(2,Math.floor(Math.sqrt(n))).every(d=>n%d);
+const opts4=(ans,c)=>uniqSort([ans,...c]);
+// a window of 5 neighbouring whole numbers that holds v at a random place
+const win=v=>{ const s=Math.min(v,Math.floor(Math.random()*5)); return range(v-s,v-s+4); };
+
+/* ---------- abacus with any number of rods (book colours) ---------- */
+const RODC=["#2BB3A3","#F2B705","#E0428C","#2F80ED","#9A5B2E","#8E1F4A","#1E9E57","#E53935"];
+const PLN=["آحاد","عشرات","مئات","ألوف","عشرات ألوف","مئات ألوف","ملايين","عشرات ملايين"];
+const PLN2=["الآحاد","العشرات","المئات","الألوف","عشرات الألوف","مئات الألوف","الملايين","عشرات الملايين"];
+const digitsOf=(n,k)=>String(n).padStart(k,"0").split("").map(Number);
+const ABSP=64;
+function abacusSvg(d,opt={}){
+  const k=d.length, Wd=k*ABSP, base=168, H=opt.nolab? base+24 : base+64;
+  let s=`<rect x="4" y="${base}" width="${Wd-8}" height="13" rx="3" fill="#29C5F6"/><rect x="4" y="${base+13}" width="${Wd-8}" height="5" fill="#E0428C"/>`;
+  d.forEach((n,i)=>{ const x=ABSP*(i+.5), p=k-1-i;
+    s+=`<line x1="${x}" y1="14" x2="${x}" y2="${base}" stroke="#1A2233" stroke-width="3.2"/>`;
+    for(let b=0;b<n;b++) s+=`<ellipse cx="${x}" cy="${base-9-b*15}" rx="17" ry="7" fill="${RODC[p]}" stroke="rgba(0,0,0,.25)"/>`;
+    if(!opt.nolab){ const w=PLN[p].split(" ");
+      s+=`<text x="${x}" y="${base+38}" text-anchor="middle" class="alab">${w[0]}</text>`+(w[1]?`<text x="${x}" y="${base+56}" text-anchor="middle" class="alab">${w[1]}</text>`:""); }
+    if(opt.click) s+=`<rect class="rodhit" data-i="${i}" x="${x-28}" y="8" width="56" height="${base-4}" fill="transparent"/>`; });
+  return `<svg class="shape abacus" viewBox="0 0 ${Wd} ${H}" width="${Wd}" style="max-width:100%;height:auto" role="img" aria-label="عدّاد">${s}</svg>`;
+}
+const ABV=(n,k)=>abacusSvg(digitsOf(n,k||Math.max(5,String(n).length)));
+// place-value table with k columns, آحاد on the right as in the book; slot {0} is the highest place
+function PVTk(k){ const h=range(0,k-1).map(p=>`<th>${PLN[p]}</th>`).join(""), c=range(0,k-1).map(p=>`<td>{${k-1-p}}</td>`).join("");
+  return `<table class="pvt">${`<tr>${h}</tr><tr>${c}</tr>`}</table>`; }
+const PVQ=(q,n,k)=>FL(q, PVTk(k), digitsOf(n,k), Array(k).fill(range(0,9)), {tip:`العدد هو ${n}`});
+const ABQ=(n,k,q)=>({t:"abacus", q:q||`مثّل العدد ${n} على العدّاد`, n, k:k||Math.max(5,String(n).length)});
+
+/* ---------- multiplying by a three-digit number, as in the book: hundreds row first (zeros given) ---------- */
+function MUL3(a,b,q){
+  const h=Math.floor(b/100), t=Math.floor(b/10)%10, o=b%10, res=a*b;
+  const pr=(v,z,lab)=>{ const s=String(v*Math.pow(10,z)); const keep=Math.max(0,s.length-z); return {p:"?".repeat(keep)+s.slice(keep), a:s, lab}; };
+  const rows=[{p:String(a)},{p:String(b),op:"×",line:true},
+    pr(a*h,2,`× ${h}00`), pr(a*t,1,`× ${t}0`), {...pr(a*o,0,`× ${o}`),op:"+",line:true},
+    {p:"?".repeat(String(res).length),a:String(res)}];
+  return {t:"column",tight:true,q:q||`اضرب: ${a} × ${b}`,rows,hint:"أولاً ضع أصفار المئات واضرب في رقم المئات، ثم ضع صفر العشرات واضرب في رقم العشرات، ثم اضرب في الآحاد، ثم اجمع."};
+}
+
+/* ---------- number line with fractions (0 on the left, as in the book) ---------- */
+function NL(den,max,marks={},opt={}){
+  const W0=520, pad=30, base=70, H=130, step=(W0-2*pad)/(den*max); let s=`<line x1="${pad-10}" y1="${base}" x2="${W0-pad+12}" y2="${base}" stroke="var(--ink)" stroke-width="2.5"/>`;
+  for(let k=0;k<=den*max;k++){ const x=pad+k*step, whole=k%den===0;
+    s+=`<line x1="${x}" y1="${base-(whole?11:8)}" x2="${x}" y2="${base+(whole?11:8)}" stroke="var(--ink)" stroke-width="${whole?2.6:1.8}"/>`;
+    if(whole) s+=`<text x="${x}" y="${base+40}" text-anchor="middle" class="tl">${k/den}</text>`;
+    if(marks[k]!=null) s+=`<circle cx="${x}" cy="${base}" r="7" fill="var(--pink)"/><text x="${x}" y="${base-22}" text-anchor="middle" class="jl">${marks[k]}</text>`;
+    if(opt.hit) s+=`<rect class="hit" data-k="${k}" x="${x-step/2}" y="${base-45}" width="${step}" height="95" fill="transparent"/>`; }
+  return `<svg class="shape nline" viewBox="0 0 ${W0} ${H}" width="${W0}" style="max-width:100%;height:auto;direction:ltr" role="img" aria-label="خط الأعداد">${s}</svg>`;
+}
+
+/* ---------- pictures for ratio ---------- */
+function rowsPic(rows,kind="tri",col="#2BA6E0"){
+  const cw=46, rh=38, wmax=Math.max(...rows)*cw+10, H=rows.length*rh+10; let s="";
+  rows.forEach((n,r)=>{ const x0=(wmax-n*cw)/2+cw/2, y=10+r*rh+rh/2;
+    for(let i=0;i<n;i++){ const x=x0+i*cw;
+      s+= kind==="tri"? `<polygon points="${x},${y-14} ${x+19},${y+13} ${x-19},${y+13}" fill="${col}"/>` : `<circle cx="${x}" cy="${y}" r="15" fill="${col}"/>`; } });
+  return `<svg class="shape" viewBox="0 0 ${wmax} ${H}" width="${Math.min(240,wmax)}" role="img" aria-label="شكل">${s}</svg>`;
+}
+const boxPic=(rows,kind,col,lab)=>`<div class="picbox"><div>${rowsPic(rows,kind,col)}</div><span class="caption">${lab}</span></div>`;
+
+/* ---------- geometry drawing (segments, rays ">أب", lines "<>أب", optional circle) ---------- */
+const SEGP=(s,pts)=>{ const ns=Object.keys(pts).sort((a,b)=>b.length-a.length); for(const a of ns) if(s.startsWith(a)){ const b=s.slice(a.length); if(pts[b]) return [a,b]; } return null; };
+const SKIND=raw=> raw.startsWith("<>")? ["l",raw.slice(2)] : raw.startsWith(">")? ["r",raw.slice(1)] : ["s",raw];
+function fig(pts,segs=[],opt={}){
+  const Wd=opt.w||320, H=opt.h||230; const names=Object.keys(pts);
+  const cx=opt.circle? opt.circle.c[0] : names.reduce((s,n)=>s+pts[n][0],0)/names.length, cy=opt.circle? opt.circle.c[1] : names.reduce((s,n)=>s+pts[n][1],0)/names.length;
+  const col=opt.col||"var(--pink)"; let s="";
+  if(opt.circle) s+=`<circle cx="${opt.circle.c[0]}" cy="${opt.circle.c[1]}" r="${opt.circle.r}" fill="none" stroke="var(--blue)" stroke-width="3"/>`;
+  const head=(x,y,ux,uy)=>`<polygon points="${x+ux*4},${y+uy*4} ${x-ux*11-uy*7},${y-uy*11+ux*7} ${x-ux*11+uy*7},${y-uy*11-ux*7}" fill="${col}"/>`;
+  segs.forEach(raw=>{ const [kind,sg]=SKIND(raw), [a,b]=SEGP(sg,pts); let [x1,y1]=pts[a],[x2,y2]=pts[b]; const dx=x2-x1, dy=y2-y1, l=Math.hypot(dx,dy), ux=dx/l, uy=dy/l, e=opt.ext||46;
+    let X1=x1,Y1=y1,X2=x2,Y2=y2, h="";
+    if(kind!=="s"){ X2=x2+ux*e; Y2=y2+uy*e; h+=head(X2,Y2,ux,uy); }
+    if(kind==="l"){ X1=x1-ux*e; Y1=y1-uy*e; h+=head(X1,Y1,-ux,-uy); }
+    s+=`<line class="sg" data-s="${sg}" x1="${X1}" y1="${Y1}" x2="${X2}" y2="${Y2}" stroke="${col}" stroke-width="3.5" stroke-linecap="round"/>${h}`; });
+  if(opt.arcs) opt.arcs.forEach(([v,a,b,lab])=>{ const [vx,vy]=pts[v], A=Math.atan2(pts[a][1]-vy,pts[a][0]-vx), B=Math.atan2(pts[b][1]-vy,pts[b][0]-vx), r=30;
+    let d=B-A; while(d<=-Math.PI) d+=2*Math.PI; while(d>Math.PI) d-=2*Math.PI;
+    s+=`<path d="M${vx+r*Math.cos(A)},${vy+r*Math.sin(A)} A${r},${r} 0 0 ${d>0?1:0} ${vx+r*Math.cos(B)},${vy+r*Math.sin(B)}" fill="none" stroke="var(--blue)" stroke-width="2.5"/>`; });
+  if(opt.right) opt.right.forEach(([v,a,b])=>{ const [vx,vy]=pts[v], u=[pts[a][0]-vx,pts[a][1]-vy], w=[pts[b][0]-vx,pts[b][1]-vy], lu=Math.hypot(...u), lw=Math.hypot(...w), k=16;
+    const p1=[vx+u[0]/lu*k,vy+u[1]/lu*k], p2=[vx+u[0]/lu*k+w[0]/lw*k,vy+u[1]/lu*k+w[1]/lw*k], p3=[vx+w[0]/lw*k,vy+w[1]/lw*k];
+    s+=`<polyline points="${p1} ${p2} ${p3}" fill="none" stroke="var(--blue)" stroke-width="2"/>`; });
+  names.forEach(n=>{ const [x,y]=pts[n]; let dx=x-cx, dy=y-cy; const l=Math.hypot(dx,dy); if(l<1){dx=.75;dy=-.75;} else {dx/=l; dy/=l;}
+    if(opt.labelUp) {dx=0; dy=-1;}
+    if(opt.lab&&opt.lab[n]) [dx,dy]=opt.lab[n];
+    s+=`<circle class="pt" data-p="${n}" cx="${x}" cy="${y}" r="${opt.big?9:5.5}" fill="var(--ink)"/>`;
+    s+=`<text class="pl" x="${x+dx*22}" y="${y+dy*22}" text-anchor="middle" dominant-baseline="central">${n}</text>`; });
+  return `<svg class="shape geo" viewBox="0 0 ${Wd} ${H}" width="${Wd}" style="max-width:100%;height:auto" role="img" aria-label="شكل هندسي">${s}</svg>`;
+}
+const LETS=n=>(n.match(/هـ|./g)||[]).join(" ");
+const RAY=n=>`<span class="seg ray">${LETS(n)}</span>`;
+const LINE=n=>`<span class="seg line">${LETS(n)}</span>`;
+const ANG=n=>`<span class="ang">∠ ${LETS(n)}</span>`;
+const HW=h=>({h});
+
+/* small angle picture: deg measured from the first arm, optional rotation */
+function angSvg(deg,opt={}){
+  const S=opt.size||110, c=S/2, L=S*0.42, rot=(opt.rot||0)*Math.PI/180;
+  const P=a=>[c+L*Math.cos(a), c-L*Math.sin(a)], a0=rot, a1=rot+deg*Math.PI/180, r=S*0.16;
+  const [x0,y0]=P(a0),[x1,y1]=P(a1), large=deg>180?1:0;
+  const arc= deg===90? (()=>{const k=r*0.8, u=[Math.cos(a0),-Math.sin(a0)], w=[Math.cos(a1),-Math.sin(a1)]; return `<polyline points="${c+u[0]*k},${c+u[1]*k} ${c+u[0]*k+w[0]*k},${c+u[1]*k+w[1]*k} ${c+w[0]*k},${c+w[1]*k}" fill="none" stroke="var(--pink)" stroke-width="2.5"/>`;})()
+    : `<path d="M${c+r*Math.cos(a0)},${c-r*Math.sin(a0)} A${r},${r} 0 ${large} 0 ${c+r*Math.cos(a1)},${c-r*Math.sin(a1)}" fill="none" stroke="var(--pink)" stroke-width="2.5"/>`;
+  return `<svg class="mini-shape" viewBox="0 0 ${S} ${S}" width="${opt.w||S}" aria-hidden="true">${arc}<line x1="${c}" y1="${c}" x2="${x0}" y2="${y0}" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/><line x1="${c}" y1="${c}" x2="${x1}" y2="${y1}" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/><circle cx="${c}" cy="${c}" r="3.5" fill="var(--ink)"/></svg>`;
+}
+const ANGTYPE=d=> d<90?"حادة": d===90?"قائمة": d<180?"منفرجة": d===180?"مستقيمة":"منعكسة";
+const ANGKEY=d=> d<90?"ac": d===90?"rt": d<180?"ob": d===180?"st":"rf";
+const ANGBINS=[["ac","حادة"],["rt","قائمة"],["ob","منفرجة"],["st","مستقيمة"],["rf","منعكسة"]];
+
+/* fraction slot helpers */
+const FADD=(q,a,b,op,cd,ans)=>FL(q, `${F(...a)} ${op} ${F(...b)} = ${FRB("{0}",cd)} ${op} ${FRB("{1}",cd)} = ${FRB("{2}",cd)}`, ans, ans.map(win));
+const FSAME=(q,a,b,op,ans)=>FL(q, `${F(...a)} ${op} ${F(...b)} = ${FRB("{0}","{1}")}`, ans, [range(0,12),uniqSort([ans[1],a[1]+b[1],a[1]*2,a[1]-1,a[1]+1].filter(x=>x>0))]);
+
+/* ================= Unit 1: whole numbers (book pp. 1–19) ================= */
+const EVENS=range(2,25).map(k=>2*k);                       // 4 … 50
+const M3=[9,15,21,27,33,39,45], M5=[25,35], M7=[49];
+const PR50=range(2,50).filter(isPrime);
+const numCard=n=>wd(n);
+const L1 = [
+{ id:1, name:"الأعداد ضمن عشرات الألوف", page:"2–6", badge:"١٠٠٠٠", qs:[
+  {t:"mcq", q:"ما العدد الممثل على العدّاد؟", vis:ABV(10000), opts:["10000","1000","100000","10001"], a:0, tip:"عشرة آلاف: منزلة جديدة على يسار الألوف هي منزلة عشرات الألوف."},
+  {t:"mcq", q:"اقرأ العدد الممثل على العدّاد:", vis:ABV(32100), opts:["اثنان وثلاثون ألفاً ومئة","ثلاثة وعشرون ألفاً ومئة","ثلاثة آلاف ومئتان وعشرة","اثنان وثلاثون ألفاً وعشرة"], a:0},
+  {t:"mcq", q:"اقرأ العدد الممثل على العدّاد:", vis:ABV(32125), opts:["اثنان وثلاثون ألفاً ومئة وخمسة وعشرون","اثنان وثلاثون ألفاً ومئة واثنان وخمسون","ثلاثة وعشرون ألفاً ومئة وخمسة وعشرون","اثنان وثلاثون ألفاً ومئتان وخمسة عشر"], a:0},
+  PVQ("اكتب في لوحة المنازل العدد: سبعة وعشرون ألفاً وخمسمئة وستة وثلاثون", 27536, 5),
+  PVQ("اكتب في لوحة المنازل العدد: خمسة عشر ألفاً وأربعمئة وعشرون", 15420, 5),
+  ABQ(15420,5), ABQ(12427,5), ABQ(29023,5), ABQ(62104,5),
+  {t:"mcq", q:"اكتب بالأرقام: اثنا عشر ألفاً ومئة وثلاثون", opts:["12130","12310","21130","1230"], a:0},
+  {t:"mcq", q:"اكتب بالأرقام: ثلاثة وعشرون ألفاً وخمسة عشر", opts:["23015","23150","32015","2315"], a:0},
+  {t:"mcq", q:"اكتب بالأرقام: سبعة وستون ألفاً وأربعون", opts:["67040","67400","76040","6740"], a:0},
+  {t:"match", q:"صِل كل عدد بالقيمة التي يرمز إليها الرقم 7 فيه:", pairs:[[N(45327),N(7)],[N(45372),N(70)],[N(45732),N(700)],[N(47532),N(7000)],[N(75432),N(70000)]], hint:"حدّد منزلة الرقم 7: آحاد أم عشرات أم مئات …"},
+  FL("اكتب العدد الذي يرمز إليه الرقم 6 في العدد 18627:", `{0}`, [600], [[6,60,600,6000,60000]]),
+  FL("اكتب العدد الذي يرمز إليه الرقم 6 في العدد 62415:", `{0}`, [60000], [[6,60,600,6000,60000]]),
+  FL("اكتب العدد المكوّن من: 5 آحاد ، 7 عشرات ، 3 مئات ، 4 آلاف", PVTk(4), [4,3,7,5], Array(4).fill(range(0,9)), {tip:"العدد هو 4375"}),
+  FL("أكمل:", `3540 ، 3550 ، {0} ، {1} ، 3580 ، 3590`, [3560,3570], [[3551,3560,3640],[3561,3570,3660]]),
+  FL("أكمل:", `500 ، 600 ، 700 ، {0} ، {1} ، 1000`, [800,900], [[701,710,800],[810,900,1000]]),
+]},
+{ id:2, name:"الأعداد ضمن مئات الألوف", page:"7–8", badge:"١٠٠٠٠٠", qs:[
+  VCOL(99999,1,"+",{q:"أضف 1 إلى 99999:", tip:"العدد 100000 يُقرأ مئة ألف."}),
+  {t:"mcq", q:"العدد 100000 يُقرأ:", opts:["مئة ألف","عشرة آلاف","مليون","ألف"], a:0},
+  {t:"mcq", q:"اقرأ العدد الممثل على العدّاد:", vis:ABV(215783), opts:["مئتان وخمسة عشر ألفاً وسبعمئة وثلاثة وثمانون","مئتان وواحد وخمسون ألفاً وسبعمئة وثمانية وثلاثون","خمسة عشر ألفاً وسبعمئة وثلاثة وثمانون","مئتان وخمسة عشر ألفاً وثمانمئة وسبعة وثلاثون"], a:0},
+  {t:"mcq", q:"كيف نقرأ العدد 534560؟", opts:["خمسمئة وأربعة وثلاثون ألفاً وخمسمئة وستون","خمسمئة وثلاثة وأربعون ألفاً وخمسمئة وستون","أربعة وثلاثون ألفاً وخمسمئة وستون","خمسمئة وأربعة وثلاثون ألفاً وستمئة وخمسون"], a:0},
+  {t:"mcq", q:"كيف نقرأ العدد 339870؟", opts:["ثلاثمئة وتسعة وثلاثون ألفاً وثمانمئة وسبعون","ثلاثمئة وثلاثة وتسعون ألفاً وثمانمئة وسبعون","ثلاثمئة وتسعة وثلاثون ألفاً وسبعمئة وثمانون","تسعة وثلاثون ألفاً وثمانمئة وسبعون"], a:0},
+  {t:"mcq", q:"كيف نقرأ العدد 712345؟", opts:["سبعمئة واثنا عشر ألفاً وثلاثمئة وخمسة وأربعون","سبعمئة وواحد وعشرون ألفاً وثلاثمئة وخمسة وأربعون","سبعمئة واثنا عشر ألفاً وثلاثمئة وأربعة وخمسون","اثنا عشر ألفاً وثلاثمئة وخمسة وأربعون"], a:0},
+  {t:"mcq", q:"اكتب بالأرقام: تسعمئة وسبعة وعشرون ألفاً وأربعمئة وتسعة وثمانون", opts:["927489","972489","927498","92749"], a:0},
+  {t:"mcq", q:"اكتب بالأرقام: مئة وسبعون ألفاً وثلاثمئة وخمسة عشر", opts:["170315","170351","107315","17315"], a:0},
+  PVQ("اكتب في لوحة المنازل العدد: ثلاثمئة وتسعة وثلاثون ألفاً وثمانمئة وسبعون", 339870, 6),
+  ABQ(215783,6), ABQ(534560,6), ABQ(100000,6),
+  FL("اكتب العدد الذي يرمز إليه الرقم 5 في العدد 534560:", `{0}`, [500000], [[5,500,5000,50000,500000]]),
+  {t:"pop", q:"فرقع كل بالون فيه عدد ضمن مئات الألوف (من ستة أرقام)", hint:"عُدّ أرقام العدد: نريد ستة أرقام.", items:[{x:N(100000),ok:1},{x:N(215783),ok:1},{x:N(534560),ok:1},{x:N(170315),ok:1},{x:N(99999),ok:0},{x:N(25232),ok:0},{x:N(7120),ok:0},{x:N(1000000),ok:0}]},
+]},
+{ id:3, name:"الأعداد ضمن الملايين", page:"9–10", badge:"مليون", qs:[
+  VCOL(999999,1,"+",{q:"أضف 1 إلى 999999:", tip:"العدد 1000000 يُقرأ مليون."}),
+  {t:"mcq", q:"العدد 1000000 يُقرأ:", opts:["مليون","مئة ألف","عشرة ملايين","عشرة آلاف"], a:0},
+  FL("لقراءة العدد نقسّمه من اليمين إلى كتل من ثلاثة أرقام:", `43954837 = {0} مليوناً و {1} ألفاً و {2}`, [43,954,837], [[4,34,43,439],[95,395,549,954],[37,483,837,873]], {tip:"ثلاثة وأربعون مليوناً وتسعمئة وأربعة وخمسون ألفاً وثمانمئة وسبعة وثلاثون."}),
+  FL("قسّم العدد من اليمين إلى كتل من ثلاثة أرقام:", `5430718 = {0} ملايين و {1} ألفاً و {2}`, [5,430,718], [[5,54,543],[30,43,430,307],[18,71,718,187]]),
+  {t:"mcq", q:"اقرأ العدد 5430718", vis:ABV(5430718,7), opts:["خمسة ملايين وأربعمئة وثلاثون ألفاً وسبعمئة وثمانية عشر","خمسة ملايين وثلاثمئة وأربعون ألفاً وسبعمئة وثمانية عشر","خمسمئة وأربعة وثلاثون ألفاً وسبعمئة وثمانية عشر","خمسة ملايين وأربعمئة وثلاثون ألفاً وثمانمئة وسبعة عشر"], a:0},
+  {t:"mcq", q:"كيف نقرأ العدد 15317230؟", opts:["خمسة عشر مليوناً وثلاثمئة وسبعة عشر ألفاً ومئتان وثلاثون","خمسة عشر مليوناً وثلاثمئة وواحد وسبعون ألفاً ومئتان وثلاثون","مليون وخمسمئة وواحد وثلاثون ألفاً وسبعمئة وثلاثة وعشرون","خمسة عشر مليوناً وثلاثمئة وسبعة عشر ألفاً وثلاثمئة وعشرون"], a:0},
+  {t:"mcq", q:"كيف نقرأ العدد 35405700؟", opts:["خمسة وثلاثون مليوناً وأربعمئة وخمسة آلاف وسبعمئة","خمسة وثلاثون مليوناً وأربعمئة وخمسون ألفاً وسبعمئة","ثلاثة ملايين وخمسمئة وأربعون ألفاً وخمسمئة وسبعون","خمسة وثلاثون مليوناً وأربعة آلاف وخمسمئة وسبعون"], a:0},
+  {t:"mcq", q:"اكتب بالأرقام: مليون وثلاثمئة وخمسة عشر ألفاً وأربعمئة وسبعون", opts:["1315470","1351470","1315407","131547"], a:0},
+  {t:"mcq", q:"اكتب بالأرقام: عشرة ملايين ومئتان وثلاثة وخمسون ألفاً وسبعمئة وخمسة وسبعون", opts:["10253775","1253775","10235775","10253757"], a:0},
+  ABQ(5430718,7), ABQ(3415321,7), ABQ(1000000,7),
+  FL("اكتب العدد الذي يرمز إليه الرقم 4 في العدد 43954837:", `{0}`, [40000000], [[40000,400000,4000000,40000000]]),
+]},
+{ id:4, name:"مقارنة الأعداد", page:"11–12", badge:"<bdi dir=\"ltr\">&gt;</bdi>", qs:[
+  {t:"mcq", q:"لمقارنة عددين لهما عدد المنازل نفسه:", opts:["نبحث من اليسار عن أول منزلة يختلف فيها الرقمان","نبحث من اليمين عن أول منزلة مختلفة","نختار العدد الذي آحاده أكبر","نختار العدد الذي فيه أصفار أكثر"], a:0},
+  {t:"cmp", q:"قارن بين العددين:", a:N(125), b:N(153)}, {t:"cmp", q:"قارن بين العددين:", a:N(2538), b:N(2543)},
+  {t:"cmp", q:"قارن بين العددين:", a:N(3517240), b:N(5718350)}, {t:"cmp", q:"قارن بين العددين:", a:N(383), b:N(365)},
+  {t:"cmp", q:"قارن بين العددين:", a:N(4518), b:N(4325)}, {t:"cmp", q:"قارن بين العددين:", a:N(42920), b:N(44930)},
+  {t:"cmp", q:"قارن بين العددين:", a:N(5708325), b:N(5718320)}, {t:"cmp", q:"قارن بين العددين:", a:N(8913000), b:N(8315760)},
+  {t:"cmp", q:"قارن بين العددين:", a:N(99999), b:N(100000), tip:"العدد الذي منازله أكثر يكون أكبر."}, {t:"cmp", q:"قارن بين العددين:", a:N(70500), b:N(70500)},
+  {t:"order", q:"رتّب الأعداد من الأصغر إلى الأكبر:", dir:"asc", items:[N(4304580),N(4725200),N(4516570),N(4315460)]},
+  {t:"order", q:"رتّب الأعداد من الأصغر إلى الأكبر:", dir:"asc", items:[N(7318720),N(7521743),N(6821920),N(6934780)]},
+  {t:"order", q:"رتّب الأعداد تصاعدياً:", dir:"asc", items:[N(7345214),N(7347217),N(8543135),N(8529214),N(8543537)]},
+]},
+{ id:5, name:"الأعداد الأولية", page:"13–15", badge:"٧", qs:[
+  {t:"mcq", q:"العدد الأولي هو العدد الأكبر من الواحد ولا يقبل القسمة إلا على:", opts:["نفسه والواحد","العدد 2 فقط","أكثر من عددين","الصفر"], a:0},
+  {t:"mcq", q:"العدد غير الأولي هو العدد الذي يقبل القسمة على:", opts:["أكثر من عددين","نفسه والواحد فقط","الواحد فقط","لا يقبل القسمة أبداً"], a:0},
+  {t:"multi", q:"اختر كل الأعداد التي يقبل العدد 12 القسمة عليها:", items:range(1,12).map(N), ans:[0,1,2,3,5,11], hint:"جرّب: هل 12 ÷ العدد بدون باقٍ؟"},
+  {t:"multi", q:"اختر كل الأعداد التي يقبل العدد 7 القسمة عليها:", items:range(1,8).map(N), ans:[0,6], tip:"7 يقبل القسمة على 1 و 7 فقط، إذن 7 عدد أولي."},
+  {t:"sieve", q:"تدريب (أ): احذف جميع مضاعفات العدد 2 عدا العدد 2", target:EVENS, hint:"مضاعفات 2: 4 ، 6 ، 8 ، … حتى 50. لا تحذف 2 نفسه."},
+  {t:"sieve", q:"تدريب (ب): احذف جميع مضاعفات العدد 3 عدا العدد 3", pre:EVENS, target:M3, hint:"مضاعفات 3 التي لم تُحذف بعد: 9 ، 15 ، … لا تحذف 3 نفسه."},
+  {t:"sieve", q:"تدريب (ج): احذف جميع مضاعفات العدد 5 عدا العدد 5", pre:[...EVENS,...M3], target:M5, hint:"ابحث عن مضاعفات 5 التي لم تُحذف بعد."},
+  {t:"sieve", q:"تدريب (د): احذف جميع مضاعفات العدد 7 عدا العدد 7", pre:[...EVENS,...M3,...M5], target:M7, hint:"ابحث عن مضاعفات 7 التي لم تُحذف بعد."},
+  {t:"sieve", q:"تدريب (هـ): ضع دائرة حول كل الأعداد الأولية بين 1 و 50", mode:"circle", pre:[...EVENS,...M3,...M5,...M7], target:PR50, hint:"الأعداد التي بقيت بعد الحذف أولية، ما عدا 1 فهو ليس أولياً."},
+  {t:"classify", q:"ميّز العدد الأولي وغير الأولي:", bins:[["p","أولي"],["n","غير أولي"]], shapes:[3,6,7,9,11,12,15,17].map(n=>[isPrime(n)?"p":"n",numCard(n)]), hint:"العدد الأولي لا يقبل القسمة إلا على نفسه والواحد."},
+  {t:"pop", q:"فرقع كل بالون فيه عدد أولي", hint:"العدد الأولي لا يقبل القسمة إلا على نفسه والواحد.", items:[19,20,21,23,24,13,27,29].map(n=>({x:N(n),ok:isPrime(n)?1:0}))},
+  {t:"multi", q:"اختر كل الأعداد الأولية الأكبر من 10 والأصغر من 20:", items:range(10,20).map(N), ans:[1,3,7,9]},
+  {t:"mcq", q:"هل العدد 141 عدد أولي أم غير أولي؟", opts:["غير أولي، لأنه يقبل القسمة على 3","أولي، لأنه لا يقبل القسمة إلا على نفسه والواحد","أولي، لأنه عدد فردي"], a:0, tip:"141 ÷ 3 = 47"},
+]},
+{ id:6, name:"الأعداد الزوجية والأعداد الفردية", page:"16–17", badge:"٢ ٤ ٦", qs:[
+  {t:"mcq", q:"العدد الذي يمكن تقسيمه إلى عددين متساويين يسمى:", opts:["عدداً زوجياً","عدداً فردياً","عدداً أولياً"], a:0, tip:"مثل 8 = 4 + 4"},
+  {t:"share", q:"هل يمكن تقسيم العدد 12 إلى عددين متساويين؟ وزّع 12 حلوى على طفلين بالتساوي", total:12, k:2, e:"🍬", tip:"12 = 6 + 6 ، إذن 12 عدد زوجي."},
+  {t:"share", q:"وزّع 11 حلوى على طفلين بالتساوي. كم نصيب كل طفل؟ وكم يبقى؟", total:11, k:2, e:"🍬", rem:true, tip:"لا يمكن تقسيم 11 إلى عددين متساويين، إذن 11 عدد فردي."},
+  {t:"classify", q:"صنّف الأعداد إلى زوجية وفردية:", bins:[["e","زوجي"],["o","فردي"]], shapes:[2,3,8,9,12,13,17,20,25,32].map(n=>[n%2?"o":"e",numCard(n)]), hint:"انظر إلى رقم الآحاد: 0 ، 2 ، 4 ، 6 ، 8 زوجي."},
+  {t:"pop", q:"فرقع كل بالون فيه عدد زوجي", hint:"العدد الزوجي رقم آحاده 0 أو 2 أو 4 أو 6 أو 8.", items:[6,7,8,9,10,15,16,19,25,38].map(n=>({x:N(n),ok:n%2?0:1}))},
+  {t:"pop", q:"فرقع كل بالون فيه عدد فردي", hint:"العدد الفردي رقم آحاده 1 أو 3 أو 5 أو 7 أو 9.", items:[8,9,11,12,14,15,17,18,23,29].map(n=>({x:N(n),ok:n%2}))},
+  FL("أكمل جدول الجمع:", `3 + 2 = {0} ، 6 + 8 = {1} ، 7 + 5 = {2} ، 12 + 11 = {3}`, [5,14,12,23]),
+  {t:"mcq", q:"عدد زوجي + عدد زوجي = عدد ............", opts:["زوجي","فردي"], a:0, tip:"مثل 6 + 8 = 14"},
+  {t:"mcq", q:"عدد فردي + عدد فردي = عدد ............", opts:["زوجي","فردي"], a:0, tip:"مثل 7 + 5 = 12"},
+  {t:"mcq", q:"عدد زوجي + عدد فردي = عدد ............", opts:["فردي","زوجي"], a:0, tip:"مثل 12 + 11 = 23"},
+  {t:"mcq", q:"هل الصفر عدد زوجي؟", opts:["نعم","لا"], a:0, tip:"0 = 0 + 0 ، ورقم آحاده صفر."},
+  {t:"mcq", q:"للأعداد الأكبر من 10: إذا كان رقم الآحاد صفراً يكون العدد:", opts:["زوجياً","فردياً"], a:0},
+]},
+];
+const FINAL1={id:99,name:"التحدي الشامل",page:"18–19"};
+
+/* ================= Unit 2: operations on whole numbers (book pp. 20–47) ================= */
+const YN=(...v)=>v.map(x=>!!x);
+const GCDQ=(nums)=>{ const g=nums.reduce(gcd); const d=divisors(Math.min(...nums)); return FL(`جد ق.م.أ للأعداد: ${nums.join(" ، ")}`, `ق.م.أ = {0}`, [g], [shuffle(uniqSort([g,...shuffle(d.filter(x=>x!==g)).slice(0,4)])).sort((a,b)=>a-b)]); };
+const LCMQ=(nums)=>{ const l=nums.reduce(lcm), p=nums.reduce((a,b)=>a*b); return FL(`جد م.م.أ للأعداد: ${nums.join(" ، ")}`, `م.م.أ = {0}`, [l], [uniqSort([l,l*2,Math.max(...nums),p===l?l*3:p,l/2%1?l+Math.max(...nums):l/2])]); };
+const L2 = [
+{ id:1, name:"ضرب عدد من ثلاثة أرقام في عدد من ثلاثة أرقام", page:"22–24", badge:"×", qs:[
+  MUL3(421,243), MUL3(765,138), MUL3(431,452), MUL3(222,347), MUL3(511,201), MUL3(917,103), MUL3(897,723), MUL3(835,640),
+  FL("سلك كهربائي طوله 352 متراً، كم طوله بالسنتمترات؟", `352 × 100 = {0} سم`, [35200], [[3520,35200,352000,3520000]], {tip:"المتر = 100 سم"}),
+  MUL3(547,502,"كم قلماً في 547 كرتونة إذا كان بكل كرتونة 502 قلم؟"),
+  {t:"mcq", q:"عند الضرب في 243 نضع أولاً:", opts:["صفرين ثم نضرب في 2 (المئات)","صفراً واحداً ثم نضرب في 4","لا نضع أصفاراً"], a:0},
+]},
+{ id:2, name:"قابلية القسمة", page:"25–27", badge:"÷", qs:[
+  {t:"mcq", q:"8 ÷ 4 = 2 ولا يوجد باقٍ. نقول إن العدد 8:", opts:["يقبل القسمة على 4","لا يقبل القسمة على 4"], a:0},
+  FL("أكمل:", `9 ÷ 2 = {0} والباقي {1}`, [4,1], [range(1,9),range(0,3)], {tip:"يوجد باقٍ، إذن 9 لا يقبل القسمة على 2."}),
+  {t:"mcq", q:"إذا كان هناك باقٍ في عملية القسمة نقول إن المقسوم:", opts:["لا يقبل القسمة على المقسوم عليه","يقبل القسمة على المقسوم عليه"], a:0},
+  {t:"mcq", q:"هل العدد 16 يقبل القسمة على 2؟", opts:["نعم، لأن 16 ÷ 2 = 8 بدون باقٍ","لا، لأن هناك باقياً"], a:0},
+  {t:"mcq", q:"هل العدد 37 يقبل القسمة على 5؟", opts:["لا، لأن 37 ÷ 5 = 7 والباقي 2","نعم، لأنه لا يوجد باقٍ"], a:0},
+  {t:"pop", q:"فرقع الأعداد التي تقبل القسمة على 5", hint:"اقسم على 5: هل يوجد باقٍ؟", items:[5,12,15,23,30,32].map(n=>({x:N(n),ok:n%5?0:1}))},
+  {t:"ynt", q:"وضّح هل العدد الأول يقبل القسمة على الثاني أم لا:", cols:["يقبل القسمة؟"], rows:[["22 ÷ 3",YN(0)],["24 ÷ 4",YN(1)],["25 ÷ 5",YN(1)],["31 ÷ 6",YN(0)]]},
+  {t:"ynt", q:"أكمل الجدول: هل العدد يقبل القسمة على …؟", corner:"العدد", cols:["2","3","5","10"], rows:[["10",YN(1,0,1,1)],["15",YN(0,1,1,0)],["20",YN(1,0,1,1)],["30",YN(1,1,1,1)]]},
+  DIVR(27,4), DIVR(27,3),
+]},
+{ id:3, name:"قابلية القسمة على 2", page:"28–29", badge:"÷٢", qs:[
+  {t:"mcq", q:"يقبل العدد القسمة على 2 إذا كان رقم آحاده:", opts:["0 أو 2 أو 4 أو 6 أو 8","1 أو 3 أو 5 أو 7 أو 9","5 أو صفراً","أي رقم"], a:0},
+  {t:"mcq", q:"العدد الذي يقبل القسمة على 2 يسمى:", opts:["عدداً زوجياً","عدداً فردياً","عدداً أولياً"], a:0},
+  {t:"pop", q:"فرقع كل بالون فيه عدد يقبل القسمة على 2", hint:"انظر إلى رقم الآحاد.", items:[4,8,16,19,23,26,42,50,63].map(n=>({x:N(n),ok:n%2?0:1}))},
+  {t:"classify", q:"صنّف الأعداد:", bins:[["y","يقبل القسمة على 2"],["n","لا يقبل القسمة على 2"]], shapes:[18,21,22,24,25,63,236,975].map(n=>[n%2?"n":"y",numCard(n)]), hint:"رقم الآحاد 0 أو 2 أو 4 أو 6 أو 8 يعني أن العدد يقبل القسمة على 2."},
+  FL("أكمل:", `18 ÷ 2 = {0}`, [9], [range(5,12)]), FL("أكمل:", `21 ÷ 2 = {0} والباقي {1}`, [10,1], [range(8,12),range(0,1)]),
+  {t:"ynt", q:"وضّح ما إذا كان كل عدد يقبل القسمة على 2 أم لا:", cols:["يقبل القسمة على 2؟"], rows:[["4",YN(1)],["19",YN(0)],["26",YN(1)],["23",YN(0)],["1236",YN(1)],["9875",YN(0)]]},
+  FL("ضع رقماً في خانة الآحاد ليقبل العدد القسمة على 2:", `37{0}`, [4], [range(0,9)], {accept:[[0,2,4,6,8]]}),
+]},
+{ id:4, name:"قابلية القسمة على 3", page:"30–31", badge:"÷٣", qs:[
+  FL("أكمل: مجموع أرقام العدد 48", `4 + 8 = {0}`, [12], [range(8,16)]), FL("أكمل: مجموع أرقام العدد 252", `2 + 5 + 2 = {0}`, [9], [range(5,13)]),
+  FL("أكمل: مجموع أرقام العدد 831", `8 + 3 + 1 = {0}`, [12], [range(8,16)]),
+  {t:"mcq", q:"يقبل العدد القسمة على 3 إذا كان:", opts:["مجموع أرقامه يقبل القسمة على 3","رقم آحاده 3","رقم آحاده صفراً","عدداً فردياً"], a:0},
+  {t:"ynt", q:"هل يقبل العدد القسمة على 3؟ (اجمع أرقامه)", cols:["يقبل القسمة على 3؟"], rows:[["48",YN(1)],["252",YN(1)],["831",YN(1)],["1223",YN(0)],["532",YN(0)]]},
+  FL("ضع أصغر رقم مناسب في المربع الخالي ليقبل العدد القسمة على 3:", `2{0}7`, [0], [range(0,9)], {tip:"2 + 0 + 7 = 9"}),
+  FL("ضع أصغر رقم مناسب في المربع الخالي ليقبل العدد القسمة على 3:", `122{0}`, [1], [range(0,9)], {tip:"1 + 2 + 2 + 1 = 6"}),
+  FL("ضع أصغر رقم مناسب في المربع الخالي ليقبل العدد القسمة على 3:", `6{0}7`, [2], [range(0,9)], {tip:"6 + 2 + 7 = 15"}),
+  FL("ضع أكبر رقم مناسب في المربع الخالي ليقبل العدد القسمة على 3:", `{0}54`, [9], [range(1,9)], {tip:"9 + 5 + 4 = 18"}),
+  FL("ضع أكبر رقم مناسب في المربع الخالي بحيث لا يقبل العدد القسمة على 3:", `81{0}`, [8], [range(0,9)], {tip:"8 + 1 + 8 = 17 لا يقبل القسمة على 3"}),
+  {t:"pop", q:"فرقع كل بالون فيه عدد يقبل القسمة على 3", hint:"اجمع أرقام العدد: هل المجموع يقبل القسمة على 3؟", items:[10,219,260,11,41,8,126,37,627,300].map(n=>({x:N(n),ok:n%3?0:1}))},
+  {t:"mcq", q:"متى يقبل العدد القسمة على 2 و 3 في آن واحد؟", opts:["إذا كان زوجياً ومجموع أرقامه يقبل القسمة على 3","إذا كان فردياً","إذا كان رقم آحاده 3","إذا كان مجموع أرقامه زوجياً"], a:0},
+  LD(627,3), LD(532,3),
+]},
+{ id:5, name:"قابلية القسمة على 5", page:"32", badge:"÷٥", qs:[
+  {t:"mcq", q:"يقبل العدد القسمة على 5 إذا كان:", opts:["رقم آحاده 5 أو صفراً","رقم آحاده 5 فقط","مجموع أرقامه 5","رقم آحاده زوجياً"], a:0},
+  {t:"pop", q:"فرقع كل بالون فيه عدد يقبل القسمة على 5", hint:"انظر إلى رقم الآحاد: 5 أو صفر.", items:[32,35,37,40,55,68,99,70,43].map(n=>({x:N(n),ok:n%5?0:1}))},
+  {t:"ynt", q:"اختبر قابلية القسمة على 5:", cols:["يقبل القسمة على 5؟"], rows:[["32",YN(0)],["35",YN(1)],["37",YN(0)],["40",YN(1)],["55",YN(1)],["68",YN(0)]]},
+  FL("املأ رقم الآحاد ليقبل العدد القسمة على 5:", `121{0}`, [0], [range(0,9)], {accept:[[0,5]]}),
+  FL("املأ رقم الآحاد ليقبل العدد القسمة على 5:", `387{0}`, [5], [range(0,9)], {accept:[[0,5]]}),
+  FL("املأ رقم الآحاد ليقبل العدد القسمة على 5:", `532{0}`, [0], [range(0,9)], {accept:[[0,5]]}),
+  FL("أكمل:", `35 ÷ 5 = {0}`, [7], [range(4,10)]), FL("أكمل:", `40 ÷ 5 = {0}`, [8], [range(4,10)]),
+  {t:"mcq", q:"لماذا لا يقبل العدد 99 القسمة على 5؟", opts:["لأن رقم آحاده ليس 5 أو صفراً","لأنه عدد فردي","لأنه أكبر من 50"], a:0},
+]},
+{ id:6, name:"قابلية القسمة على 10", page:"33–34", badge:"÷١٠", qs:[
+  {t:"mcq", q:"يقبل العدد القسمة على 10 إذا كان:", opts:["رقم آحاده صفراً","رقم آحاده 1","رقم آحاده 5 أو صفراً","مجموع أرقامه 10"], a:0},
+  FL("أكمل:", `234 × 10 = {0}`, [2340], [[234,2340,23400,2304]]), FL("أكمل:", `37800 ÷ 10 = {0}`, [3780], [[378,3780,37800,3708]]), FL("أكمل:", `750 ÷ 10 = {0}`, [75], [[7,75,750,705]]),
+  {t:"ynt", q:"أكمل الجدول: هل يقبل العدد القسمة على 10؟", cols:["يقبل القسمة على 10؟"], rows:[["45",YN(0)],["60",YN(1)],["85",YN(0)],["100",YN(1)],["225",YN(0)],["450",YN(1)]]},
+  {t:"pop", q:"فرقع كل بالون فيه عدد يقبل القسمة على 10", hint:"رقم الآحاد يجب أن يكون صفراً.", items:[45,50,350,700,775,105,2340,1000].map(n=>({x:N(n),ok:n%10?0:1}))},
+  {t:"multi", q:"اختر الأعداد التي تقبل القسمة على 2 و 5 و 10 معاً:", items:[20,35,40,55,70,85].map(N), ans:[0,2,4], hint:"العدد الذي آحاده صفر يقبل القسمة على 2 و 5 و 10."},
+  {t:"mcq", q:"كل عدد يقبل القسمة على 10 يقبل القسمة أيضاً على:", opts:["2 و 5","3 و 7","9 فقط","4 فقط"], a:0},
+]},
+{ id:7, name:"تحليل العدد إلى عوامله الأولية", page:"35–36", badge:"٢×٣", qs:[
+  {t:"mcq", q:"قواسم العدد 8 (الأعداد التي يقبل 8 القسمة عليها) هي:", opts:["1 ، 2 ، 4 ، 8","2 ، 4","1 ، 8","1 ، 2 ، 3 ، 4 ، 8"], a:0},
+  {t:"ladder", q:"حلّل العدد 210 إلى عوامله الأولية: اضغط على العدد الأولي الذي تقسم عليه", n:210},
+  {t:"ladder", q:"حلّل العدد 462 إلى عوامله الأولية", n:462},
+  {t:"ladder", q:"حلّل العدد 60 إلى عوامله الأولية", n:60},
+  {t:"ladder", q:"حلّل العدد 420 إلى عوامله الأولية", n:420},
+  {t:"ladder", q:"حلّل العدد 48 إلى عوامله الأولية", n:48},
+  {t:"ladder", q:"حلّل العدد 144 إلى عوامله الأولية", n:144},
+  {t:"ladder", q:"حلّل العدد 72 إلى عوامله الأولية", n:72},
+  {t:"ladder", q:"حلّل العدد 630 إلى عوامله الأولية", n:630},
+  FL("تتبّع الشكل لتحليل العدد 420 إلى عوامله الأولية:", `<div class="ftree"><div class="fr0"><span class="fb">420</span></div><div class="fr1"><span class="fb">42</span><span class="fb">{0}</span></div><div class="fr2"><span class="fb">{1}</span><span class="fb">{2}</span><span class="fb">5</span><span class="fb">2</span></div><div class="fr3"><span class="fb">7</span><span class="fg"><span class="fb">3</span><span class="fb">2</span></span><span class="fb">5</span><span class="fb">2</span></div></div>`,
+     [10,7,6], [[5,10,20,21],[2,6,7,14],[2,6,7,21]], {tip:"420 = 2 × 2 × 3 × 5 × 7", hint:"كل مربع يساوي حاصل ضرب العددين تحته."}),
+  FL("أكمل:", `60 = 2 × 2 × 3 × {0}`, [5], [[2,3,5,7]]), FL("أكمل:", `462 = 2 × 3 × 7 × {0}`, [11], [[7,9,11,13]]),
+  {t:"multi", q:"اختر العوامل الأولية للعدد 30:", items:[1,2,3,5,6,10,15,30].map(N), ans:[1,2,3], hint:"العامل الأولي: قاسم للعدد وهو عدد أولي."},
+]},
+{ id:8, name:"القاسم المشترك الأكبر (ق.م.أ)", page:"37–39", badge:"ق.م.أ", qs:[
+  {t:"multi", q:"اختر كل قواسم العدد 15:", items:range(1,15).map(N), ans:[0,2,4,14]},
+  {t:"multi", q:"اختر كل قواسم العدد 18:", items:range(1,18).map(N), ans:[0,1,2,5,8,17]},
+  {t:"common", q:"اضغط على القواسم المشتركة للعددين 30 و 45:", rows:[["قواسم 30",divisors(30)],["قواسم 45",divisors(45)]], ans:[1,3,5,15], tip:"أكبر القواسم المشتركة هو 15 ، إذن ق.م.أ = 15"},
+  {t:"common", q:"اضغط على القواسم المشتركة للأعداد 21 و 35 و 56:", rows:[["قواسم 21",divisors(21)],["قواسم 35",divisors(35)],["قواسم 56",divisors(56)]], ans:[1,7], tip:"ق.م.أ = 7"},
+  {t:"mcq", q:"القاسم المشترك الأكبر لعددين أو أكثر هو:", opts:["أكبر عدد تقبل هذه الأعداد القسمة عليه","أصغر عدد يقبل القسمة على هذه الأعداد","مجموع الأعداد","حاصل ضرب الأعداد"], a:0},
+  FL("بطريقة التحليل إلى العوامل الأولية:", `36 = 2 × 2 × 3 × 3 ، 54 = 2 × 3 × 3 × 3 ، ق.م.أ = 2 × 3 × 3 = {0}`, [18], [[6,9,12,18,36]]),
+  FL("بطريقة التحليل إلى العوامل الأولية:", `12 = 2 × 2 × 3 ، 16 = 2 × 2 × 2 × 2 ، 28 = 2 × 2 × 7 ، ق.م.أ = {0}`, [4], [[2,4,8,12]]),
+  GCDQ([20,30]), GCDQ([15,18]), GCDQ([8,12,18]), GCDQ([50,75]), GCDQ([24,16,40]), GCDQ([30,60,75]),
+]},
+{ id:9, name:"المضاعف المشترك الأصغر (م.م.أ)", page:"40–41", badge:"م.م.أ", qs:[
+  {t:"common", q:"اضغط على المضاعفات المشتركة للعددين 2 و 3:", rows:[["مضاعفات 2",range(1,10).map(k=>2*k)],["مضاعفات 3",range(1,7).map(k=>3*k)]], ans:[6,12,18], tip:"أصغر هذه المضاعفات المشتركة هو 6 ، إذن م.م.أ = 6"},
+  {t:"common", q:"اضغط على المضاعفات المشتركة للعددين 4 و 6:", rows:[["مضاعفات 4",range(1,9).map(k=>4*k)],["مضاعفات 6",range(1,6).map(k=>6*k)]], ans:[12,24], tip:"م.م.أ = 12"},
+  {t:"mcq", q:"المضاعف المشترك الأصغر لعددين أو أكثر هو:", opts:["أصغر عدد يقبل القسمة على هذه الأعداد","أكبر عدد تقبل هذه الأعداد القسمة عليه","مجموع الأعداد"], a:0},
+  FL("بطريقة التحليل إلى العوامل الأولية:", `24 = 2 × 2 × 2 × 3 ، 32 = 2 × 2 × 2 × 2 × 2 ، م.م.أ = {0}`, [96], [[8,48,96,768]], {tip:"م.م.أ = 2 × 2 × 2 × 2 × 2 × 3 = 96"}),
+  FL("بطريقة التحليل إلى العوامل الأولية:", `45 = 3 × 3 × 5 ، 60 = 2 × 2 × 3 × 5 ، 90 = 2 × 3 × 3 × 5 ، م.م.أ = {0}`, [180], [[15,90,180,360]]),
+  LCMQ([42,66]), LCMQ([10,15,20]), LCMQ([16,24,12]), LCMQ([32,48,56]), LCMQ([11,75,77]),
+]},
+{ id:10, name:"قسمة عدد على عدد مكوّن من رقمين", page:"42–44", badge:"÷٢٦", qs:[
+  LD(639,3,"تذكّر قسمة الصف الثالث: اقسم 639 ÷ 3"), LD(725,3,"اقسم 725 ÷ 3"),
+  LD(546,26), LD(9776,13), LD(3645,15), LD(475,14), LD(465,19), LD(647,17), LD(615,12),
+]},
+{ id:11, name:"قسمة عدد على عدد مكوّن من ثلاثة أرقام", page:"45–46", badge:"÷١١٢", qs:[
+  LD(4627,112), LD(72015,204), LD(97012,613), LD(4279,116), LD(65397,223), LD(49217,402), LD(92178,342), LD(32975,224),
+]},
+];
+const FINAL2={id:99,name:"التحدي الشامل",page:"47"};
+
+/* ================= Unit 3: measurement – capacity (book pp. 48–54) ================= */
+const CV=(q,expr,ans,c)=>FL(q,expr,[ans],[opts4(ans,c)]);
+const ML={l:1000,dl:100,cl:10,ml:1};                       // millilitres in each unit
+const L3 = [
+{ id:1, name:"السعة", page:"49–52", badge:"لتر", qs:[
+  {t:"mcq", q:"السعة هي:", opts:["حجم الفراغ الداخلي لأي جسم أجوف","طول الجسم","وزن الجسم","مساحة سطح الجسم"], a:0},
+  {t:"mcq", q:"من وحدات قياس السعة:", opts:["اللتر","المتر","الكيلوجرام","الدرجة"], a:0},
+  {t:"pour", kind:"syringe", q:"هذه الحقنة سعتها 5 سي سي. اسحب المكبس لتملأها بـ 3 سي سي من الدواء", max:5, target:3, lab:i=>`${i}`, liq:"#F2A65A", tip:"سي سي تعني مليلتر، أي جزءاً من ألف جزء من اللتر."},
+  {t:"mcq", q:"الحقنة التي سعتها 5 سي سي تتسع لـ:", opts:["5 مليلترات","5 لترات","5 دسلترات","50 مليلتراً"], a:0},
+  FL("أكمل:", `1 ل = {0} دسل = {1} سل = {2} ملل`, [10,100,1000], [[10,100,1000],[10,100,1000],[10,100,1000]]),
+  {t:"pour", q:"الإبريق سعته لتر واحد ومقسّم إلى دسلترات. املأه حتى 7 دسل", max:10, target:7, lab:i=>`${i} دسل`},
+  {t:"pour", q:"صُبّ 600 ملل من الماء في الإبريق", max:10, target:6, lab:i=>`${i*100} ملل`},
+  {t:"pour", q:"صُبّ نصف لتر من العصير في الإبريق", max:10, target:5, lab:i=>`${i*100} ملل`, liq:"#F2A65A", hint:"نصف اللتر = 500 ملل"},
+  CV("أكمل:", `3 ل = {0} دسل`, 30, [3,300,3000]), 
+  CV("أكمل:", `5 دسل = {0} ملل`, 500, [50,5000,5]), CV("أكمل:", `{0} ل = 200 سل`, 2, [20,200,2000]),
+  CV("أكمل:", `{0} ل = 3000 ملل`, 3, [30,300,3000]), CV("أكمل:", `80 دسل = {0} ل`, 8, [80,800,800]),
+  CV("حوّل:", `4 ل = {0} سل`, 400, [40,4000,4]), CV("كم لتراً في 100 سنتلتر؟", `100 سل = {0} ل`, 1, [10,100,1000]),
+  {t:"cmp", q:"ضع العلامة المناسبة:", a:W("50 ل",50*ML.l), b:W("500 سل",500*ML.cl), tip:"50 ل = 5000 سل"},
+  {t:"cmp", q:"ضع العلامة المناسبة:", a:W("20 دسل",20*ML.dl), b:W("2000 ملل",2000), tip:"20 دسل = 2000 ملل"},
+  {t:"order", q:"رتّب السعات من الأصغر إلى الأكبر:", dir:"asc", items:[W("1 ل",1000),W("5 دسل",500),W("30 سل",300),W("750 ملل",750)]},
+  FL("خزان سعته 1800 لتر. كم برميلاً نملأ منه إذا كانت سعة البرميل 200 دسل؟", `1800 ل = {0} دسل ، {1} ÷ 200 = {2} برميلاً`, [18000,18000,90], [[180,1800,18000],[180,1800,18000],[9,90,900]]),
+  FL("خزان ماء سعته 500 لتر يراد ملؤه بوعاء سعته 1 سنتلتر، كم وعاءً نحتاج؟", `500 ل = {0} سل`, [50000], [[500,5000,50000,500000]]),
+  FL("خزان وقود سعته 750 لتراً يراد تفريغه في براميل سعة البرميل 25 لتراً. كم برميلاً نحتاج؟", `750 ÷ 25 = {0} برميلاً`, [30], [[3,25,30,300]]),
+  FL("وعاء به 5 لترات من الدواء يُفرّغ في أنابيب سعة الواحد 30 سل. كم أنبوباً يحتاج؟ وكم ملل يبقى؟", `5 ل = {0} سل ، {1} ÷ 30 = {2} والباقي {3} سل = {4} ملل`, [500,500,16,20,200], [[50,500,5000],[50,500,5000],[15,16,17],[10,20,30],[20,200,2000]]),
+]},
+{ id:2, name:"المكاييل", page:"53–54", badge:"كيلة", qs:[
+  FL("أكمل:", `الكيلة = {0} ربع = {1} ملوات`, [2,4], [range(1,8),range(1,8)]),
+  FL("أكمل:", `الربع = {0} ملوة`, [2], [range(1,8)]),
+  {t:"groups", q:"كم ملوة في 3 كيلات؟ أضف كيلة (فيها 4 ملوات) حتى تصبح عندك 3 كيلات", n:4, g:3, e:"🥣"},
+  {t:"groups", q:"كم ملوة في 5 أرباع؟ أضف ربعاً (فيه ملوتان) حتى تصبح عندك 5 أرباع", n:2, g:5, e:"🥣"},
+  CV("كم ملوة في جوال ذرة فيه 7 كيلات؟", `7 × 4 = {0} ملوة`, 28, [11,24,32]),
+  CV("حوّل:", `48 ملوة = 48 ÷ 4 = {0} كيلة`, 12, [10,24,44]), CV("حوّل:", `5 كيلات = {0} أرباع`, 10, [7,20,2]),
+  CV("حوّل:", `15 ربع = {0} ملوة`, 30, [17,60,7]), CV("حوّل إلى أرباع:", `6 ملوات = {0} أرباع`, 3, [12,2,8]),
+  CV("حوّل إلى أرباع:", `3 كيلات = {0} أرباع`, 6, [5,12,3]), CV("حوّل إلى ملوات:", `5 كيلات = {0} ملوة`, 20, [10,9,25]),
+  CV("حوّل إلى ملوات:", `20 ربع = {0} ملوة`, 40, [10,22,80]), CV("حوّل إلى كيلات:", `30 ربع = {0} كيلة`, 15, [60,7,32]),
+  CV("حوّل إلى كيلات:", `32 ملوة = {0} كيلات`, 8, [16,128,28]),
+  {t:"match", q:"صِل كل كمية بما يساويها:", pairs:[[W("كيلة واحدة"),W("4 ملوات")],[W("ربع واحد"),W("2 ملوة")],[W("2 كيلة"),W("4 أرباع")],[W("3 أرباع"),W("6 ملوات")]]},
+  {t:"order", q:"رتّب الكميات من الأصغر إلى الأكبر:", dir:"asc", items:[W("ربع",2),W("3 ملوات",3),W("كيلة",4),W("3 أرباع",6),W("2 كيلة",8)]},
+  FL("عبّأ صاحب بستان كل 30 ملوة في جوال، كم جوالاً يحتاج إذا كان محصوله 480 ملوة؟", `480 ÷ 30 = {0} جوالاً`, [16], [[15,16,18,160]]),
+  FL("اشترى محمد 5 كيلات وربعاً واحداً من النبق ووضعها في 11 كيساً بالتساوي. كم ملوة في الكيس الواحد؟", `5 كيلات وربع = {0} ملوة ، {1} ÷ 11 = {2} ملوة`, [22,22,2], [[21,22,24],[21,22,24],[1,2,3]]),
+]},
+];
+const FINAL3={id:99,name:"التحدي الشامل",page:"54"};
+
+/* ================= Unit 4: common fractions (book pp. 55–65) ================= */
+const L4 = [
+{ id:1, name:"مراجعة الكسور", page:"56–57", badge:"<span class=\"fr\" style=\"font-size:15px\"><b>2</b><i>3</i></span>", qs:[
+  {t:"mcq", q:"ما الكسر الذي يمثل الجزء الملوّن من الدائرة؟", vis:pie(3,sh(2,"pink")), opts:[F(2,3),F(3,2),F(1,3),F(2,5)], a:0, tip:"العدد 2 بسط الكسر، والعدد 3 مقام الكسر."},
+  {t:"mcq", q:"ما الكسر الذي تمثله الكرات الحمراء؟", vis:setVis(["🔴","🔴","🔵"]), opts:[F(2,3),F(1,3),F(3,2),F(2,1)], a:0},
+  {t:"mcq", q:"اكتب الكسر الذي يمثل الجزء المظلل:", vis:bar(5,sh(2,"blue"),{w:300}), opts:[F(2,5),F(3,5),F(5,2),F(2,3)], a:0},
+  {t:"color", q:`لوّن الأجزاء التي تمثل الكسر ${F(5,6)}`, shape:"pie", n:6, need:5},
+  {t:"build", q:"اصنع الكسر: أربعة أخماس", n:4, d:5},
+  FL("اكتب في شكل بسط ومقام: ثلثان", FRB("{0}","{1}"), [2,3], [range(1,9),range(1,9)]),
+  FL("اكتب في شكل بسط ومقام: ستة أسباع", FRB("{0}","{1}"), [6,7], [range(1,9),range(1,9)]),
+  FL("ضع العدد المناسب:", `${F(2,3)} = ${FRB("{0}",9)}`, [6], [range(2,9)], {tip:"ضربنا البسط والمقام في 3."}),
+  FL("ضع العدد المناسب:", `${F(5,6)} = ${FRB(15,"{0}")}`, [18], [[12,15,18,30]]),
+  FL("ضع العدد المناسب:", `${FRB(2,"{0}")} = ${F(12,30)}`, [5], [range(2,9)]),
+  FL("ادرس النمط واكتب الكسر التالي:", `${F(2,5)} = ${F(4,10)} = ${F(6,15)} = ${FRB("{0}",20)}`, [8], [range(5,12)]),
+  FL("ادرس النمط واكتب الكسر التالي:", `${F(3,4)} = ${F(6,8)} = ${F(9,12)} = ${FRB(12,"{0}")}`, [16], [[14,15,16,18,20]]),
+  FSAME("جد ناتج الجمع:", [3,5], [1,5], "+", [4,5]),
+  FSAME("جد ناتج الطرح:", [4,9], [2,9], "−", [2,9]),
+  {t:"match", q:"صِل كل كسر بالكسر المكافئ له:", pairs:[[[1,2],[2,4]],[[2,3],[4,6]],[[3,5],[6,10]],[[1,4],[3,12]]]},
+]},
+{ id:2, name:"تمثيل الكسور على الخط العددي", page:"58–59", badge:"٠—١", qs:[
+  {t:"mcq", q:`لتحديد الكسر ${F(1,3)} على خط الأعداد نقسم المسافة بين 0 و 1 إلى:`, opts:["3 أجزاء متساوية","جزأين متساويين","4 أجزاء متساوية","10 أجزاء متساوية"], a:0},
+  {t:"place", q:`حدّد على خط الأعداد الكسر ${F(1,2)}`, den:2, max:2, ask:[{n:1}]},
+  {t:"place", q:`حدّد على خط الأعداد الكسرين ${F(1,3)} و ${F(2,3)}`, den:3, max:2, ask:[{n:1},{n:2}]},
+  {t:"mcq", q:"ما الكسر الذي تمثله النقطة ب؟", vis:NL(7,1,{4:"ب"}), opts:[F(4,7),F(3,7),F(4,8),F(7,4)], a:0, tip:"قُسمت المسافة بين 0 و 1 إلى 7 أجزاء، والنقطة ب بعد 4 أجزاء."},
+  {t:"place", q:`ضع الحرف ج فوق النقطة التي تمثل ${F(2,7)} ، والحرف و فوق النقطة التي تمثل ${F(3,7)}`, den:7, max:1, ask:[{n:2,lab:"ج"},{n:3,lab:"و"}]},
+  {t:"place", q:`حدّد النقاط التي تمثل الكسور ${F(1,5)} ، ${F(2,5)} ، ${F(4,5)}`, den:5, max:1, ask:[{n:1},{n:2},{n:4}]},
+  {t:"place", q:`حدّد النقاط التي تمثل الكسور ${F(2,9)} ، ${F(5,9)} ، ${F(7,9)}`, den:9, max:1, ask:[{n:2},{n:5},{n:7}]},
+  {t:"place", q:`ارسم خطاً عددياً ووضّح عليه الكسرين ${F(1,4)} و ${F(3,4)}`, den:4, max:1, ask:[{n:1},{n:3}]},
+  {t:"place", q:`وضّح على خط الأعداد الكسرين ${F(2,5)} و ${F(3,5)}`, den:5, max:1, ask:[{n:2},{n:3}]},
+  {t:"place", q:`وضّح على خط الأعداد الكسور ${F(1,6)} ، ${F(2,6)} ، ${F(5,6)}`, den:6, max:1, ask:[{n:1},{n:2},{n:5}]},
+  {t:"mcq", q:"ما الكسر الذي تمثله النقطة أ؟", vis:NL(5,1,{3:"أ"}), opts:[F(3,5),F(2,5),F(3,6),F(5,3)], a:0},
+]},
+{ id:3, name:"جمع الكسور", page:"60–62", badge:"+", qs:[
+  {t:"mcq", q:"لجمع كسرين متساويين في المقام:", opts:["نجمع البسطين ويبقى المقام المشترك","نجمع البسطين ونجمع المقامين","نضرب البسطين","نجمع المقامين فقط"], a:0},
+  FSAME("جد ناتج الجمع:", [3,8], [2,8], "+", [5,8]), FSAME("جد ناتج الجمع:", [7,10], [2,10], "+", [9,10]), FSAME("جد ناتج الجمع:", [4,8], [3,8], "+", [7,8]),
+  {t:"jump", q:`استخدم خط الأعداد لإيجاد ناتج الجمع: ${F(2,4)} + ${F(1,4)}`, den:4, start:2, add:1},
+  {t:"jump", q:`استخدم خط الأعداد لإيجاد ناتج الجمع: ${F(3,8)} + ${F(4,8)}`, den:8, start:3, add:4},
+  FL("مقام أحد الكسرين مضاعف لمقام الآخر. أكمل:", `${F(1,4)} + ${F(1,8)} = ${FRB("{0}",8)} + ${F(1,8)} = ${FRB("{1}",8)}`, [2,3], [win(2),win(3)]),
+  FL("أكمل:", `${F(1,3)} + ${F(1,6)} = ${FRB("{0}",6)} + ${F(1,6)} = ${FRB("{1}",6)}`, [2,3], [win(2),win(3)], {tip:`${F(3,6)} = ${F(1,2)}`}),
+  FL("أكمل:", `${F(1,5)} + ${F(7,10)} = ${FRB("{0}",10)} + ${F(7,10)} = ${FRB("{1}",10)}`, [2,9], [win(2),win(9)]),
+  FL("أكمل:", `${F(1,2)} + ${F(1,6)} = ${FRB("{0}",6)} + ${F(1,6)} = ${FRB("{1}",6)}`, [3,4], [win(3),win(4)]),
+  FADD("أكمل:", [1,3], [1,4], "+", 12, [4,3,7]), FADD("أكمل:", [1,2], [1,5], "+", 10, [5,2,7]),
+  FADD("أكمل:", [4,5], [3,4], "+", 20, [16,15,31]),
+  FADD(`يستهلك محمد ${F(2,3)} من راتبه في غذائه و ${F(1,4)} من راتبه في سكنه. ما الكسر الذي يستهلكه في سكنه وغذائه؟`, [2,3], [1,4], "+", 12, [8,3,11]),
+  {t:"build", q:`صنعت والدة أحمد فطيرة وقسمتها 5 قطع متساوية. أكل أحمد ${F(1,5)} وأكل محمود ${F(2,5)}. اصنع الكسر الدال على ما أكلاه معاً`, n:3, d:5},
+  FSAME("جد ناتج الجمع:", [1,3], [2,3], "+", [3,3]),
+]},
+{ id:4, name:"طرح الكسور", page:"63–65", badge:"−", qs:[
+  FSAME("جد ناتج الطرح:", [7,8], [4,8], "−", [3,8]),
+  {t:"jump", q:`استخدم خط الأعداد: ${F(7,8)} − ${F(3,8)}`, den:8, start:7, add:-3},
+  FL("أكمل:", `${F(5,8)} − ${F(1,4)} = ${F(5,8)} − ${FRB("{0}",8)} = ${FRB("{1}",8)}`, [2,3], [win(2),win(3)]),
+  FL("أكمل:", `${F(7,8)} − ${F(1,2)} = ${F(7,8)} − ${FRB("{0}",8)} = ${FRB("{1}",8)}`, [4,3], [win(4),win(3)]),
+  FL("أكمل:", `${F(7,9)} − ${F(2,3)} = ${F(7,9)} − ${FRB("{0}",9)} = ${FRB("{1}",9)}`, [6,1], [win(6),win(1)]),
+  FADD("جد ناتج الطرح:", [3,4], [2,3], "−", 12, [9,8,1]), FADD("جد ناتج الطرح:", [5,6], [3,4], "−", 12, [10,9,1]),
+  FADD("جد ناتج الطرح:", [5,7], [2,3], "−", 21, [15,14,1]), FADD("جد ناتج الطرح:", [2,3], [1,4], "−", 12, [8,3,5]),
+  FADD("جد ناتج الطرح:", [5,6], [1,4], "−", 12, [10,3,7]), FADD("جد ناتج الطرح:", [4,5], [2,3], "−", 15, [12,10,2]),
+  FADD("جد ناتج الطرح:", [8,9], [5,6], "−", 18, [16,15,1]), FADD("جد ناتج الطرح:", [3,7], [1,5], "−", 35, [15,7,8]),
+  FL(`زجاجة فيها ${F(3,4)} لتر من العصير، شرب منها أحمد ${F(1,2)} لتر. كم لتراً بقي في الزجاجة؟`, `${F(3,4)} − ${F(1,2)} = ${F(3,4)} − ${FRB("{0}",4)} = ${FRB("{1}",4)} لتر`, [2,1], [win(2),win(1)]),
+  {t:"color", q:`زجاجة فيها ${F(3,4)} لتر، شرب أحمد ${F(1,2)} لتر. لوّن ما بقي من اللتر`, shape:"bar", n:4, need:1},
+]},
+];
+const FINAL4={id:99,name:"التحدي الشامل",page:"56–65"};
+
+/* ================= Unit 5: ratio (book pp. 66–80) ================= */
+const RF=(q,expr,ans,ex={})=>FL(q,expr,ans,ans.map(v=>opts4(v,[v+1,v>1?v-1:v+2,v*2,v+10].filter(x=>x!==v))),ex);
+const FIGA=boxPic([3,2,3,2],"tri","#2BA6E0","(أ)"), FIGB=boxPic([2,4,4,2],"tri","#2BA6E0","(ب)");
+const L5 = [
+{ id:1, name:"مفهوم النسبة", page:"67–71", badge:"<span class=\"fr\" style=\"font-size:15px\"><b>10</b><i>12</i></span>", qs:[
+  RF("انظر إلى الشكلين وعُدّ المثلثات:", `عدد المثلثات في (أ) = {0} ، وفي (ب) = {1}`, [10,12], {vis:FIGA+FIGB}),
+  RF("النسبة بين عدد المثلثات في الشكل (أ) إلى عدد المثلثات في الشكل (ب):", `النسبة = ${FRB("{0}","{1}")}`, [10,12], {vis:FIGA+FIGB}),
+  {t:"mcq", q:"النسبة تعبّر عن المقارنة بين كميتين:", opts:["من النوع نفسه ولهما الوحدات نفسها","من نوعين مختلفين","بجمعهما","بطرحهما"], a:0},
+  RF("في روضة أطفال 20 تلميذاً و 25 تلميذة. النسبة بين عدد البنين وعدد البنات:", FRB("{0}","{1}"), [20,25]),
+  RF("في روضة أطفال 20 تلميذاً و 25 تلميذة. النسبة بين عدد البنات وعدد البنين:", FRB("{0}","{1}"), [25,20]),
+  RF("في روضة أطفال 20 تلميذاً و 25 تلميذة. النسبة بين عدد البنين وعدد تلاميذ الروضة:", `${FRB("{0}","{1}")}`, [20,45], {tip:"عدد تلاميذ الروضة = 20 + 25 = 45"}),
+  RF("حصص الرياضيات 6 في الأسبوع، والعلوم 4، والحاسوب 2، والحصص الكلية 48. نسبة حصص الرياضيات إلى الحصص الكلية:", FRB("{0}","{1}"), [6,48]),
+  RF("حصص الرياضيات 6 ، والعلوم 4 ، والحاسوب 2. نسبة حصص الحاسوب والعلوم إلى حصص الرياضيات:", FRB("{0}","{1}"), [6,6], {tip:"2 + 4 = 6"}),
+  RF("المسافة بين الخرطوم ومدني 186 كلم، وبين الخرطوم والكاملين 88 كلم. ما نسبة المسافة (الخرطوم–الكاملين) إلى المسافة (مدني–الكاملين)؟", `186 − 88 = {0} ، النسبة = ${FRB(88,"{1}")}`, [98,98]),
+  RF("اكتب النسبة بين العدد 9 وضعف العدد 5:", FRB("{0}","{1}"), [9,10]),
+  RF("احسب النسبة بين عدد الدوائر في الشكل الأول إلى عدد الدوائر في الشكل الثاني:", FRB("{0}","{1}"), [3,5], {vis:boxPic([2,1],"circ","#E53935","الشكل الأول")+boxPic([2,1,2],"circ","#E53935","الشكل الثاني")}),
+  RF("احسب النسبة بين عدد المثلثات في الشكل الأول إلى عدد المثلثات في الشكل الثاني:", FRB("{0}","{1}"), [6,8], {vis:boxPic([1,2,3],"tri","#2BA6E0","الشكل الأول")+boxPic([2,3,3],"tri","#2BA6E0","الشكل الثاني")}),
+  RF("عمر الابن 10 سنوات وعمر الأب 40 سنة. نسبة عمر الابن إلى عمر الأب:", FRB("{0}","{1}"), [10,40]),
+  RF("عند أحمد 100 جنيه وعند معاذ 25 جنيهاً. نسبة ما عند أحمد إلى مجموع ما عندهما:", FRB("{0}","{1}"), [100,125]),
+  {t:"ratio", q:`ضع مثلثات في الصندوقين بحيث تكون النسبة بين عدد المثلثات في (أ) إلى عددها في (ب) = ${F(3,5)}`, a:3, b:5, la:"(أ)", lb:"(ب)", ea:"🔺", eb:"🔷"},
+]},
+{ id:2, name:"طريقة كتابة النسبة", page:"72–74", badge:"<bdi dir=\"rtl\">٣ : ١٠</bdi>", qs:[
+  {t:"mcq", q:"النسبة بين 3 و 10 تكتب:", opts:[`${F(3,10)} أو ${RAT(3,10)}`,`${F(10,3)} أو ${RAT(10,3)}`,"3 + 10","3 × 10"], a:0, tip:"وتقرأ 3 على 10 ، أو 3 إلى 10"},
+  {t:"measure", q:`قِس طول القطعة المستقيمة ${SEG("أب")}`, a:"أ", b:"ب", mm:60},
+  {t:"measure", q:`قِس طول القطعة المستقيمة ${SEG("جد")}`, a:"ج", b:"د", mm:90},
+  RF(`إذا كان ${SEG("أب")} = 6 سم و ${SEG("جد")} = 9 سم، اكتب نسبة طول ${SEG("أب")} إلى طول ${SEG("جد")} بالطريقتين:`, `${FRB("{0}","{1}")} = {2} : {3}`, [6,9,6,9]),
+  RF("أكمل الجدول: المقدار الأول 3 والمقدار الثاني 9", `نسبة الأول إلى الثاني = {0} : {1} ، ونسبة الثاني إلى الأول = {2} : {3}`, [3,9,9,3]),
+  RF("أكمل الجدول: المقدار الأول 6 والمقدار الثاني 12", `نسبة الأول إلى الثاني = {0} : {1}`, [6,12]),
+  FL("اختصر لأبسط صورة:", `9 : 27 = {0} : {1}`, [1,3], [range(1,9),range(1,9)]),
+  FL("اختصر لأبسط صورة:", `13 : 52 = {0} : {1}`, [1,4], [range(1,9),range(1,9)]),
+  FL("اختصر لأبسط صورة:", `12 : 36 = {0} : {1}`, [1,3], [range(1,9),range(1,9)]),
+  {t:"mcq", q:`هل النسبتان ${RAT(5,2)} و ${RAT(15,6)} متساويتان؟`, opts:["نعم","لا"], a:0, tip:`${RAT(15,6)} = ${RAT(5,2)} بالقسمة على 3`},
+  RF("اكتب النسبة بين العدد 2 وثلاثة أمثال العدد 5:", `{0} : {1}`, [2,15]),
+  RF("اكتب النسبة بين العدد 7 وخمسة أمثال العدد 2:", `{0} : {1}`, [7,10]),
+  RF("اكتب نسبة العدد 8 إلى العدد 20 بالطريقتين:", `${FRB("{0}","{1}")} = {2} : {3}`, [8,20,8,20]),
+  RF(`في الشكل: ${SEG("أب")} = 10 سم ، ${SEG("أد")} = 3 سم. اكتب نسبة ${SEG("أد")} إلى ${SEG("دب")}:`, `${SEG("دب")} = {0} سم ، النسبة = {1} : {2}`, [7,3,7], {vis:fig({"أ":[290,60],"د":[220,60],"ب":[30,60]},["أب"],{h:110,labelUp:true})}),
+  RF("مع عمر 20 جنيهاً ومع أنس 30 جنيهاً. نسبة ما عند عمر إلى مجموع ما عندهما:", `${FRB("{0}","{1}")} = {2} : {3}`, [20,50,20,50]),
+  {t:"ratio", q:`اجعل نسبة الكرات الحمراء إلى الكرات الزرقاء ${RAT(2,3)}`, a:2, b:3, la:"الحمراء", lb:"الزرقاء", ea:"🔴", eb:"🔵"},
+  {t:"match", q:"صِل كل نسبة بأبسط صورة لها:", pairs:[[HW(RAT(9,27)),HW(RAT(1,3))],[HW(RAT(13,52)),HW(RAT(1,4))],[HW(RAT(15,75)),HW(RAT(1,5))],[HW(RAT(27,90)),HW(RAT(3,10))]]},
+]},
+{ id:3, name:"مقدم النسبة وتالي النسبة", page:"75–76", badge:"أ : ب", qs:[
+  {t:"mcq", q:`في النسبة ${RAT(3,5)} مقدم النسبة (الحد الأول) هو:`, opts:["3","5","8","15"], a:0},
+  {t:"mcq", q:`في النسبة ${RAT(3,5)} تالي النسبة (الحد الثاني) هو:`, opts:["5","3","8","2"], a:0},
+  {t:"mcq", q:`في النسبة ${RAT("أ","ب")} الحرف ب هو:`, opts:["تالي النسبة (الحد الثاني)","مقدم النسبة (الحد الأول)"], a:0},
+  {t:"mcq", q:`في النسبة ${F("د","هـ")} مقدم النسبة هو:`, opts:["د","هـ","د + هـ"], a:0},
+  {t:"mcq", q:`حدّا النسبة ${RAT(3,5)} هما:`, opts:["3 و 5","3 فقط","5 فقط","8"], a:0},
+  RF("املأ الجدول:", `النسبة ${F(3,4)} : المقدم = {0} ، التالي = {1}`, [3,4]),
+  RF("املأ الجدول:", `النسبة ${RAT(2,5)} : المقدم = {0} ، التالي = {1}`, [2,5]),
+  RF("املأ الجدول:", `النسبة ${RAT(4,9)} : المقدم = {0} ، التالي = {1}`, [4,9]),
+  FL("حصل أبوبكر على 80 درجة في الرياضيات و 70 في العلوم. ما نسبة درجة الرياضيات إلى درجة العلوم في أبسط صورة؟", `80 : 70 = {0} : {1}`, [8,7], [range(1,9),range(1,9)]),
+  FL("عند علي 200 جنيه وعند محمد 300 جنيه. ما نسبة ما عند علي إلى ما عند محمد في أبسط صورة؟", `200 : 300 = {0} : {1}`, [2,3], [range(1,9),range(1,9)], {tip:"المقدم 2 والتالي 3"}),
+  {t:"match", q:"صِل كل نسبة بمقدمها:", pairs:[[HW(RAT(7,2)),N(7)],[HW(RAT(4,9)),N(4)],[HW(RAT(5,8)),N(5)],[HW(RAT(3,10)),N(3)]]},
+  {t:"ratio", q:`اجعل مقدم النسبة 4 وتاليها 3: المقدم عدد التفاحات والتالي عدد البرتقالات`, a:4, b:3, exact:true, la:"التفاح (المقدم)", lb:"البرتقال (التالي)", ea:"🍎", eb:"🍊"},
+]},
+{ id:4, name:"مسائل في النسبة", page:"77–78", badge:"؟", qs:[
+  FL("مع سعاد 80 جنيهاً ومع سلوى 50 جنيهاً. ما نسبة ما عند سعاد إلى ما عند سلوى؟", `80 : 50 = {0} : {1}`, [8,5], [range(1,9),range(1,9)]),
+  FL("صرفت سعاد 20 جنيهاً وصرفت سلوى 10 جنيهات. كم تصبح النسبة؟", `(80 − 20) : (50 − 10) = {0} : {1} = {2} : {3}`, [60,40,3,2], [[50,60,70],[30,40,50],range(1,9),range(1,9)]),
+  FL("إذا صرفت كل منهما 30 جنيهاً، كم تصبح نسبة ما عند سعاد إلى ما عند سلوى؟", `{0} : {1} = {2} : {3}`, [50,20,5,2], [[50,60,70],[20,30,40],range(1,9),range(1,9)]),
+  FL("إذا أعطت سعاد سلوى 10 جنيهات، كم تصبح نسبة ما عند سعاد إلى ما عند سلوى؟", `{0} : {1} = {2} : {3}`, [70,60,7,6], [[70,80,90],[40,50,60],range(1,9),range(1,9)]),
+  FL("عمر ولد 20 سنة وعمر أخته 15 سنة. ما نسبة عمر الولد إلى عمر أخته؟", `20 : 15 = {0} : {1}`, [4,3], [range(1,9),range(1,9)]),
+  FL("ما نسبة عمر الولد إلى عمر أخته بعد 5 سنوات؟", `{0} : {1} = {2} : {3}`, [25,20,5,4], [[15,20,25],[10,15,20],range(1,9),range(1,9)]),
+  FL("كم كانت نسبة عمر الولد إلى عمر أخته قبل 10 سنوات؟", `{0} : {1} = {2} : {3}`, [10,5,2,1], [[5,10,30],[5,10,25],range(1,9),range(1,9)]),
+  {t:"ratio", q:`مع سعاد 80 جنيهاً ومع سلوى 50 جنيهاً. كل قطعة نقود = 10 جنيهات. ضع ما مع كل منهما`, a:8, b:5, exact:true, la:"سعاد", lb:"سلوى", ea:"🪙", eb:"🪙"},
+]},
+{ id:5, name:"تمرين عام", page:"79–80", badge:"★", qs:[
+  FL("اكتب النسبة بين العددين 16 ، 64 في أبسط صورة:", `16 : 64 = {0} : {1}`, [1,4], [range(1,10),range(1,10)]),
+  FL("اكتب النسبة بين العددين 15 ، 75 في أبسط صورة:", `15 : 75 = {0} : {1}`, [1,5], [range(1,10),range(1,10)]),
+  FL("اكتب النسبة بين العددين 27 ، 90 في أبسط صورة:", `27 : 90 = {0} : {1}`, [3,10], [range(1,10),range(1,10)]),
+  RF("نسبة عدد المثلثات في الشكل (أ) إلى عدد المثلثات في الشكل (ب):", `{0} : {1}`, [7,12], {vis:boxPic([3,2,2],"tri","#2BA6E0","(أ)")+boxPic([4,4,4],"tri","#2BA6E0","(ب)")}),
+  RF("نسبة عدد المثلثات في الشكل (ب) إلى عدد المثلثات في الشكلين (أ) و (ب):", `{0} : {1}`, [12,19], {vis:boxPic([3,2,2],"tri","#2BA6E0","(أ)")+boxPic([4,4,4],"tri","#2BA6E0","(ب)")}),
+  FL("موظف راتبه 20000 جنيه، يصرف 15000 ويوفّر 5000. نسبة ما يصرفه إلى ما يوفره:", `15000 : 5000 = {0} : {1}`, [3,1], [range(1,5),range(1,5)]),
+  FL("نسبة ما يصرفه إلى راتبه الشهري:", `15000 : 20000 = {0} : {1}`, [3,4], [range(1,5),range(1,5)]),
+  FL("نسبة ما يوفره إلى راتبه الشهري:", `5000 : 20000 = {0} : {1}`, [1,4], [range(1,5),range(1,5)]),
+  {t:"mcq", q:`إذا كانت نسبة عمر ولد إلى عمر أخته ${F(3,4)} ، فما مقدم النسبة؟`, opts:["3","4","7","12"], a:0},
+  FL("عمر ولد 15 سنة وعمر أبيه 45 سنة. ما نسبة عمر الولد إلى عمر أبيه؟", `15 : 45 = {0} : {1}`, [1,3], [range(1,6),range(1,6)]),
+  FL("ما نسبة عمر الولد إلى عمر أبيه قبل 5 سنوات؟", `10 : 40 = {0} : {1}`, [1,4], [range(1,6),range(1,6)]),
+  FL("ما نسبة عمر الولد إلى عمر أبيه بعد 5 سنوات؟", `20 : 50 = {0} : {1}`, [2,5], [range(1,6),range(1,6)]),
+  {t:"ratio", q:`مجموع عددين 21 والنسبة بينهما ${RAT(1,2)}. ضع الخرزات لتجد العددين`, a:1, b:2, total:21, mx:21, la:"العدد الأول", lb:"العدد الثاني", ea:"🟡", eb:"🟣", tip:"العددان 7 و 14"},
+  FL("وزن جسم على الأرض 600 جرام ووزنه على القمر 60 جراماً. جد نسبة الوزن على القمر إلى الوزن على الأرض:", `60 : 600 = {0} : {1}`, [1,10], [[1,6,10],[1,6,10,60]]),
+]},
+];
+const FINAL5={id:99,name:"التحدي الشامل",page:"67–80"};
+
+/* ================= Unit 6: geometry (book pp. 81–113) ================= */
+const vsub=(p,q)=>[p[0]-q[0],p[1]-q[1]], vlen=v=>Math.hypot(v[0],v[1]), vdot=(a,b)=>a[0]*b[0]+a[1]*b[1], same=(p,q)=>p[0]===q[0]&&p[1]===q[1];
+// right triangle with the right angle at V: |VA| = la, |VB| = lb
+const RTRI=(V,A,B,la,lb)=>P=>{ const u=vsub(P[A],P[V]), w=vsub(P[B],P[V]);
+  if(Math.abs(vlen(u)-la)>1e-9) return `طول ${LETS(V+A)} يجب أن يكون ${la} سم.`;
+  if(Math.abs(vlen(w)-lb)>1e-9) return `طول ${LETS(V+B)} يجب أن يكون ${lb} سم.`;
+  if(vdot(u,w)!==0) return `الزاوية عند ${V} يجب أن تكون قائمة.`; return true; };
+// rectangle / square A B C D with A, B fixed: |BC| = h, BC ⟂ AB, D = A + (C − B)
+const RECT=(A,B,C,D,h)=>P=>{ const ab=vsub(P[B],P[A]), bc=vsub(P[C],P[B]);
+  if(vdot(ab,bc)!==0) return `الزاوية عند ${B} يجب أن تكون قائمة.`;
+  if(Math.abs(vlen(bc)-h)>1e-9) return `طول ${LETS(B+C)} يجب أن يكون ${h} سم.`;
+  if(!same(P[D],[P[A][0]+bc[0],P[A][1]+bc[1]])) return `${D} يجب أن تكون مقابل ${C} بحيث يكون ${LETS(A+D)} موازياً ومساوياً لـ ${LETS(B+C)}.`; return true; };
+const PARA=(A,B,C,D)=>P=>same(P[D],[P[A][0]+P[C][0]-P[B][0],P[A][1]+P[C][1]-P[B][1]])||"في متوازي الأضلاع كل ضلعين متقابلين متوازيان ومتساويان. عُدّ النقاط من ج كما تعدّها من ب إلى أ.";
+const onC=(d,c=[160,118],r=88)=>[+(c[0]+r*Math.cos(d*Math.PI/180)).toFixed(1), +(c[1]-r*Math.sin(d*Math.PI/180)).toFixed(1)];
+const PCIR={"م":[160,118],"ج":onC(160),"د":onC(-20),"أ":onC(75),"ب":onC(15),"هـ":onC(245)};
+const PSRL={"أ":[250,45],"ب":[110,45],"ج":[250,120],"د":[110,120],"هـ":[250,195],"و":[110,195]};
+const PRAY={"م":[160,190],"أ":[70,95],"ب":[175,70],"ج":[260,115]};
+const PANG={"أ":[120,75],"ب":[50,190],"ج":[255,190]};
+const PANG2={"س":[115,70],"ص":[205,190],"ع":[270,130]};
+const PTRI3={"أ":[160,70],"ب":[245,205],"ج":[75,205]};
+const PPERP={"أ":[285,115],"ب":[35,115],"د":[160,25],"ج":[160,205],"م":[160,115]};
+const PRC4={"أ":[265,180],"ب":[55,180],"ج":[55,60],"د":[265,60]};
+const SP=(a,b)=>HW(`${SEG(a)} و ${SEG(b)}`);
+function pairsPic(){ const box=(i,l)=>`<div class="picbox"><svg class="shape" viewBox="0 0 120 90" width="110" aria-hidden="true">${l}</svg><span class="caption">(${i})</span></div>`, ln=(a,b,c,d)=>`<line x1="${a}" y1="${b}" x2="${c}" y2="${d}" stroke="var(--pink)" stroke-width="4" stroke-linecap="round"/>`;
+  return box(1,ln(10,15,110,75)+ln(10,75,110,15))+box(2,ln(15,20,105,40)+ln(15,55,105,75))+box(3,ln(10,45,110,45)+ln(60,8,60,82)); }
+const STEP=(t,i)=>W(t,i);
+const L6 = [
+{ id:1, name:"مراجعة", page:"82", badge:"△", qs:[
+  {t:"classify", q:"ميِّز من الأشكال التالية المثلث والمربع والمستطيل:", bins:[["tr","مثلث"],["sq","مربع"],["re","مستطيل"]],
+   shapes:[["tr",SH.tri()],["sq",SH.square()],["re",SH.rect()],["tr",SH.rtri()],["re",SH.tall()],["sq",poly("40,10 100,10 100,70 40,70",{w:120})]], hint:"عُدّ الأضلاع: المثلث 3 أضلاع، والمربع أضلاعه الأربعة متساوية، والمستطيل كل ضلعين متقابلين متساويان."},
+  {t:"measure", q:`قِس طول الضلع ${SEG("أب")} في المثلث`, a:"أ", b:"ب", mm:45, tri:true},
+  {t:"measure", q:`قِس طول الضلع ${SEG("بج")} في المثلث`, a:"ب", b:"ج", mm:38, tri:true},
+  {t:"measure", q:`قِس طول الضلع ${SEG("كل")} في الشكل الرباعي`, a:"ك", b:"ل", mm:52},
+  {t:"mcq", q:"الشكل الذي له ثلاثة أضلاع يسمى:", opts:["مثلثاً","مربعاً","مستطيلاً","دائرة"], a:0},
+  {t:"pop", q:"فرقع كل بالون فيه مربع", hint:"المربع أضلاعه الأربعة متساوية.", items:[{x:{h:SH.square()},ok:1},{x:{h:poly("40,10 100,10 100,70 40,70",{w:120})},ok:1},{x:{h:SH.rect()},ok:0},{x:{h:SH.tri()},ok:0},{x:{h:SH.tall()},ok:0},{x:{h:SH.para()},ok:0}]},
+]},
+{ id:2, name:"الشعاع والمستقيم", page:"83–85", badge:"→", qs:[
+  {t:"mcq", q:"مددنا القطعة المستقيمة أ ب من جهة ب. ما اسم الشكل الناتج؟", vis:fig({"أ":[250,60],"ب":[130,60]},[">أب"],{h:110,labelUp:true}), opts:["الشعاع أ ب","القطعة المستقيمة أ ب","المستقيم أ ب","الزاوية أ ب"], a:0},
+  {t:"mcq", q:"مددنا القطعة المستقيمة أ ب من طرفيها. ما اسم الشكل الناتج؟", vis:fig({"أ":[220,60],"ب":[100,60]},["<>أب"],{h:110,labelUp:true}), opts:["المستقيم أ ب","الشعاع أ ب","القطعة المستقيمة أ ب"], a:0},
+  {t:"mcq", q:"ما نقطة بداية الشعاع المرسوم؟", vis:fig({"أ":[250,60],"ب":[130,60]},[">بأ"],{h:110,labelUp:true}), opts:["ب","أ","ليس له بداية"], a:0, tip:`هذا الشعاع ${RAY("بأ")} بدايته ب وامتداده من جهة أ.`},
+  {t:"mcq", q:"الشعاع:", opts:["له نقطة بداية وليس له نقطة نهاية","له نقطة بداية ونقطة نهاية","ليس له نقطة بداية","له نقطتا نهاية"], a:0},
+  {t:"mcq", q:"المستقيم:", opts:["يمتد في اتجاهين متعاكسين دون نهاية","له نقطة بداية فقط","له نقطة بداية ونقطة نهاية"], a:0},
+  {t:"ynt", q:"أكمل الجدول بكتابة نعم أو لا:", corner:"الشكل", cols:["توجد نقطة بداية","توجد نقطة نهاية"], rows:[["القطعة المستقيمة",YN(1,1)],["الشعاع",YN(1,0)],["المستقيم",YN(0,0)]]},
+  {t:"match", q:"صِل كل رمز باسمه:", pairs:[[HW(SEG("أب")),W("القطعة المستقيمة أ ب")],[HW(RAY("أب")),W("الشعاع أ ب")],[HW(RAY("بأ")),W("الشعاع ب أ")],[HW(LINE("أب")),W("المستقيم أ ب")]], hint:"الخط فوق الحرفين للقطعة، والسهم للشعاع، والسهمان للمستقيم."},
+  {t:"mcq", q:"اكتب الرمز للشعاع المرسوم:", vis:fig({"س":[250,60],"ص":[130,60]},[">سص"],{h:110,labelUp:true}), opts:[RAY("سص"),RAY("صس"),SEG("سص"),LINE("سص")], a:0},
+  {t:"multi", q:"من الشكل: اختر الأشعة الثلاثة المرسومة", vis:fig(PRAY,[">مأ",">مب",">مج"],{h:230}), items:[HW(RAY("مأ")),HW(RAY("مب")),HW(RAY("مج")),HW(RAY("أم")),HW(SEG("أج")),HW(LINE("مب"))], ans:[0,1,2], hint:"بداية الأشعة الثلاثة هي النقطة م."},
+  {t:"tapseg", q:`اضغط على الشعاع ${RAY("جد")}`, pts:PSRL, segs:["أب",">جد","<>هـو"], ask:"جد", hint:"الشعاع له نقطة بداية وسهم من جهة واحدة."},
+  {t:"tapseg", q:`اضغط على المستقيم ${LINE("هـو")}`, pts:PSRL, segs:["أب",">جد","<>هـو"], ask:"هـو", hint:"المستقيم يمتد من الجهتين."},
+  {t:"tapseg", q:`اضغط على القطعة المستقيمة ${SEG("أب")}`, pts:PSRL, segs:["أب",">جد","<>هـو"], ask:"أب", hint:"القطعة المستقيمة لها نقطتا بداية ونهاية."},
+]},
+{ id:3, name:"الزاوية", page:"86–87", badge:"∠", qs:[
+  {t:"mcq", q:"إذا انطلق شعاعان من نقطة واحدة فإنهما يكوّنان:", opts:["زاوية","مستقيماً","قطعة مستقيمة","دائرة"], a:0},
+  {t:"tappt", q:`اضغط على رأس الزاوية ${ANG("أبج")}`, pts:PANG, segs:[">بأ",">بج"], ask:"ب", hint:"رأس الزاوية هو نقطة بداية الشعاعين."},
+  {t:"mcq", q:`ضلعا الزاوية ${ANG("أبج")} هما الشعاعان:`, vis:fig(PANG,[">بأ",">بج"]), opts:[`${RAY("بأ")} ، ${RAY("بج")}`,`${RAY("أب")} ، ${RAY("جب")}`,`${SEG("أج")} ، ${SEG("أب")}`], a:0},
+  {t:"mcq", q:"اكتب بالرموز الزاوية المرسومة:", vis:fig(PANG2,[">صس",">صع"]), opts:[ANG("سصع"),ANG("صسع"),ANG("سعص")], a:0, tip:`وتكتب أيضاً ${ANG("عصس")} أو ${ANG("ص")}`},
+  {t:"multi", q:"اختر كل الأسماء الصحيحة للزاوية المرسومة:", vis:fig(PANG2,[">صس",">صع"]), items:[HW(ANG("سصع")),HW(ANG("عصس")),HW(ANG("ص")),HW(ANG("صسع")),HW(ANG("سعص"))], ans:[0,1,2], hint:"رأس الزاوية ص يُكتب في الوسط."},
+  {t:"connect", q:"ارسم الزاوية التي ضلعاها هـ و ، هـ ك", pts:{"هـ":[80,60],"ك":[275,60],"و":[200,200]}, targets:["هـو","هـك"], tip:`رسمت ${ANG("وهـك")}`},
+  {t:"tappt", q:`النقطة التي تقع على المستقيمين ${LINE("أب")} ، ${LINE("أج")} معاً:`, pts:PTRI3, segs:["<>أب","<>أج","<>بج"], fo:{h:260,ext:30}, ask:"أ", hint:"ابحث عن النقطة التي يمر بها المستقيمان."},
+  {t:"multi", q:"من الشكل: اختر الزوايا الثلاث", vis:fig(PTRI3,["أب","بج","جأ"],{h:250}), items:[HW(ANG("بأج")),HW(ANG("أبج")),HW(ANG("أجب")),HW(ANG("أبد")),HW(ANG("دجب"))], ans:[0,1,2], hint:"لا توجد نقطة د في الشكل."},
+]},
+{ id:4, name:"قياس الزاوية ورسمها", page:"88–91", badge:"°", qs:[
+  {t:"mcq", q:"أداة قياس الزاوية هي:", opts:["المنقلة","المسطرة","الفرجار","مثلث الرسم"], a:0},
+  {t:"mcq", q:"وحدة قياس الزاوية هي:", opts:["الدرجة","السنتمتر","اللتر","المتر"], a:0},
+  {t:"mcq", q:"عند قياس الزاوية نضع مركز المنقلة عند:", opts:["رأس الزاوية","نهاية أحد الضلعين","أي نقطة","منتصف الضلع"], a:0},
+  {t:"protr", q:`قِس الزاوية ${ANG("أبج")} بالمنقلة`, deg:40, side:"R"},
+  {t:"protr", q:`قِس الزاوية ${ANG("أبج")} بالمنقلة`, deg:55, side:"L"},
+  {t:"protr", q:`قِس الزاوية ${ANG("أبج")} بالمنقلة`, deg:120, side:"R"},
+  {t:"protr", q:`قِس الزاوية ${ANG("أبج")} بالمنقلة`, deg:30, side:"L"},
+  {t:"protr", q:`قِس الزاوية ${ANG("أبج")} بالمنقلة`, deg:145, side:"L"},
+  {t:"protr", q:`قِس الزاوية ${ANG("أبج")} بالمنقلة`, deg:75, side:"R"},
+  {t:"protr", mode:"draw", q:`ارسم الزاوية ${ANG("كلهـ")} التي قياسها ${DEG(55)}`, deg:55, side:"R", L:["هـ","ل","ك"]},
+  {t:"protr", mode:"draw", q:`ارسم الزاوية ${ANG("بأج")} التي قياسها ${DEG(35)}`, deg:35, side:"L", L:["ب","أ","ج"]},
+  {t:"protr", mode:"draw", q:`ارسم الزاوية ${ANG("سصع")} التي قياسها ${DEG(65)}`, deg:65, side:"R", L:["س","ص","ع"]},
+  {t:"protr", mode:"draw", q:`ارسم الزاوية ${ANG("لهـو")} التي قياسها ${DEG(72)}`, deg:72, side:"L", L:["ل","هـ","و"]},
+  {t:"protr", mode:"draw", q:`ارسم الزاوية ${ANG("أمن")} التي قياسها ${DEG(110)}`, deg:110, side:"R", L:["أ","م","ن"]},
+  {t:"protr", mode:"draw", q:`ارسم الزاوية ${ANG("كلم")} التي قياسها ${DEG(90)}`, deg:90, side:"L", L:["ك","ل","م"]},
+]},
+{ id:5, name:"أنواع الزوايا", page:"92–95", badge:"٩٠°", qs:[
+  {t:"mcq", q:`الزاوية التي قياسها ${DEG(90)} تسمى زاوية:`, opts:["قائمة","حادة","منفرجة","مستقيمة"], a:0},
+  {t:"mcq", q:`الزاوية التي قياسها أكبر من صفر وأقل من ${DEG(90)} تسمى زاوية:`, opts:["حادة","قائمة","منفرجة","منعكسة"], a:0},
+  {t:"mcq", q:`الزاوية التي قياسها أكبر من ${DEG(90)} وأقل من ${DEG(180)} تسمى زاوية:`, opts:["منفرجة","حادة","مستقيمة","منعكسة"], a:0},
+  {t:"mcq", q:`الزاوية التي قياسها ${DEG(180)} تسمى زاوية:`, opts:["مستقيمة","قائمة","منعكسة","حادة"], a:0},
+  {t:"mcq", q:`الزاوية التي قياسها أكبر من ${DEG(180)} وأقل من ${DEG(360)} تسمى زاوية:`, opts:["منعكسة","منفرجة","مستقيمة","قائمة"], a:0},
+  {t:"classify", q:"صنّف الزوايا حسب نوعها:", bins:ANGBINS, shapes:[[30,10],[70,40],[90,0],[90,35],[120,0],[150,15],[180,0],[220,0],[300,20]].map(([d,r])=>[ANGKEY(d),angSvg(d,{rot:r,w:86})]), hint:"قارن الزاوية بالزاوية القائمة (ركن الورقة)."},
+  {t:"classify", q:"اذكر نوع كل زاوية من قياسها:", bins:ANGBINS, shapes:[40,210,7,127,180,300,90].map(d=>[ANGKEY(d),wd(DEG(d))]), hint:"حادة أقل من ٩٠ ، منفرجة بين ٩٠ و ١٨٠ ، منعكسة بين ١٨٠ و ٣٦٠."},
+  {t:"mcq", q:"ما نوع هذه الزاوية؟", vis:angSvg(240,{size:150}), opts:["منعكسة","منفرجة","مستقيمة","حادة"], a:0},
+  {t:"mcq", q:"ما نوع هذه الزاوية؟", vis:angSvg(110,{size:150,rot:20}), opts:["منفرجة","حادة","قائمة","منعكسة"], a:0},
+  {t:"pop", q:"فرقع كل بالون فيه زاوية حادة", hint:"الزاوية الحادة أصغر من القائمة.", items:[[25,0],[60,30],[80,10],[100,0],[90,20],[150,0],[45,90]].map(([d,r])=>({x:HW(angSvg(d,{rot:r,w:64})),ok:d<90?1:0}))},
+  FL("مجموع الزوايا المتجمعة في نقطة يساوي:", `{0} درجة`, [360], [[90,180,270,360]]),
+  FL("ثلاث زوايا متجمعة في نقطة، قياس اثنتين منها 120° و 100°. ما قياس الثالثة؟", `360 − 120 − 100 = {0} درجة`, [140], [[100,120,140,160]]),
+]},
+{ id:6, name:"المستقيمات المتعامدة", page:"96–97", badge:"⊥", qs:[
+  {t:"mcq", q:"المستقيمان المتقاطعان اللذان يكوّنان أربع زوايا قوائم يسميان:", opts:["مستقيمين متعامدين","مستقيمين متوازيين","شعاعين","قطعتين مستقيمتين"], a:0},
+  {t:"mcq", q:`المستقيمان ${LINE("أب")} و ${LINE("جد")} في الشكل:`, vis:fig(PPERP,["<>أب","<>جد"],{ext:14,right:[["م","أ","د"]]}), opts:["متعامدان","متوازيان","لا يتقاطعان"], a:0, tip:`${LINE("أب")} يعامد ${LINE("جد")}`},
+  {t:"mcq", q:"إذا تقاطع مستقيمان وكانت إحدى زوايا التقاطع قائمة فإن الزوايا الثلاث الأخرى:", opts:["قوائم أيضاً","حادة","منفرجة","مستقيمة"], a:0},
+  {t:"mcq", q:"أي مما يلي يمثل مستقيمين متعامدين؟", opts:["ضلعا ركن السبورة","حافتا المسطرة الطويلتان","قضيبا سكة الحديد"], a:0},
+  {t:"multi", q:"عيّن أزواج القطع المستقيمة المتعامدة في المستطيل أ ب ج د:", vis:fig(PRC4,["أب","بج","جد","دأ"],{col:"var(--blue)"}), items:[SP("أب","بج"),SP("بج","جد"),SP("جد","دأ"),SP("دأ","أب"),SP("أب","جد"),SP("بج","دأ")], ans:[0,1,2,3], hint:"الضلعان المتجاوران في المستطيل متعامدان."},
+  {t:"geo", q:`ضع النقطة ن بحيث يكون ${SEG("من")} عمودياً على ${SEG("أب")}`, c:7, r:5, fixed:{"أ":[0,3],"م":[3,3],"ب":[6,3]}, place:["ن"], segs:["أب","من"], check:P=>(P["ن"][0]===3&&P["ن"][1]!==3)||"يجب أن يكوّن المستقيمان زاوية قائمة عند م."},
+  {t:"protr", mode:"draw", q:`ارسم بالمنقلة مستقيماً عمودياً على ${SEG("أب")} عند النقطة م (زاوية ${DEG(90)})`, deg:90, side:"R", L:["ن","م","أ"]},
+]},
+{ id:7, name:"المستقيمات المتوازية", page:"98–99", badge:"//", qs:[
+  {t:"mcq", q:"الخطان المستقيمان اللذان لا يتقاطعان يسميان:", opts:["خطين متوازيين","خطين متعامدين","خطين متقاطعين"], a:0},
+  {t:"mcq", q:"نكتب «أ ب يوازي ج د» بالرموز:", opts:["أ ب // ج د","أ ب ⊥ ج د","أ ب = ج د"], a:0},
+  {t:"mcq", q:"حدّد الشكل الذي فيه المستقيمان المتوازيان:", vis:pairsPic(), opts:["(2)","(1)","(3)"], a:0},
+  {t:"mcq", q:"أي مما يلي يمثل خطين متوازيين؟", opts:["حافتا المسطرة الطويلتان","ضلعا ركن الكتاب","عقربا الساعة عند الثالثة"], a:0},
+  {t:"multi", q:"في المستطيل أ ب ج د: اختر أزواج الأضلاع المتوازية", vis:fig(PRC4,["أب","بج","جد","دأ"],{col:"var(--blue)"}), items:[SP("أب","جد"),SP("بج","دأ"),SP("أب","بج"),SP("جد","دأ")], ans:[0,1], hint:"الضلعان المتقابلان متوازيان."},
+  {t:"classify", q:"في المستطيل أ ب ج د: صنّف كل زوج من الأضلاع", vis:fig(PRC4,["أب","بج","جد","دأ"],{col:"var(--blue)"}), bins:[["pa","متوازيان"],["pe","متعامدان"]],
+   shapes:[["pa",`${SEG("أب")} ، ${SEG("جد")}`],["pa",`${SEG("بج")} ، ${SEG("دأ")}`],["pe",`${SEG("أب")} ، ${SEG("بج")}`],["pe",`${SEG("جد")} ، ${SEG("دأ")}`],["pe",`${SEG("بج")} ، ${SEG("جد")}`]], hint:"المتقابلان متوازيان، والمتجاوران متعامدان."},
+  {t:"geo", q:`ارسم مستقيماً يوازي ${SEG("أب")} ويمر بالنقطة د: ضع النقطة هـ`, c:7, r:5, fixed:{"أ":[0,3],"ب":[6,3],"د":[2,1]}, place:["هـ"], segs:["أب","دهـ"], check:P=>(P["هـ"][1]===1)||"المستقيمان المتوازيان لا يتقاطعان: البعد بينهما ثابت."},
+  {t:"geo", q:`ارسم مستقيماً يوازي ${SEG("سص")} ويمر بالنقطة ن: ضع النقطة ك`, c:7, r:6, fixed:{"س":[1,5],"ص":[4,2],"ن":[3,5]}, place:["ك"], segs:["سص","نك"], check:P=>{ const v=vsub(P["ك"],P["ن"]); return (v[0]===-v[1]&&v[0]!==0)||"اجعل ن ك يميل مثل س ص تماماً."; }},
+]},
+{ id:8, name:"رسم المثلث", page:"100–101", badge:"◺", qs:[
+  {t:"mcq", q:"للمثلث:", opts:["ثلاثة أضلاع وثلاث زوايا","أربعة أضلاع وأربع زوايا","ضلعان وزاوية واحدة"], a:0},
+  {t:"geo", q:`ارسم المثلث أ ب ج القائم الزاوية في أ: ${SEG("أب")} = 4 سم ، ${SEG("أج")} = 3 سم`, c:7, r:6, fixed:{"أ":[1,4]}, place:["ب","ج"], segs:["أب","أج","بج"], check:RTRI("أ","ب","ج",4,3)},
+  {t:"geo", q:`ارسم المثلث أ ب ج القائم الزاوية في أ: ${SEG("أب")} = 3 سم ، ${SEG("أج")} = 4 سم`, c:7, r:6, fixed:{"أ":[2,5]}, place:["ب","ج"], segs:["أب","أج","بج"], check:RTRI("أ","ب","ج",3,4)},
+  {t:"geo", q:`ارسم المثلث س ص ع القائم الزاوية في س: ${SEG("سص")} = 6 سم ، ${SEG("سع")} = 8 سم`, c:9, r:7, fixed:{"س":[0,6]}, place:["ص","ع"], segs:["سص","سع","صع"], check:RTRI("س","ص","ع",6,8)},
+  {t:"measure", q:`المثلث أ ب ج قائم الزاوية في ب ، ${SEG("أب")} = 4 سم ، ${SEG("بج")} = 3 سم. قِس طول ${SEG("أج")}`, a:"أ", b:"ج", mm:50, tri:true},
+  {t:"order", q:"رتّب خطوات رسم المثلث القائم الزاوية:", dir:"asc", lab:"الخطوة الأولى ← … ← الأخيرة", items:[STEP("ارسم الضلع أ ب بالمسطرة",1),STEP("ارسم الزاوية القائمة عند أ بمثلث الرسم",2),STEP("حدّد ج بالطول المطلوب",3),STEP("صِل ج بالنقطة ب",4)]},
+]},
+{ id:9, name:"رسم متوازي الأضلاع", page:"102–104", badge:"▱", qs:[
+  {t:"mcq", q:"متوازي الأضلاع شكل رباعي فيه:", opts:["كل ضلعين متقابلين متوازيان ومتساويان","أربع زوايا حادة","ثلاثة أضلاع متساوية","ضلعان فقط متوازيان"], a:0},
+  {t:"mcq", q:"في متوازي الأضلاع كل زاويتين متقابلتين:", opts:["متساويتان","قائمتان دائماً","مختلفتان"], a:0},
+  FL(`متوازي الأضلاع أ ب ج د فيه ${SEG("أب")} = 4 سم ، ${SEG("أد")} = 3 سم ، ${ANG("بأد")} = ${DEG(120)}. أكمل:`, `ج د = {0} سم ، ب ج = {1} سم ، قياس ∠ ب ج د = {2} درجة`, [4,3,120], [[3,4,5],[3,4,5],[60,90,120]]),
+  {t:"protr", mode:"draw", q:`الخطوة الثانية: ارسم من النقطة أ الزاوية ${ANG("بأد")} = ${DEG(120)}`, deg:120, side:"L", L:["د","أ","ب"]},
+  {t:"geo", q:"أكمل متوازي الأضلاع أ ب ج د: ضع النقطة د", c:8, r:5, fixed:{"أ":[1,4],"ب":[5,4],"ج":[6,1]}, place:["د"], segs:["أب","بج","جد","دأ"], check:PARA("أ","ب","ج","د")},
+  {t:"geo", q:"أكمل متوازي الأضلاع أ ب ج د: ضع النقطة د", c:8, r:5, fixed:{"أ":[0,4],"ب":[4,4],"ج":[6,1]}, place:["د"], segs:["أب","بج","جد","دأ"], check:PARA("أ","ب","ج","د")},
+  FL(`متوازي الأضلاع أ ب ج د فيه ${SEG("أب")} = 5 سم ، ${SEG("بج")} = 6 سم ، ${ANG("أبج")} = ${DEG(140)}. ما طول ${SEG("أد")}؟`, `أ د = {0} سم`, [6], [[4,5,6,7]]),
+  {t:"mcq", q:`ارسم متوازي الأضلاع ب ج د هـ حيث ب ج = 4 سم ، ج د = 4 سم ، ${ANG("بجد")} = ${DEG(90)}. ما اسم الشكل الذي رسمته؟`, opts:["مربع","مستطيل","مثلث"], a:0},
+  {t:"mcq", q:`ارسم متوازي الأضلاع ج د هـ و حيث ج د = 2 سم ، ج و = 3 سم ، ${ANG("وجد")} = ${DEG(90)}. ما اسم الشكل الذي رسمته؟`, opts:["مستطيل","مربع","مثلث"], a:0},
+  {t:"pop", q:"فرقع كل بالون فيه متوازي أضلاع", hint:"في متوازي الأضلاع كل ضلعين متقابلين متوازيان ومتساويان (المربع والمستطيل منها).", items:[{x:{h:SH.para()},ok:1},{x:{h:SH.rect()},ok:1},{x:{h:SH.square()},ok:1},{x:{h:poly("6,10 80,10 114,70 40,70",{w:120})},ok:1},{x:{h:SH.trap()},ok:0},{x:{h:SH.tri()},ok:0},{x:{h:SH.pent()},ok:0}]},
+]},
+{ id:10, name:"رسم المستطيل", page:"105–106", badge:"▭", qs:[
+  {t:"mcq", q:"المستطيل شكل رباعي زواياه الأربع:", opts:["قوائم","حادة","منفرجة"], a:0},
+  {t:"geo", q:`ارسم المستطيل أ ب ج د: ${SEG("أب")} = 5 سم ، ${SEG("أد")} = 4 سم. ضع النقطتين ج ثم د`, c:8, r:6, fixed:{"أ":[1,5],"ب":[6,5]}, place:["ج","د"], segs:["أب","بج","جد","دأ"], check:RECT("أ","ب","ج","د",4)},
+  {t:"geo", q:`ارسم المستطيل أ ب ج د: ${SEG("أب")} = 6 سم ، ${SEG("أد")} = 4 سم`, c:7, r:6, fixed:{"أ":[0,5],"ب":[6,5]}, place:["ج","د"], segs:["أب","بج","جد","دأ"], check:RECT("أ","ب","ج","د",4)},
+  FL(`في المستطيل أ ب ج د: ${SEG("أب")} = 5 سم ، ${SEG("أد")} = 4 سم. أكمل:`, `ج د = {0} سم ، ب ج = {1} سم`, [5,4], [[4,5,9],[4,5,9]]),
+  {t:"multi", q:"اختر كل ما هو صحيح عن المستطيل:", items:[W("زواياه الأربع قوائم"),W("كل ضلعين متقابلين متساويان"),W("كل ضلعين متقابلين متوازيان"),W("أضلاعه الأربعة متساوية دائماً"),W("له ثلاث زوايا")], ans:[0,1,2]},
+]},
+{ id:11, name:"رسم المربع", page:"107–108", badge:"□", qs:[
+  {t:"mcq", q:"المربع مثل المستطيل زواياه الأربع قوائم، ولكن:", opts:["أضلاعه الأربعة متساوية","له ثلاثة أضلاع","زواياه حادة"], a:0},
+  {t:"geo", q:"ارسم المربع أ ب ج د الذي طول ضلعه 5 سم: ضع النقطتين ج ثم د", c:8, r:7, fixed:{"أ":[1,6],"ب":[6,6]}, place:["ج","د"], segs:["أب","بج","جد","دأ"], check:RECT("أ","ب","ج","د",5)},
+  {t:"geo", q:"ارسم المربع أ ب ج د الذي طول ضلعه 4 سم", c:7, r:6, fixed:{"أ":[1,5],"ب":[5,5]}, place:["ج","د"], segs:["أب","بج","جد","دأ"], check:RECT("أ","ب","ج","د",4)},
+  {t:"geo", q:"ارسم المربع س ص ك ل الذي طول ضلعه 6 سم", c:7, r:7, fixed:{"س":[0,6],"ص":[6,6]}, place:["ك","ل"], segs:["سص","صك","كل","لس"], check:RECT("س","ص","ك","ل",6)},
+  {t:"classify", q:"صنّف الأشكال: مربع أم مستطيل؟", bins:[["sq","مربع"],["re","مستطيل"]], shapes:[["sq",SH.square()],["re",SH.rect()],["re",SH.tall()],["sq",poly("40,10 100,10 100,70 40,70",{w:120})],["re",poly("4,24 116,24 116,56 4,56",{w:120})]], hint:"المربع أضلاعه الأربعة متساوية."},
+]},
+{ id:12, name:"الدائرة", page:"109–110", badge:"◯", qs:[
+  {t:"mcq", q:"من أمثلة الشكل الدائري في حياتنا:", opts:["قطعة النقود المعدنية","المسطرة","الكتاب","الباب"], a:0},
+  {t:"tappt", q:"اضغط على مركز الدائرة", pts:PCIR, segs:["جد","أب","مهـ"], fo:{circle:{c:[160,118],r:88}}, ask:"م", hint:"المركز نقطة في الوسط تبعد عنها نقاط الدائرة أبعاداً متساوية."},
+  {t:"tapseg", q:"اضغط على قطر الدائرة", pts:PCIR, segs:["جد","أب","مهـ"], fo:{circle:{c:[160,118],r:88}}, ask:"جد", hint:"القطر وتر يمر بالمركز."},
+  {t:"tapseg", q:"اضغط على نصف قطر الدائرة", pts:PCIR, segs:["جد","أب","مهـ"], fo:{circle:{c:[160,118],r:88}}, ask:"مهـ", hint:"نصف القطر يصل بين المركز ونقطة على الدائرة."},
+  {t:"tapseg", q:"اضغط على الوتر الذي لا يمر بالمركز", pts:PCIR, segs:["جد","أب","مهـ"], fo:{circle:{c:[160,118],r:88}}, ask:"أب", hint:"الوتر يصل بين نقطتين على الدائرة."},
+  {t:"mcq", q:"الوتر الذي يمر بمركز الدائرة يسمى:", opts:["قطر الدائرة","نصف القطر","المركز"], a:0},
+  {t:"mcq", q:"القطعة المستقيمة الواصلة بين المركز وأي نقطة على الدائرة تسمى:", opts:["نصف القطر","القطر","الوتر"], a:0},
+  {t:"mcq", q:"جميع أنصاف أقطار الدائرة الواحدة:", opts:["متساوية","مختلفة","أطول من القطر"], a:0},
+  {t:"multi", q:"اختر أنصاف أقطار الدائرة المرسومة:", vis:fig(PCIR,["جد","أب","مهـ","مأ"],{circle:{c:[160,118],r:88}}), items:[HW(SEG("مهـ")),HW(SEG("مأ")),HW(SEG("أب")),HW(SEG("جد"))], ans:[0,1], hint:"نصف القطر طرفه الأول المركز م."},
+]},
+{ id:13, name:"رسم الدائرة", page:"111–113", badge:"◎", qs:[
+  {t:"mcq", q:"لرسم الدائرة نستخدم المسطرة وأداة تسمى:", opts:["الفرجار (البرجل)","المنقلة","مثلث الرسم"], a:0},
+  {t:"mcq", q:"عند رسم الدائرة نثبّت سن الفرجار عند:", opts:["مركز الدائرة","أي نقطة على الدائرة","طرف المسطرة"], a:0},
+  {t:"compass", q:"افتح الفرجار فتحة طولها 3 سم لترسم دائرة نصف قطرها 3 سم", r:3},
+  {t:"compass", q:"افتح الفرجار فتحة طولها 4 سم وارسم دائرة", r:4},
+  {t:"compass", q:"ارسم دائرة نصف قطرها 2 سم", r:2},
+  {t:"compass", q:"ارسم دائرة نصف قطرها 5 سم", r:5},
+  {t:"order", q:"رتّب خطوات رسم الدائرة التي نصف قطرها 3 سم:", dir:"asc", lab:"الخطوة الأولى ← … ← الأخيرة", items:[STEP("حدّد النقطة م مركزاً للدائرة",1),STEP("افتح الفرجار 3 سم بالمسطرة",2),STEP("ثبّت سن الفرجار عند م",3),STEP("حرّك القلم حتى يعود إلى نقطة البداية",4)]},
+]},
+];
+const FINAL6={id:99,name:"التحدي الشامل",page:"112–113"};
+
+
+/* ---------- units ---------- */
+const pickN=(L,n=12)=>{ const pools=L.map((l,li)=>shuffle(l.qs).map(q=>({...q,_l:li}))), out=[]; let i=0;
+  while(out.length<n && pools.some(p=>p.length)){ const p=pools[i%pools.length]; if(p.length) out.push(p.shift()); i++; } return out; };
+const BADGES=L=>()=>L.map(l=>badge(l.badge));
+
+const UNITS=[
+  {key:"u1", col:"var(--c7)", num:"الأولى", name:"مجموعة الأعداد الكلية", page:"1–19", L:L1, FINAL:FINAL1, minis:BADGES(L1),
+   icon:()=>abacusSvg([2,7,5,3,6],{nolab:true}).replace(`width="${5*ABSP}"`,'width="100"'), pick:L=>pickN(L), pickNote:"12 سؤالاً عشوائياً من دروس الوحدة"},
+  {key:"u2", col:"var(--c1)", num:"الثانية", name:"العمليات على الأعداد الكلية", page:"20–47", L:L2, FINAL:FINAL2, minis:BADGES(L2),
+   icon:()=>`<span class="ubadge" style="background:var(--c1)">÷</span>`, pick:L=>pickN(L), pickNote:"12 سؤالاً عشوائياً من دروس الوحدة"},
+  {key:"u3", col:"var(--c5)", num:"الثالثة", name:"القياس", page:"48–54", L:L3, FINAL:FINAL3, minis:BADGES(L3),
+   icon:()=>`<span class="ubadge" style="background:var(--c5)">ل</span>`, pick:L=>pickN(L), pickNote:"12 سؤالاً عشوائياً من الدرسين"},
+  {key:"u4", col:"var(--c2)", num:"الرابعة", name:"الكسور العادية", page:"55–65", L:L4, FINAL:FINAL4,
+   minis:()=>[pie(3,sh(2,"pink"),{size:44}),badge("٠—١"),badge("+"),badge("−")],
+   icon:()=>pie(4,["pink","pink","blue"],{size:86}), pick:L=>pickN(L), pickNote:"12 سؤالاً عشوائياً من الدروس الأربعة"},
+  {key:"u5", col:"var(--c6)", num:"الخامسة", name:"النسبة", page:"66–80", L:L5, FINAL:FINAL5, minis:BADGES(L5),
+   icon:()=>`<span class="ubadge" style="background:var(--c6);font-size:40px"><bdi dir="rtl">٣ : ٤</bdi></span>`, pick:L=>pickN(L), pickNote:"12 سؤالاً عشوائياً من دروس الوحدة"},
+  {key:"u6", col:"var(--c4)", num:"السادسة", name:"الهندسة", page:"81–113", L:L6, FINAL:FINAL6, minis:BADGES(L6),
+   icon:()=>angSvg(55,{size:96,rot:0}), pick:L=>pickN(L), pickNote:"12 سؤالاً عشوائياً من دروس الوحدة"},
+];
+
+let UNIT=UNITS[0], L=UNIT.L, FINAL=UNIT.FINAL;
+const LCOLS=["--c1","--c2","--c3","--c4","--c5","--c6","--c7","--c8"];
+const LC=i=>`var(${LCOLS[(i+UNITS.indexOf(UNIT)*3)%8]})`;
+// the credit line shows only on the units (home) screen
+const setGC=c=>{ if(c) $("#app").style.setProperty("--gc",c); else $("#app").style.removeProperty("--gc"); $(".credit").hidden=!!c; };
+function useUnit(u){UNIT=u; L=u.L; FINAL=u.FINAL; $("#unitTab").textContent=`الوحدة ${u.num} · ${u.name}`;}
+
+/* ---------- state ---------- */
+// stars kept per unit + lesson; carry over stars already earned in the two separate games
+let best = store.get("g4-best",{});
+const B=id=>best[UNIT.key+"-"+id]||0;
+let S = null;
+
+function starsFor(p){return p>=0.9?3:p>=0.7?2:p>=0.4?1:0;}
+function starStr(n){return [0,1,2].map(i=>`<span class="${i<n?"on":""}">★</span>`).join("");}
+const unitStars=u=>[...u.L,u.FINAL].reduce((s,l)=>s+(best[u.key+"-"+l.id]||0),0);
+const unitMax=u=>(u.L.length+1)*3;
+function updateTotal(){
+  const t=UNITS.reduce((s,u)=>s+unitStars(u),0), m=UNITS.reduce((s,u)=>s+unitMax(u),0);
+  $("#totalStars").textContent=`${t} / ${m}`;
+}
+const PG=p=>{const [a,b]=p.split("–"); return b? `من صفحة ${a} إلى ${b}` : `صفحة ${a}`;};
+const ORD=["الأول","الثاني","الثالث","الرابع","الخامس","السادس","السابع","الثامن","التاسع","العاشر","الحادي عشر","الثاني عشر","الثالث عشر","الرابع عشر","الخامس عشر","السادس عشر"];
+
+/* ---------- home: choose a unit ---------- */
+function showHome(){
+  S=null; setGC(null); $("#unitTab").textContent="كتاب الرياضيات · المنهج السوداني";
+  $("#view").innerHTML=`
+    <p class="sub">اختر وحدة. كل الأسئلة من تمارين كتاب الرياضيات للصف الرابع.</p>
+    <div class="units" style="margin-top:14px">
+      ${UNITS.map((u,i)=>`
+        <button class="unit" data-u="${i}" style="--tc:${u.col}">
+          <span class="uicon">${u.icon()}</span>
+          <span class="ubody">
+            <span class="tab">الوحدة ${u.num}</span>
+            <span class="nm">${u.name}</span>
+            <span class="pg">${PG(u.page)}<br>${u.L.length===2?"درسان":u.L.length+(u.L.length>10?" درساً":" دروس")} وتحدٍّ شامل</span>
+            <span class="pg"><span style="color:#F5B400">★</span> ${unitStars(u)} / ${unitMax(u)}</span>
+          </span>
+        </button>`).join("")}
+    </div>`;
+  $("#view").querySelectorAll(".unit").forEach(b=>b.addEventListener("click",()=>{useUnit(UNITS[+b.dataset.u]);showMap();}));
+  updateTotal();
+}
+
+/* ---------- map of one unit ---------- */
+function showMap(){
+  S=null; setGC(UNIT.col);
+  const minis=UNIT.minis();
+  $("#view").innerHTML = `
+    <div class="bar"><button class="back" id="homeBtn">→ الوحدات</button><span class="sub">الوحدة ${UNIT.num}: ${UNIT.name}</span></div>
+    <div class="map" style="margin-top:14px">
+      ${L.map((l,i)=>`
+        <button class="lesson" data-l="${l.id}" style="--tc:${LC(i)}">
+          <span class="ln"><span class="tab">الدرس ${ORD[i]}</span><span class="pie-mini">${minis[i]}</span></span>
+          <span class="nm">${l.name}</span>
+          <span class="ln"><span class="pg">${PG(l.page)}<br>${l.qs.length} سؤالاً</span><span class="stars">${starStr(B(l.id))}</span></span>
+        </button>`).join("")}
+      <button class="lesson final" data-l="${FINAL.id}">
+        <span class="ln"><span class="tab">كل الدروس</span><span class="stars">${starStr(B(FINAL.id))}</span></span>
+        <span class="nm">${FINAL.name}</span>
+        <span class="pg">${UNIT.pickNote}</span>
+      </button>
+    </div>`;
+  $("#homeBtn").addEventListener("click",showHome);
+  $("#view").querySelectorAll(".lesson").forEach(b=>b.addEventListener("click",()=>start(+b.dataset.l)));
+  updateTotal();
+}
+
+function start(id){
+  let lesson, list;
+  if(id===FINAL.id){ lesson=FINAL; list=shuffle(UNIT.pick(L)); }
+  else { lesson=L.find(l=>l.id===id); list=lesson.qs.map(q=>({...q,_l:id-1})); }
+  setGC(id===FINAL.id? UNIT.col : LC(id-1));
+  S={lesson,list,i:0,score:0,streak:0};
+  renderQ();
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+
+/* ---------- question rendering ---------- */
+const LET=["أ","ب","ج","د"];
+const D=x=> Array.isArray(x)? F(...x) : x.h? x.h : `<span class="word">${x.l}</span>`;
+const VAL=x=> Array.isArray(x)? x[0]/x[1] : x.v;
+// logical relation "right REL left" -> glyph drawn so its point faces the smaller fraction, as in the book
+const VIS=s=> s==="<"?">":s===">"?"<":s;
+const G=s=>`<bdi dir="ltr">${VIS(s)}</bdi>`;
+const PRAISE=["أحسنت!","ممتاز!","رائع!","إجابة صحيحة!","بطل الرياضيات!"];
+const TYPE={sieve:"غربال الأعداد",ladder:"التحليل إلى العوامل",common:"المشترك",ynt:"جدول نعم أو لا",pour:"املأ الإناء",place:"خط الأعداد",ratio:"اصنع النسبة",protr:"المنقلة",geo:"لوحة النقاط",compass:"الفرجار",tappt:"اختر النقطة",abacus:"العدّاد",column:"الحساب الرأسي",longdiv:"القسمة المطوّلة",groups:"اصنع المجموعات",share:"وزّع بالتساوي",opsign:"ضع العلامة",race:"سباق",connect:"صِل النقاط",tapseg:"اختر القطعة",measure:"قِس بالمسطرة",classify:"صنّف الأشكال",pop:"فرقع البالونات",build:"اصنع الكسر",jump:"خط الأعداد",setclock:"حرّك الشوكتين",mcq:"اختيار من متعدد",color:"لوّن",set:"احصر",fill:"أكمل",cmp:"قارن",order:"رتّب",match:"صِل",multi:"اختر الكل"};
+
+function renderQ(){
+  const q=S.list[S.i], n=S.list.length;
+  const li=q._l; S.wrong=0;
+  $("#view").innerHTML=`
+    <div class="bar">
+      <button class="back" id="backBtn">→ الدروس</button>
+      <div class="prog" aria-hidden="true"><i style="width:${(S.i/n)*100}%"></i></div>
+      <span class="streak" id="streak" hidden></span>
+      <span class="count">${S.i+1} / ${n}</span>
+    </div>
+    <section class="card" style="margin-top:14px">
+      <div class="qhead"><span class="tab">الدرس ${ORD[li]} · ${L[li].name}</span><span class="qtype">${TYPE[q.t]}</span></div>
+      <p class="q">${q.q}</p>
+      <div id="body" style="display:flex;flex-direction:column;gap:16px"></div>
+      <div id="fb"></div>
+      <div class="actions" id="acts"></div>
+    </section>`;
+  $("#backBtn").addEventListener("click",showMap);
+  const body=$("#body");
+  if(q.vis) body.insertAdjacentHTML("beforeend",`<div class="vis">${q.vis}</div>`);
+  R[q.t](q,body);
+  paintStreak();
+}
+
+
+/* ---------- drag helper: tap = onTap, drag = onDrop(x,y) ---------- */
+function dragify(el,onTap,onDrop){
+  el.style.touchAction="none";
+  el.addEventListener("pointerdown",e=>{
+    const sx=e.clientX, sy=e.clientY; let ghost=null;
+    const move=ev=>{ const dx=ev.clientX-sx, dy=ev.clientY-sy;
+      if(!ghost && Math.hypot(dx,dy)>8){ ghost=el.cloneNode(true); ghost.classList.add("dragghost"); const r=el.getBoundingClientRect();
+        ghost.style.width=r.width+"px"; ghost.style.left=r.left+"px"; ghost.style.top=r.top+"px"; document.body.appendChild(ghost); el.classList.add("lifting"); }
+      if(ghost){ const r=el.getBoundingClientRect(); ghost.style.transform=`translate(${dx}px,${dy}px) rotate(-3deg)`; } };
+    const up=ev=>{ window.removeEventListener("pointermove",move); window.removeEventListener("pointerup",up);
+      if(ghost){ ghost.remove(); el.classList.remove("lifting"); if(!onDrop(ev.clientX,ev.clientY)){} } else onTap(); };
+    window.addEventListener("pointermove",move); window.addEventListener("pointerup",up);
+  });
+}
+/* ---------- celebration ---------- */
+const RM = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+function confetti(){
+  if(RM) return;
+  const c=document.createElement("canvas"); c.className="confetti"; document.body.appendChild(c);
+  const w=c.width=innerWidth, h=c.height=innerHeight, x=c.getContext("2d");
+  const cols=["#FFD60A","#0B8A52","#E0457B","#2D6FD6","#FF8A3D","#A86EF0"];
+  const ps=Array.from({length:90},()=>({x:w/2+(Math.random()-.5)*120,y:h*0.45,vx:(Math.random()-.5)*11,vy:-Math.random()*11-4,s:Math.random()*7+5,r:Math.random()*6,c:cols[Math.floor(Math.random()*cols.length)]}));
+  let t=0; (function f(){ x.clearRect(0,0,w,h); ps.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.vy+=0.35;p.r+=0.2; x.save();x.translate(p.x,p.y);x.rotate(p.r);x.fillStyle=p.c;x.fillRect(-p.s/2,-p.s/4,p.s,p.s/2);x.restore();});
+    if(++t<70) requestAnimationFrame(f); else c.remove(); })();
+}
+function cardFx(cls){ const c=$(".card"); if(!c||RM) return; c.classList.remove("fx-ok","fx-no"); void c.offsetWidth; c.classList.add(cls); }
+function paintStreak(){ const s=$("#streak"); if(!s) return; s.hidden=!(S.streak>=2); s.innerHTML=`🔥 <span>${S.streak}</span> متتالية`; }
+
+const AGAIN=["حاول مرة أخرى","فكّر جيداً وحاول مرة أخرى","اقتربت! حاول مرة أخرى"];
+// wrong answer: never show the answer, let the pupil try again
+function wrong(hint=""){
+  S.wrong++; beep(false); S.streak=0; paintStreak(); cardFx("fx-no");
+  $("#fb").innerHTML=`<div class="fb no"><span>✗</span><span>${AGAIN[Math.min(S.wrong-1,AGAIN.length-1)]}${hint?`<span class="tip">${hint}</span>`:""}</span></div>`;
+}
+// right answer: point only if it was right from the first try
+function correct(q,note=""){
+  if(S.wrong===0){ S.score++; S.streak=(S.streak||0)+1; } 
+  beep(true); confetti(); cardFx("fx-ok"); paintStreak();
+  if(S.streak>=3 && S.wrong===0) note=`${S.streak} إجابات صحيحة متتالية! `+note;
+  const tip = q.tip? `<span class="tip">${q.tip}</span>`:"";
+  const extra = S.wrong>0? `<span class="tip">وصلت إلى الإجابة الصحيحة بعد ${S.wrong+1} محاولات.</span>`:"";
+  $("#fb").innerHTML=`<div class="fb ok"><span>✓</span><span>${PRAISE[Math.floor(Math.random()*PRAISE.length)]} ${note}${extra}${tip}</span></div>`;
+  const last = S.i===S.list.length-1;
+  $("#acts").innerHTML=`<button class="btn" id="nextBtn">${last?"النتيجة":"التالي ←"}</button>`;
+  $("#nextBtn").addEventListener("click",()=>{ if(last) showResult(); else {S.i++;renderQ();} });
+  $("#nextBtn").focus({preventScroll:true});
+}
+function checkBtn(onCheck,enabled=true){
+  $("#acts").innerHTML=`<button class="btn" id="chk"${enabled?"":" disabled"}>تحقّق</button>`;
+  $("#chk").addEventListener("click",onCheck);
+  return $("#chk");
+}
+
+const R={
+  mcq(q,body){
+    const order=shuffle(q.opts.map((o,i)=>i));
+    body.insertAdjacentHTML("beforeend",`<div class="opts">${order.map((oi,k)=>`<button class="opt" data-oi="${oi}"><span class="L">${LET[k]}</span><span class="C">${q.opts[oi]}</span></button>`).join("")}</div>`);
+    body.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>{
+      if(+b.dataset.oi===q.a){
+        b.classList.add("right"); body.querySelectorAll(".opt").forEach(x=>x.disabled=true); correct(q);
+      } else { b.classList.add("wrong"); b.disabled=true; wrong(); }
+    }));
+  },
+  color(q,body){
+    // tap or drag across the parts to paint them
+    const st=Array(q.n).fill(false); let locked=false, painting=null;
+    const svgHtml= q.shape==="pie"? pie(q.n,[],{click:true,size:230}) : bar(q.n,[],{click:true});
+    body.insertAdjacentHTML("beforeend",`<div class="vis" id="cv">${svgHtml}</div><div class="counter" id="cc">عدد الأجزاء الملوّنة: 0</div>
+      <div class="dirnote" style="font-weight:400">اضغط على الأجزاء أو اسحب إصبعك فوقها لتلوينها.</div>`);
+    const parts=[...body.querySelectorAll("#cv .part")];
+    const btn=checkBtn(check,false);
+    const setPart=(i,v)=>{ if(locked||st[i]===v) return; st[i]=v; parts[i].setAttribute("fill", v?"var(--shade)":"var(--empty)");
+      parts[i].classList.toggle("pop-in",v); const k=st.filter(Boolean).length; $("#cc").textContent=`عدد الأجزاء الملوّنة: ${k}`; btn.disabled=k===0; };
+    const partAt=e=>{ const el=document.elementFromPoint(e.clientX,e.clientY); return el&&el.classList.contains("part")&&parts.includes(el)? +el.dataset.i : null; };
+    const svg=$("#cv svg"); svg.style.touchAction="none";
+    svg.addEventListener("pointerdown",e=>{ const i=partAt(e); if(i==null) return; painting=!st[i]; setPart(i,painting); e.preventDefault(); });
+    window.addEventListener("pointermove",e=>{ if(painting==null) return; const i=partAt(e); if(i!=null) setPart(i,painting); });
+    window.addEventListener("pointerup",()=>{ painting=null; });
+    function check(){
+      const k=st.filter(Boolean).length;
+      if(k===q.need){ locked=true; svg.classList.remove("click"); correct(q); }
+      else wrong("تذكّر: البسط يخبرك كم جزءاً تلوّن، والمقام عدد الأجزاء كلها.");
+    }
+  },
+  build(q,body){
+    // build a fraction: choose the number of equal parts (denominator) and the shaded parts (numerator)
+    const st={d:1,n:0}; let locked=false;
+    body.insertAdjacentHTML("beforeend",`<div class="vis" id="bv"></div>
+      <div class="steppers">
+        <div class="stepper"><span class="slabel">الأجزاء الملوّنة (البسط)</span>
+          <div class="srow"><button class="sbtn" data-k="n" data-d="1" aria-label="زِد البسط">+</button><span class="sval" id="sn">0</span><button class="sbtn" data-k="n" data-d="-1" aria-label="أنقص البسط">−</button></div></div>
+        <div class="stepper"><span class="slabel">عدد الأجزاء المتطابقة (المقام)</span>
+          <div class="srow"><button class="sbtn" data-k="d" data-d="1" aria-label="زِد المقام">+</button><span class="sval" id="sd">1</span><button class="sbtn" data-k="d" data-d="-1" aria-label="أنقص المقام">−</button></div></div>
+      </div>`);
+    const btn=checkBtn(check,true);
+    function paint(){
+      $("#bv").innerHTML=cap(pie(st.d,sh(st.n),{size:210}), F(st.n,st.d));
+      $("#sn").textContent=st.n; $("#sd").textContent=st.d;
+    }
+    body.querySelectorAll(".sbtn").forEach(b=>b.addEventListener("click",()=>{ if(locked) return;
+      const k=b.dataset.k, d=+b.dataset.d;
+      if(k==="d"){ st.d=Math.min(12,Math.max(1,st.d+d)); st.n=Math.min(st.n,st.d); }
+      else st.n=Math.min(st.d,Math.max(0,st.n+d));
+      paint(); }));
+    function check(){
+      const okD=st.d===q.d, okN=st.n===q.n;
+      if(okD&&okN){ locked=true; body.querySelectorAll(".sbtn").forEach(b=>b.disabled=true); correct(q); }
+      else wrong(!okD? "عدد الأجزاء المتطابقة (المقام) يحتاج إلى تصحيح." : "عدد الأجزاء الملوّنة (البسط) يحتاج إلى تصحيح.");
+    }
+    paint();
+  },
+  jump(q,body){
+    // number line from 0 to 1, as in the book; pupil taps where the answer lands
+    const den=q.den, ans=q.start+q.add, W0=520, pad=28, H=190, base=105, step=(W0-2*pad)/den;
+    const X=k=>pad+k*step;
+    const arc=(a,b,col,lab)=>{ const x1=X(a),x2=X(b),mx=(x1+x2)/2, h=Math.min(60,18+Math.abs(b-a)*10);
+      return `<path d="M${x1},${base} Q${mx},${base-h*1.6} ${x2},${base}" fill="none" stroke="${col}" stroke-width="3"/>
+        <polygon points="${x2},${base} ${x2+(b>a?-9:9)},${base-12} ${x2+(b>a?-1:1)},${base-14}" fill="${col}"/>
+        <text x="${mx}" y="${base-h*0.9-14}" text-anchor="middle" class="jl">${lab}</text>`; };
+    function draw(extra=""){
+      let s=`<line x1="${pad-8}" y1="${base}" x2="${W0-pad+14}" y2="${base}" stroke="var(--ink)" stroke-width="2.5"/>`;
+      for(let k=0;k<=den;k++){ const x=X(k);
+        s+=`<line x1="${x}" y1="${base-8}" x2="${x}" y2="${base+8}" stroke="var(--ink)" stroke-width="2"/>`;
+        s+= k===0? `<text x="${x}" y="${base+42}" text-anchor="middle" class="tl">0</text>` : k===den? `<text x="${x}" y="${base+42}" text-anchor="middle" class="tl">1</text>`
+          : `<text x="${x}" y="${base+32}" text-anchor="middle" class="tl s">${k}</text><line x1="${x-10}" y1="${base+39}" x2="${x+10}" y2="${base+39}" stroke="var(--ink)" stroke-width="2"/><text x="${x}" y="${base+60}" text-anchor="middle" class="tl s">${den}</text>`;
+        s+=`<rect class="hit" data-k="${k}" x="${x-step/2}" y="${base-45}" width="${step}" height="115" fill="transparent"/>`; }
+      s+=arc(0,q.start,"var(--pink)",`${q.start}/${den}`)+extra;
+      return `<svg class="shape nline" viewBox="0 0 ${W0} ${H}" width="${W0}" style="max-width:100%;height:auto" role="img" aria-label="خط الأعداد">${s}</svg>`;
+    }
+    body.insertAdjacentHTML("beforeend",`<div class="vis" id="jv" style="direction:ltr">${draw()}</div><div class="dirnote" style="font-weight:400">${q.add>0?"قفز السهم إلى":"نبدأ من"} ${F(q.start,den)}. اضغط على المكان الذي ${q.add>0?"تصل إليه بعد القفزة الثانية":"تصل إليه بعد الرجوع"}.</div>`);
+    $("#acts").innerHTML="";
+    let locked=false;
+    function bind(){ body.querySelectorAll("#jv .hit").forEach(r=>r.addEventListener("click",()=>{ if(locked) return; const k=+r.dataset.k;
+      if(k===ans){ locked=true; $("#jv").innerHTML=draw(arc(q.start,ans,"var(--blue)",`${Math.abs(q.add)}/${den}`)+`<circle cx="${X(ans)}" cy="${base}" r="11" fill="var(--ok)"/>`); correct(q); }
+      else { $("#jv").innerHTML=draw(`<circle cx="${X(k)}" cy="${base}" r="11" fill="var(--bad)"/>`); bind();
+        wrong(q.add>0? `القفزة الثانية طولها ${Math.abs(q.add)} أجزاء. عُدّ الأجزاء من ${q.start}.` : `نرجع ${Math.abs(q.add)} أجزاء. عُدّ الأجزاء إلى الخلف.`); } })); }
+    bind();
+  },
+  pop(q,body){
+    // balloons: pop every balloon that matches the rule
+    const items=shuffle(q.items.map((x,i)=>i)); let left=q.items.filter(x=>x.ok).length;
+    const COLS=["#F05D7A","#4C8DF0","#F6B92B","#3CC283","#A86EF0","#FF8A3D"];
+    body.insertAdjacentHTML("beforeend",`<div class="pond" id="pond">${items.map((i,k)=>`
+      <button class="balloon" data-i="${i}" style="--c:${COLS[k%COLS.length]};--d:${(k%5)*0.45}s"><span class="bl">${D(q.items[i].x)}</span><span class="str"></span></button>`).join("")}</div>
+      <div class="counter" id="cc">بقي ${left} بالونات</div>`);
+    $("#acts").innerHTML="";
+    body.querySelectorAll(".balloon").forEach(b=>b.addEventListener("click",()=>{
+      const it=q.items[+b.dataset.i];
+      if(it.ok){ b.classList.add("popped"); b.disabled=true; left--; $("#cc").textContent= left? `بقي ${left} ${left===1?"بالون":"بالونات"}` : "أحسنت! فرقعت كل البالونات";
+        if(left===0) correct(q); else beep(true); }
+      else { b.classList.remove("shake"); void b.offsetWidth; b.classList.add("shake"); wrong(q.hint||""); }
+    }));
+  },
+  set(q,body){
+    const st=Array(q.items.length).fill(false);
+    body.insertAdjacentHTML("beforeend",`<div class="vis">${setVis(q.items,{click:true})}</div><div class="counter" id="cc">اخترت: 0</div>`);
+    const btn=checkBtn(()=>{
+      const k=st.filter(Boolean).length;
+      if(k===q.need){ body.querySelectorAll(".item").forEach(b=>b.disabled=true); correct(q); }
+      else wrong("تذكّر: المقام عدد العناصر كلها، والبسط عدد العناصر التي تختارها.");
+    },false);
+    body.querySelectorAll(".item").forEach(b=>b.addEventListener("click",()=>{
+      const i=+b.dataset.i; st[i]=!st[i]; b.classList.toggle("pick",st[i]);
+      const k=st.filter(Boolean).length; $("#cc").textContent=`اخترت: ${k}`; btn.disabled=k===0;
+    }));
+  },
+  fill(q,body){
+    let html=q.expr;
+    q.ans.forEach((a,k)=>{
+      const opts=(q.opts&&q.opts[k])||range(0,12);
+      html=html.replace(`{${k}}`,`<select class="dd" id="dd${k}" aria-label="الفراغ ${k+1}"><option value="">?</option>${opts.map(o=>`<option value="${o}">${o}</option>`).join("")}</select>`);
+    });
+    body.insertAdjacentHTML("beforeend",`<div class="eqline"><span class="eq"${q.rtlExpr?' style="direction:rtl"':""}>${html}</span></div>`);
+    const sels=q.ans.map((a,k)=>$("#dd"+k,body));
+    const btn=checkBtn(()=>{
+      let ok=true;
+      sels.forEach((s,k)=>{const r=+s.value===q.ans[k]; s.classList.toggle("wrong",!r); if(!r) ok=false;});
+      if(ok){ sels.forEach(s=>{s.disabled=true;s.classList.add("right");}); correct(q); }
+      else wrong(sels.length>1?"الفراغ الملوّن بالأحمر يحتاج إلى تصحيح.":"");
+    },false);
+    sels.forEach(s=>s.addEventListener("change",()=>{s.classList.remove("wrong");btn.disabled=sels.some(x=>x.value==="");}));
+  },
+  cmp(q,body){
+    const signs=q.signs||["<","=",">"];
+    const v=VAL(q.a)-VAL(q.b);
+    const ans = signs.includes("≠") ? (Math.abs(v)<1e-9?"=":"≠") : (Math.abs(v)<1e-9?"=":v<0?"<":">");
+    body.insertAdjacentHTML("beforeend",`<div class="cmp">${D(q.a)}<span class="slot" id="slot"></span>${D(q.b)}</div>
+      <div class="signs">${signs.map(s=>`<button class="sign" data-s="${s}" aria-label="${s==="<"?"أصغر من":s===">"?"أكبر من":s==="="?"يساوي":"لا يساوي"}">${G(s)}</button>`).join("")}</div>`);
+    body.querySelectorAll(".sign").forEach(b=>b.addEventListener("click",()=>{
+      const slot=$("#slot");
+      slot.innerHTML=G(b.dataset.s); slot.classList.remove("right","wrong");
+      if(b.dataset.s===ans){ slot.classList.add("right"); body.querySelectorAll(".sign").forEach(x=>x.disabled=true); correct(q); }
+      else { slot.classList.add("wrong"); b.disabled=true; wrong("تذكّر: رأس العلامة يتجه نحو الأصغر.");
+             setTimeout(()=>{ if(slot.classList.contains("wrong")){slot.innerHTML="";slot.classList.remove("wrong");} },900); }
+    }));
+  },
+  order(q,body){
+    // drag a card into a box, or tap a card to put it in the next empty box; tap a box to empty it
+    const val=VAL, n=q.items.length;
+    const correctOrder=q.items.slice().sort((x,y)=> q.dir==="asc"? val(x)-val(y) : val(y)-val(x));
+    const pool=shuffle(q.items.map((x,i)=>i)); let slots=Array(n).fill(null), locked=false, marks=[];
+    body.insertAdjacentHTML("beforeend",`<div class="dirnote">${q.lab||(q.dir==="asc"?"الأصغر ← … ← الأكبر":"الأكبر ← … ← الأصغر")} <span style="font-weight:400">(اسحب البطاقة إلى الخانة، أو اضغط عليها. اضغط على خانة لتفريغها)</span></div>
+      <div class="slots" id="slots"></div><div class="chips" id="pool"></div>`);
+    const btn=checkBtn(check,false);
+    const place=(i,k)=>{ const old=slots.indexOf(i); if(old>-1) slots[old]=null; if(k==null) k=slots.indexOf(null); if(k<0) return; slots[k]=i; marks=[]; paint(); };
+    function paint(){
+      $("#slots").innerHTML=slots.map((it,k)=>{
+        const arrow=k<n-1?`<span class="arrow">${q.lab?"←":G(q.dir==="asc"?"<":">")}</span>`:"";
+        return `<button class="chip slot-chip ${marks[k]||""}" data-k="${k}" aria-label="خانة ${k+1}"${locked?" disabled":""}>${it!=null?D(q.items[it]):""}</button>${arrow}`;}).join("");
+      $("#pool").innerHTML= locked? "" : pool.map(i=>`<button class="chip drag${slots.includes(i)?" used":""}" data-i="${i}">${D(q.items[i])}</button>`).join("");
+      btn.disabled=slots.includes(null)||locked;
+      if(locked) return;
+      $("#slots").querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{const k=+b.dataset.k;if(slots[k]!=null){slots[k]=null;marks=[];paint();}}));
+      $("#pool").querySelectorAll(".chip").forEach(b=>dragify(b,()=>place(+b.dataset.i,null),(x,y)=>{
+        const el=document.elementFromPoint(x,y), s=el&&el.closest(".slot-chip"); if(s){ place(+b.dataset.i,+s.dataset.k); return true; } return false; }));
+    }
+    function check(){
+      const ok=slots.every((p,k)=>val(q.items[p])===val(correctOrder[k]));
+      if(ok){ locked=true; marks=slots.map(()=> "right"); paint(); correct(q); }
+      else { marks=slots.map(()=> "wrong"); paint();
+             wrong("اضغط على الخانات لتفريغها ثم رتّب من جديد. "+(q.dir==="asc"?"ابدأ بالأصغر.":"ابدأ بالأكبر.")); }
+    }
+    paint();
+  },
+  match(q,body){
+    const right=shuffle(q.pairs.map((p,i)=>i));
+    let sel=null, done=0;
+    body.insertAdjacentHTML("beforeend",`<div class="dirnote" style="font-weight:400">اضغط كسراً من العمود الأول، ثم الكسر المكافئ له من العمود الثاني.</div>
+      <div class="match"><div class="col" id="mL">${q.pairs.map((p,i)=>`<button class="chip" data-i="${i}">${D(p[0])}</button>`).join("")}</div>
+      <div class="col" id="mR">${right.map(i=>`<button class="chip" data-i="${i}">${D(q.pairs[i][1])}</button>`).join("")}</div></div>`);
+    $("#acts").innerHTML="";
+    body.querySelectorAll("#mL .chip").forEach(b=>b.addEventListener("click",()=>{
+      body.querySelectorAll("#mL .chip").forEach(x=>x.classList.remove("sel")); b.classList.add("sel"); sel=+b.dataset.i;}));
+    body.querySelectorAll("#mR .chip").forEach(b=>b.addEventListener("click",()=>{
+      if(sel==null){b.classList.add("shake");setTimeout(()=>b.classList.remove("shake"),400);return;}
+      if(+b.dataset.i===sel){
+        const l=body.querySelector(`#mL .chip[data-i="${sel}"]`);
+        [l,b].forEach(x=>{x.classList.remove("sel");x.classList.add("pair1");x.disabled=true;});
+        sel=null; done++; $("#fb").innerHTML="";
+        if(done===q.pairs.length) correct(q,"أكملت التوصيل.");
+        else if(soundOn) beep(true);
+      } else { b.classList.add("wrong","shake"); setTimeout(()=>b.classList.remove("wrong","shake"),450);
+               wrong(q.hint||""); }
+    }));
+  },
+  setclock(q,body){
+    // drag the hands (or tap a number) to set the clock
+    const st={h:null,m:null}; let active="h", locked=false, dragging=false;
+    body.insertAdjacentHTML("beforeend",`<div class="handbtns">
+        <button class="hb on" data-h="h"><span class="dot" style="background:var(--hourhand)"></span>شوكة الساعات (القصيرة)</button>
+        <button class="hb" data-h="m"><span class="dot" style="background:var(--minhand)"></span>شوكة الدقائق (الطويلة)</button></div>
+      <div class="vis" id="cv"></div><div class="counter">اختر الشوكة، ثم اسحبها أو اضغط على الرقم الذي تشير إليه.</div>`);
+    const btn=checkBtn(check,false);
+    const setActive=h=>{active=h; body.querySelectorAll(".hb").forEach(x=>x.classList.toggle("on",x.dataset.h===h));};
+    body.querySelectorAll(".hb").forEach(b=>b.addEventListener("click",()=>{ if(!locked) setActive(b.dataset.h); }));
+    const posAt=e=>{ const svg=$("#cv svg"), r=svg.getBoundingClientRect(), dx=e.clientX-(r.left+r.width/2), dy=e.clientY-(r.top+r.height/2);
+      let a=Math.atan2(dx,-dy)*180/Math.PI; if(a<0) a+=360; return Math.round(a/30)%12; };
+    function paint(){
+      $("#cv").innerHTML=clockFace(st.h,st.m,{size:260,click:!locked});
+      btn.disabled = st.h==null || st.m==null || locked;
+      if(locked) return;
+      const svg=$("#cv svg"); svg.style.touchAction="none";
+      svg.addEventListener("pointerdown",e=>{ dragging=true; const p=posAt(e); if(st[active]!==p){st[active]=p;paint();} e.preventDefault(); });
+    }
+    window.addEventListener("pointermove",e=>{ if(!dragging||locked) return; const p=posAt(e); if(st[active]!==p){ st[active]=p; paint(); } });
+    window.addEventListener("pointerup",()=>{ if(!dragging) return; dragging=false;
+      if(active==="h" && st.m==null) setActive("m"); });
+    function check(){
+      const th=q.h%12, tm=(q.m/5)%12;
+      const okM = st.m===tm;
+      const okH = q.m===0 ? st.h===th : (st.h===th || st.h===(th+1)%12);
+      if(okH && okM){ locked=true; $("#cv").innerHTML=clock(q.h,q.m,{size:260}); body.querySelectorAll(".hb").forEach(x=>x.disabled=true); correct(q); }
+      else wrong(!okH && !okM? "راجع الشوكتين: القصيرة للساعات والطويلة للدقائق."
+                 : !okH? "شوكة الساعات (القصيرة) تحتاج إلى تصحيح."
+                 : "شوكة الدقائق (الطويلة) تحتاج إلى تصحيح. تذكّر: بين كل رقمين 5 دقائق.");
+    }
+    paint();
+  },
+  connect(q,body){
+    // tap (or drag from) one point to another to draw a segment
+    const pts=q.pts, Wd=320, H=q.h||230, done=new Set(); let sel=null, dragging=false, locked=false;
+    const key=(a,b)=>[a,b].sort().join("|");
+    const targets=new Set(q.targets.map(t=>{const [a,b]=SEGP(t,pts); return key(a,b);}));
+    body.insertAdjacentHTML("beforeend",`<div class="vis" id="gv"></div><div class="counter" id="cc">اضغط على نقطة ثم على نقطة أخرى، أو اسحب من نقطة إلى أخرى.</div>`);
+    $("#acts").innerHTML="";
+    function draw(rubber=""){
+      let lines=[...done].map(k=>{const [a,b]=k.split("|"); return `<line x1="${pts[a][0]}" y1="${pts[a][1]}" x2="${pts[b][0]}" y2="${pts[b][1]}" stroke="var(--ok)" stroke-width="4" stroke-linecap="round"/>`;}).join("");
+      const base=fig(pts,[],{w:Wd,h:H,big:true,labelUp:q.labelUp});
+      $("#gv").innerHTML=base.replace('role="img"',`role="img" id="gsvg"`).replace(/(<circle class="pt")/,`${lines}${rubber}$1`);
+      $("#gv").querySelectorAll(".pt").forEach(c=>{ if(c.dataset.p===sel) c.setAttribute("fill","var(--blue)"); c.setAttribute("r","11"); });
+    }
+    const svgPt=e=>{ const svg=$("#gsvg"), r=svg.getBoundingClientRect(); return [(e.clientX-r.left)*Wd/r.width,(e.clientY-r.top)*H/r.height]; };
+    const near=e=>{ const [x,y]=svgPt(e); let best=null,bd=1e9; for(const n in pts){ const d=Math.hypot(pts[n][0]-x,pts[n][1]-y); if(d<bd){bd=d;best=n;} } return bd<30?best:null; };
+    function attempt(a,b){
+      const k=key(a,b);
+      if(done.has(k)) return;
+      if(targets.has(k)){ done.add(k); draw(); if(done.size===targets.size){ locked=true; correct(q); } else { beep(true); $("#cc").textContent=`رسمت ${done.size} من ${targets.size}`; } }
+      else { draw(`<line x1="${pts[a][0]}" y1="${pts[a][1]}" x2="${pts[b][0]}" y2="${pts[b][1]}" stroke="var(--bad)" stroke-width="4" stroke-dasharray="6 6"/>`); setTimeout(()=>{ if(!locked) draw(); },700);
+             wrong(q.hint||"اقرأ السؤال جيداً: أي النقاط يجب أن نصل بينها؟"); }
+    }
+    $("#gv").addEventListener("pointerdown",e=>{ if(locked) return; const p=near(e); if(!p) return; e.preventDefault();
+      if(sel && sel!==p){ const a=sel; sel=null; attempt(a,p); return; }
+      sel=p; dragging=true; draw(); });
+    $("#gv").addEventListener("pointermove",e=>{ if(!dragging||!sel||locked) return; const [x,y]=svgPt(e);
+      draw(`<line x1="${pts[sel][0]}" y1="${pts[sel][1]}" x2="${x}" y2="${y}" stroke="var(--blue)" stroke-width="3" stroke-dasharray="5 5"/>`); });
+    $("#gv").addEventListener("pointerup",e=>{ if(!dragging) return; dragging=false; const p=near(e);
+      if(p && sel && p!==sel){ const a=sel; sel=null; attempt(a,p); } else draw(); });
+    $("#gv").style.touchAction="none";
+    draw();
+  },
+  tapseg(q,body){
+    const pts=q.pts; let locked=false;
+    body.insertAdjacentHTML("beforeend",`<div class="vis" id="gv">${fig(pts,q.segs)}</div><div class="counter">اضغط على القطعة المطلوبة.</div>`);
+    $("#acts").innerHTML="";
+    const svg=$("#gv svg");
+    // wide invisible hit lines on top
+    q.segs.forEach(sg=>{ const [a,b]=SEGP(sg,pts); svg.insertAdjacentHTML("beforeend",`<line class="hitseg" data-s="${sg}" x1="${pts[a][0]}" y1="${pts[a][1]}" x2="${pts[b][0]}" y2="${pts[b][1]}" stroke="transparent" stroke-width="26" stroke-linecap="round"/>`); });
+    const same=(s1,s2)=>{ const p=SEGP(s1,pts), r=SEGP(s2,pts); return p&&r&&[...p].sort().join()===[...r].sort().join(); };
+    svg.querySelectorAll(".hitseg").forEach(h=>h.addEventListener("click",()=>{ if(locked) return;
+      const ln=svg.querySelector(`.sg[data-s="${h.dataset.s}"]`);
+      if(same(h.dataset.s,q.ask)){ locked=true; ln.setAttribute("stroke","var(--ok)"); ln.setAttribute("stroke-width","7"); correct(q); }
+      else { ln.setAttribute("stroke","var(--bad)"); setTimeout(()=>ln.setAttribute("stroke","var(--pink)"),700); wrong("اقرأ حرفي القطعة: هما النقطتان عند طرفيها."); } }));
+  },
+  measure(q,body){
+    // segment (or object) above a ruler the pupil can drag left and right
+    const S3=3, x0=q.aligned?20:46+Math.floor(Math.random()*30), x1=x0+q.mm*S3, Wd=360, H=q.tri?220:170, segY=q.tri?140:60, rY=segY+14;
+    let rx=q.aligned? x0-10 : 4, dragging=false, sx=0, srx=0;
+    let top="";
+    if(q.obj==="pencil") top=pencilSvg(x0,q.mm*S3,segY-10);
+    else if(q.obj==="nail") top=nailSvg(x0,q.mm*S3,segY-10);
+    else {
+      if(q.tri) top+=`<line x1="${x0}" y1="${segY}" x2="${(x0+x1)/2+30}" y2="${segY-115}" stroke="var(--blue)" stroke-width="2.5"/><line x1="${x1}" y1="${segY}" x2="${(x0+x1)/2+30}" y2="${segY-115}" stroke="var(--blue)" stroke-width="2.5"/>`;
+      top+=`<line x1="${x0}" y1="${segY}" x2="${x1}" y2="${segY}" stroke="var(--pink)" stroke-width="3"/>
+        <line x1="${x0}" y1="${segY-9}" x2="${x0}" y2="${segY+9}" stroke="var(--pink)" stroke-width="3"/><line x1="${x1}" y1="${segY-9}" x2="${x1}" y2="${segY+9}" stroke="var(--pink)" stroke-width="3"/>
+        <text x="${x0}" y="${segY-20}" text-anchor="middle" class="pl">${q.a}</text><text x="${x1}" y="${segY-20}" text-anchor="middle" class="pl">${q.b}</text>`;
+    }
+    body.insertAdjacentHTML("beforeend",`<div class="vis" id="mv" style="direction:ltr"><svg class="shape rulerbox" id="msvg" viewBox="0 0 ${Wd} ${H}" width="${Wd}" style="max-width:100%;height:auto;touch-action:none" role="img" aria-label="مسطرة">
+        ${top}<g id="rul" transform="translate(${rx},${rY})" style="cursor:grab">${rulerSvg()}</g></svg></div>
+      ${q.aligned?"":'<div class="nudge"><button class="sbtn" id="rr" aria-label="حرّك المسطرة يميناً">→</button><span class="dirnote" style="font-weight:400">اسحب المسطرة حتى يقع الصفر عند بداية القطعة</span><button class="sbtn" id="rl" aria-label="حرّك المسطرة يساراً">←</button></div>'}
+      <div class="eqline"><span class="eq" style="direction:rtl;font-size:24px">الطول = <select class="dd" id="dd0" aria-label="السنتمترات"><option value="">?</option>${range(0,10).map(o=>`<option value="${o}">${o}</option>`).join("")}</select> سم و <select class="dd" id="dd1" aria-label="المليمترات"><option value="">?</option>${range(0,9).map(o=>`<option value="${o}">${o}</option>`).join("")}</select> ملم</span></div>`);
+    const svg=$("#msvg"), g=$("#rul");
+    const setRx=v=>{ rx=Math.max(-20,Math.min(Wd-60,v)); g.setAttribute("transform",`translate(${rx},${rY})`); };
+    if(!q.aligned){
+      g.addEventListener("pointerdown",e=>{ dragging=true; sx=e.clientX; srx=rx; g.style.cursor="grabbing"; e.preventDefault(); });
+      window.addEventListener("pointermove",e=>{ if(!dragging) return; const r=svg.getBoundingClientRect(); setRx(srx+(e.clientX-sx)*Wd/r.width); });
+      window.addEventListener("pointerup",()=>{ dragging=false; g.style.cursor="grab"; });
+      $("#rr").addEventListener("click",()=>setRx(rx+3)); $("#rl").addEventListener("click",()=>setRx(rx-3));
+    }
+    const sels=[$("#dd0"),$("#dd1")], want=[Math.floor(q.mm/10), q.mm%10];
+    const btn=checkBtn(()=>{
+      let ok=true; sels.forEach((s,k)=>{const r=+s.value===want[k]; s.classList.toggle("wrong",!r); if(!r) ok=false;});
+      if(ok){ sels.forEach(s=>{s.disabled=true;s.classList.add("right");}); correct(q); }
+      else wrong("ضع صفر المسطرة عند بداية القطعة، ثم عُدّ السنتمترات، ثم المليمترات الصغيرة بعدها.");
+    },false);
+    sels.forEach(s=>s.addEventListener("change",()=>{s.classList.remove("wrong");btn.disabled=sels.some(x=>x.value==="");}));
+  },
+  classify(q,body){
+    const order=shuffle(q.shapes.map((s,i)=>i)); let sel=null, left=q.shapes.length;
+    body.insertAdjacentHTML("beforeend",`<div class="chips" id="pool">${order.map(i=>`<button class="chip drag shapecard" data-i="${i}" aria-label="شكل">${q.shapes[i][1]}</button>`).join("")}</div>
+      <div class="bins">${q.bins.map(([k,l])=>`<div class="bin" data-k="${k}"><span class="binl">${l}</span><div class="bini"></div></div>`).join("")}</div>
+      <div class="counter" id="cc">اسحب كل شكل إلى صندوقه، أو اضغط على الشكل ثم على الصندوق.</div>`);
+    $("#acts").innerHTML="";
+    const put=(i,binEl)=>{ const card=body.querySelector(`.shapecard[data-i="${i}"]`); if(!card||!binEl) return false;
+      if(q.shapes[i][0]===binEl.dataset.k){ card.remove(); binEl.querySelector(".bini").insertAdjacentHTML("beforeend",`<span class="placed">${q.shapes[i][1]}</span>`);
+        left--; sel=null; if(left===0) correct(q); else { beep(true); $("#cc").textContent=`بقي ${left} أشكال`; } }
+      else { card.classList.remove("shake","sel"); void card.offsetWidth; card.classList.add("shake"); binEl.classList.add("nope"); setTimeout(()=>binEl.classList.remove("nope"),500); sel=null; wrong(q.hint||""); }
+      return true; };
+    body.querySelectorAll(".shapecard").forEach(c=>dragify(c,()=>{ body.querySelectorAll(".shapecard").forEach(x=>x.classList.remove("sel")); c.classList.add("sel"); sel=+c.dataset.i; },
+      (x,y)=>{ const el=document.elementFromPoint(x,y), b=el&&el.closest(".bin"); return b? put(+c.dataset.i,b) : false; }));
+    body.querySelectorAll(".bin").forEach(b=>b.addEventListener("click",()=>{ if(sel!=null) put(sel,b); }));
+  },
+  abacus(q,body){
+    // tap + / − under each rod (or tap the rod) to add or remove beads
+    const want=ab(q.n), st=[0,0,0,0]; let locked=false;
+    body.insertAdjacentHTML("beforeend",`<div class="vis" id="av"></div>
+      <div class="abtns">${["ألوف","مئات","عشرات","آحاد"].map((l,i)=>`<div class="abtn"><button class="sbtn" data-i="${i}" data-d="1" aria-label="أضف خرزة إلى ${l}">+</button><button class="sbtn" data-i="${i}" data-d="-1" aria-label="أنقص خرزة من ${l}">−</button></div>`).join("")}</div>
+      <div class="counter" id="cc"></div>`);
+    const btn=checkBtn(check,false);
+    function paint(){
+      $("#av").innerHTML=abacusSvg(st,{click:!locked});
+      $("#cc").textContent=`العدد في العداد: ${st.join("").replace(/^0+(?=\d)/,"")}`;
+      btn.disabled=locked;
+      if(locked) return;
+      $("#av").querySelectorAll(".rodhit").forEach(r=>r.addEventListener("click",()=>{ const i=+r.dataset.i; st[i]=(st[i]+1)%10; paint(); }));
+    }
+    body.querySelectorAll(".abtns .sbtn").forEach(b=>b.addEventListener("click",()=>{ if(locked) return; const i=+b.dataset.i; st[i]=Math.max(0,Math.min(9,st[i]+ +b.dataset.d)); paint(); }));
+    function check(){
+      const bad=st.map((v,i)=>v!==want[i]);
+      if(!bad.some(Boolean)){ locked=true; body.querySelectorAll(".abtns .sbtn").forEach(b=>b.disabled=true); paint(); correct(q); }
+      else { const names=["الألوف","المئات","العشرات","الآحاد"].filter((n,i)=>bad[i]); wrong(`راجع خرزات: ${names.join(" و ")}.`); }
+    }
+    paint();
+  },
+  column(q,body){
+    const W0=Math.max(...q.rows.map(r=>r.p.length)); let k=0; const want=[];
+    let html=`<table class="colt${q.tight?" tight":""}" dir="ltr">`;
+    q.rows.forEach(r=>{
+      const p=r.p.padStart(W0," "), a=(r.a||r.p).padStart(W0," ");
+      html+=`<tr class="${r.line?"line":""}"><td class="op">${r.op||""}</td>`;
+      for(let i=0;i<W0;i++){ const ch=p[i];
+        if(ch==="?"){ want.push(+a[i]); html+=`<td><select class="dd sm" id="cd${k}" aria-label="رقم"><option value="">?</option>${range(0,9).map(o=>`<option value="${o}">${o}</option>`).join("")}</select></td>`; k++; }
+        else html+=`<td>${ch===" "?"":ch}</td>`; }
+      html+=`<td class="lab" dir="rtl">${r.lab?r.lab+" ←":""}</td></tr>`;
+    });
+    html+=`</table>`;
+    body.insertAdjacentHTML("beforeend",`<div class="vis colbox">${html}</div>`);
+    const sels=want.map((w,i)=>$("#cd"+i,body));
+    const btn=checkBtn(()=>{
+      let ok=true; sels.forEach((s,i)=>{const r=+s.value===want[i]; s.classList.toggle("wrong",!r); if(!r) ok=false;});
+      if(ok){ sels.forEach(s=>{s.disabled=true;s.classList.add("right");}); correct(q); }
+      else wrong(q.hint||"");
+    },false);
+    sels.forEach(s=>s.addEventListener("change",()=>{s.classList.remove("wrong");btn.disabled=sels.some(x=>x.value==="");}));
+  },
+  longdiv(q,body){
+    // long division as in the book: divisor on the left, quotient digits above the dividend
+    const a=String(q.a), b=q.b, qd=[]; let cur=0;
+    for(const ch of a){ cur=cur*10+ +ch; qd.push(Math.floor(cur/b)); cur%=b; }
+    const rem=cur, n=a.length;
+    const sel=(id,opts)=>`<select class="dd sm" id="${id}" aria-label="رقم"><option value="">?</option>${opts.map(o=>`<option value="${o}">${o}</option>`).join("")}</select>`;
+    let html=`<table class="divt" dir="ltr"><tr><td></td>${qd.map((d,i)=>`<td>${sel("qd"+i,range(0,9))}</td>`).join("")}</tr>
+      <tr><td class="dv">${b}</td>${a.split("").map((d,i)=>`<td class="dn${i===0?" first":""}">${d}</td>`).join("")}</tr></table>`;
+    body.insertAdjacentHTML("beforeend",`<div class="vis colbox">${html}</div>
+      <div class="eqline"><span class="eq" style="font-size:24px">الباقي = ${sel("qr",range(0,b-1))}</span></div>
+      <div class="dirnote" style="font-weight:400">اقسم خانة خانة من اليسار، واكتب صفراً فوق الرقم الذي لا يقبل القسمة على ${b}.</div>`);
+    const sels=[...qd.map((d,i)=>$("#qd"+i,body)),$("#qr",body)], want=[...qd,rem];
+    const btn=checkBtn(()=>{
+      let ok=true; sels.forEach((s,i)=>{const r=+s.value===want[i]; s.classList.toggle("wrong",!r); if(!r) ok=false;});
+      if(ok){ sels.forEach(s=>{s.disabled=true;s.classList.add("right");}); correct(q, `${q.a} ÷ ${b} = ${+qd.join("")}${rem?` والباقي ${rem}`:""}. `); }
+      else wrong(`ابدأ من اليسار: كم مرة يدخل ${b} في الرقم الأول؟ اطرح، ثم أنزل الرقم التالي.`);
+    },false);
+    sels.forEach(s=>s.addEventListener("change",()=>{s.classList.remove("wrong");btn.disabled=sels.some(x=>x.value==="");}));
+  },
+  groups(q,body){
+    let k=0, locked=false;
+    body.insertAdjacentHTML("beforeend",`<div class="gbox" id="gb"></div>
+      <div class="steppers"><div class="stepper"><span class="slabel">عدد المجموعات</span>
+        <div class="srow"><button class="sbtn" data-d="1" aria-label="أضف مجموعة">+</button><span class="sval" id="gk">0</span><button class="sbtn" data-d="-1" aria-label="احذف مجموعة">−</button></div></div></div>`);
+    const btn=checkBtn(check,false);
+    function paint(){
+      $("#gb").innerHTML= k? range(1,k).map(()=>`<div class="grpbox">${rep(`<span>${q.e}</span>`,q.n).join("")}</div>`).join("") : `<span class="dirnote" style="font-weight:400">اضغط + لتضيف مجموعة من ${q.n}</span>`;
+      $("#gk").textContent=k; btn.disabled=k===0||locked;
+    }
+    body.querySelectorAll(".sbtn").forEach(b=>b.addEventListener("click",()=>{ if(locked) return; k=Math.max(0,Math.min(10,k+ +b.dataset.d)); paint(); }));
+    function check(){ if(k===q.g){ locked=true; body.querySelectorAll(".sbtn").forEach(b=>b.disabled=true); paint(); correct(q, `${q.g} × ${q.n} = ${q.g*q.n}. `); }
+      else wrong(`نريد ${q.g} مجموعات، في كل مجموعة ${q.n}.`); }
+    paint();
+  },
+  share(q,body){
+    // a sharing mat: tap a plate to give it one item, or share one to every plate
+    const plates=Array(q.k).fill(0); let pool=q.total; const each=Math.floor(q.total/q.k), r=q.total%q.k;
+    body.insertAdjacentHTML("beforeend",`<div class="pool" id="pool"></div>
+      <div class="actions"><button class="btn ghost" id="sh1" type="button">وزّع واحدة على كل طبق</button><button class="btn ghost" id="sh0" type="button">ابدأ من جديد</button></div>
+      <div class="plates" id="pl"></div>
+      <div class="eqline"><span class="eq" style="font-size:24px">نصيب كل واحد = <select class="dd sm" id="se"><option value="">?</option>${range(0,Math.max(12,each+3)).map(o=>`<option value="${o}">${o}</option>`).join("")}</select>${q.rem?` والباقي = <select class="dd sm" id="sr"><option value="">?</option>${range(0,q.k-1).map(o=>`<option value="${o}">${o}</option>`).join("")}</select>`:""}</span></div>`);
+    function paint(){
+      $("#pool").innerHTML= pool? `<span class="plabel">المتبقي: ${pool}</span>`+rep(`<span>${q.e}</span>`,pool).join("") : `<span class="plabel">وُزّعت كل القطع</span>`;
+      $("#pl").innerHTML=plates.map((c,i)=>`<button class="plate" data-i="${i}" type="button"><span class="pc">${c}</span><span class="pitems">${rep(q.e,c).join("")}</span></button>`).join("");
+      $("#pl").querySelectorAll(".plate").forEach(p=>p.addEventListener("click",()=>{ if(pool>0){ plates[+p.dataset.i]++; pool--; paint(); } }));
+    }
+    $("#sh1").addEventListener("click",()=>{ if(pool>=q.k){ for(let i=0;i<q.k;i++) plates[i]++; pool-=q.k; paint(); } else { $("#pool").classList.remove("shake"); void $("#pool").offsetWidth; $("#pool").classList.add("shake"); } });
+    $("#sh0").addEventListener("click",()=>{ plates.fill(0); pool=q.total; paint(); });
+    const sels=[$("#se"),...(q.rem?[$("#sr")]:[])], want=[each,...(q.rem?[r]:[])];
+    const btn=checkBtn(()=>{
+      let ok=true; sels.forEach((s,i)=>{const v=+s.value===want[i]; s.classList.toggle("wrong",!v); if(!v) ok=false;});
+      if(ok){ sels.forEach(s=>{s.disabled=true;s.classList.add("right");}); correct(q, `${q.total} ÷ ${q.k} = ${each}${q.rem?` والباقي ${r}`:""}. `); }
+      else wrong("وزّع القطع على الأطباق بالتساوي، ثم عُدّ ما في الطبق الواحد"+(q.rem?" وما بقي.":"."));
+    },false);
+    sels.forEach(s=>s.addEventListener("change",()=>{s.classList.remove("wrong");btn.disabled=sels.some(x=>x.value==="");}));
+    paint();
+  },
+  opsign(q,body){
+    const f={"+":(a,b)=>a+b,"−":(a,b)=>a-b,"×":(a,b)=>a*b,"÷":(a,b)=>a/b};
+    const good=Object.keys(f).filter(o=>f[o](q.l,q.r)===q.res);
+    body.insertAdjacentHTML("beforeend",`<div class="eqline"><span class="eq" style="font-size:36px">${q.l} <span class="slot" id="slot"></span> ${q.r} = ${q.res}</span></div>
+      <div class="signs">${Object.keys(f).map(o=>`<button class="sign" data-s="${o}" aria-label="${o}">${o}</button>`).join("")}</div>`);
+    $("#acts").innerHTML="";
+    body.querySelectorAll(".sign").forEach(b=>b.addEventListener("click",()=>{
+      const slot=$("#slot"); slot.textContent=b.dataset.s; slot.classList.remove("right","wrong");
+      if(good.includes(b.dataset.s)){ slot.classList.add("right"); body.querySelectorAll(".sign").forEach(x=>x.disabled=true); correct(q); }
+      else { slot.classList.add("wrong"); b.disabled=true; wrong("جرّب العلامة واحسب: هل يكون الناتج "+q.res+"؟");
+             setTimeout(()=>{ if(slot.classList.contains("wrong")){slot.textContent="";slot.classList.remove("wrong");} },900); }
+    }));
+  },
+  race(q,body){
+    let i=0; const t0=Date.now();
+    body.insertAdjacentHTML("beforeend",`<div class="racebar"><span id="rt">⏱ 0</span><span id="rp"></span></div><div class="eqline"><span class="eq" id="rq" style="font-size:42px"></span></div><div class="signs" id="ro"></div>`);
+    $("#acts").innerHTML="";
+    const tick=setInterval(()=>{ const el=$("#rt"); if(!el){clearInterval(tick);return;} el.textContent=`⏱ ${Math.round((Date.now()-t0)/1000)}`; },500);
+    function show(){
+      const [k,t]=q.facts[i], ans=k*t;
+      const opts=shuffle(uniqSort([ans, ans+t, Math.max(0,ans-t)===ans? ans+1 : Math.max(0,ans-t), ans+1]).filter((v,j,a)=>a.indexOf(v)===j)).slice(0,3);
+      if(!opts.includes(ans)) opts[0]=ans;
+      $("#rq").textContent=`${k} × ${t} = ؟`; $("#rp").textContent=`${i+1} / ${q.facts.length}`;
+      $("#ro").innerHTML=shuffle(opts).map(o=>`<button class="sign wide" data-v="${o}">${o}</button>`).join("");
+      $("#ro").querySelectorAll(".sign").forEach(b=>b.addEventListener("click",()=>{
+        if(+b.dataset.v===ans){ $("#fb").innerHTML=""; beep(true); i++; if(i<q.facts.length) show(); else { clearInterval(tick); $("#ro").innerHTML=""; $("#rq").textContent="🏁"; correct(q, `أنهيت السباق في ${Math.round((Date.now()-t0)/1000)} ثانية. `); } }
+        else { b.disabled=true; b.classList.add("shake"); wrong(); }
+      }));
+    }
+    show();
+  },
+  multi(q,body){
+    const st=Array(q.items.length).fill(false);
+    body.insertAdjacentHTML("beforeend",`<div class="chips">${q.items.map((x,i)=>`<button class="chip" data-i="${i}" aria-pressed="false">${D(x)}</button>`).join("")}</div>`);
+    const btn=checkBtn(()=>{
+      const ok=q.items.every((x,i)=>st[i]===q.ans.includes(i));
+      if(ok){ body.querySelectorAll(".chip").forEach(b=>{if(st[+b.dataset.i]){b.classList.remove("sel");b.classList.add("right");} b.disabled=true;}); correct(q); }
+      else wrong(q.hint||"");
+    },false);
+    body.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{
+      const i=+b.dataset.i; st[i]=!st[i]; b.classList.toggle("sel",st[i]); b.setAttribute("aria-pressed",st[i]); btn.disabled=!st.some(Boolean);}));
+  }
+};
+
+/* ================= Grade 4 activities (added to R) ================= */
+const PRIMES=[2,3,5,7,11,13];
+const R4={
+  /* dropdown blanks; q.accept[k] lists every value that is right for blank k */
+  fill(q,body){
+    let html=q.expr;
+    q.ans.forEach((a,k)=>{
+      const opts=(q.opts&&q.opts[k])||range(0,12);
+      html=html.replace(`{${k}}`,`<select class="dd" id="dd${k}" aria-label="الفراغ ${k+1}"><option value="">?</option>${opts.map(o=>`<option value="${o}">${o}</option>`).join("")}</select>`);
+    });
+    body.insertAdjacentHTML("beforeend",`<div class="eqline"><span class="eq">${html}</span></div>`);
+    const sels=q.ans.map((a,k)=>$("#dd"+k,body));
+    const ok1=(s,k)=> q.accept&&q.accept[k]? q.accept[k].includes(+s.value) : +s.value===q.ans[k];
+    const btn=checkBtn(()=>{
+      let ok=true;
+      sels.forEach((s,k)=>{const r=ok1(s,k); s.classList.toggle("wrong",!r); if(!r) ok=false;});
+      if(ok){ sels.forEach(s=>{s.disabled=true;s.classList.add("right");}); correct(q); }
+      else wrong(q.hint||(sels.length>1?"الفراغ الملوّن بالأحمر يحتاج إلى تصحيح.":""));
+    },false);
+    sels.forEach(s=>s.addEventListener("change",()=>{s.classList.remove("wrong");btn.disabled=sels.some(x=>x.value==="");}));
+  },
+  match(q,body){
+    const right=shuffle(q.pairs.map((p,i)=>i));
+    let sel=null, done=0;
+    body.insertAdjacentHTML("beforeend",`<div class="dirnote" style="font-weight:400">اضغط عنصراً من العمود الأول، ثم ما يناسبه من العمود الثاني.</div>
+      <div class="match"><div class="col" id="mL">${q.pairs.map((p,i)=>`<button class="chip" data-i="${i}">${D(p[0])}</button>`).join("")}</div>
+      <div class="col" id="mR">${right.map(i=>`<button class="chip" data-i="${i}">${D(q.pairs[i][1])}</button>`).join("")}</div></div>`);
+    $("#acts").innerHTML="";
+    body.querySelectorAll("#mL .chip").forEach(b=>b.addEventListener("click",()=>{
+      body.querySelectorAll("#mL .chip").forEach(x=>x.classList.remove("sel")); b.classList.add("sel"); sel=+b.dataset.i;}));
+    body.querySelectorAll("#mR .chip").forEach(b=>b.addEventListener("click",()=>{
+      if(sel==null){b.classList.add("shake");setTimeout(()=>b.classList.remove("shake"),400);return;}
+      if(+b.dataset.i===sel){
+        const l=body.querySelector(`#mL .chip[data-i="${sel}"]`);
+        [l,b].forEach(x=>{x.classList.remove("sel");x.classList.add("pair1");x.disabled=true;});
+        sel=null; done++; $("#fb").innerHTML="";
+        if(done===q.pairs.length) correct(q,"أكملت التوصيل.");
+        else if(soundOn) beep(true);
+      } else { b.classList.add("wrong","shake"); setTimeout(()=>b.classList.remove("wrong","shake"),450); wrong(q.hint||""); }
+    }));
+  },
+  /* abacus with any number of rods */
+  abacus(q,body){
+    const k=q.k, want=digitsOf(q.n,k), st=Array(k).fill(0); let locked=false;
+    body.insertAdjacentHTML("beforeend",`<div class="vis" id="av"></div>
+      <div class="abtns" style="max-width:${k*ABSP}px">${range(0,k-1).map(i=>{const l=PLN[k-1-i]; return `<div class="abtn"><button class="sbtn" data-i="${i}" data-d="1" aria-label="أضف خرزة إلى ${l}">+</button><button class="sbtn" data-i="${i}" data-d="-1" aria-label="أنقص خرزة من ${l}">−</button></div>`;}).join("")}</div>
+      <div class="counter" id="cc"></div>`);
+    const btn=checkBtn(check,false);
+    function paint(){
+      $("#av").innerHTML=abacusSvg(st,{click:!locked});
+      $("#cc").textContent=`العدد في العدّاد: ${st.join("").replace(/^0+(?=\d)/,"")}`;
+      btn.disabled=locked;
+      if(locked) return;
+      $("#av").querySelectorAll(".rodhit").forEach(r=>r.addEventListener("click",()=>{ const i=+r.dataset.i; st[i]=(st[i]+1)%10; paint(); }));
+    }
+    body.querySelectorAll(".abtns .sbtn").forEach(b=>b.addEventListener("click",()=>{ if(locked) return; const i=+b.dataset.i; st[i]=Math.max(0,Math.min(9,st[i]+ +b.dataset.d)); paint(); }));
+    function check(){
+      const bad=st.map((v,i)=>v!==want[i]);
+      if(!bad.some(Boolean)){ locked=true; body.querySelectorAll(".abtns .sbtn").forEach(b=>b.disabled=true); paint(); correct(q); }
+      else { const names=PLN2.slice(0,k).reverse().filter((n,i)=>bad[i]); wrong(`راجع خرزات: ${names.join(" و ")}.`); }
+    }
+    paint();
+  },
+  /* long division as in the book: the quotient starts above the first part of the dividend that holds the divisor */
+  longdiv(q,body){
+    const a=String(q.a), b=q.b, qd=[]; let cur=0;
+    for(const ch of a){ cur=cur*10+ +ch; qd.push(Math.floor(cur/b)); cur%=b; }
+    const rem=cur, lead=Math.max(0,qd.findIndex(d=>d>0));
+    const sel=(id,opts)=>`<select class="dd sm" id="${id}" aria-label="رقم"><option value="">?</option>${opts.map(o=>`<option value="${o}">${o}</option>`).join("")}</select>`;
+    const remOpts= b<=12? range(0,b-1) : uniqSort([rem,rem+1,rem+2,rem-1,rem-2,rem+10,rem-10,b-rem>0&&b-rem<b?b-rem:rem+3].filter(x=>x<b));
+    let html=`<table class="divt" dir="ltr"><tr><td></td>${qd.map((d,i)=>`<td>${i<lead?"":sel("qd"+i,range(0,9))}</td>`).join("")}</tr>
+      <tr><td class="dv">${b}</td>${a.split("").map((d,i)=>`<td class="dn${i===0?" first":""}">${d}</td>`).join("")}</tr></table>`;
+    body.insertAdjacentHTML("beforeend",`<div class="vis colbox">${html}</div>
+      <div class="eqline"><span class="eq" style="font-size:24px">الباقي = ${sel("qr",remOpts)}</span></div>
+      <div class="dirnote" style="font-weight:400">اقسم، ثم اضرب، ثم اطرح، ثم أنزل الرقم التالي. استعن بالورقة والقلم.</div>`);
+    const idx=range(lead,qd.length-1), sels=[...idx.map(i=>$("#qd"+i,body)),$("#qr",body)], want=[...idx.map(i=>qd[i]),rem];
+    const btn=checkBtn(()=>{
+      let ok=true; sels.forEach((s,i)=>{const r=+s.value===want[i]; s.classList.toggle("wrong",!r); if(!r) ok=false;});
+      if(ok){ sels.forEach(s=>{s.disabled=true;s.classList.add("right");}); correct(q, `${q.a} ÷ ${b} = ${+qd.join("")}${rem?` والباقي ${rem}`:""}. `); }
+      else wrong(`ابدأ من اليسار بأول جزء من المقسوم يقبل القسمة على ${b}، ثم اضرب واطرح وأنزل الرقم التالي.`);
+    },false);
+    sels.forEach(s=>s.addEventListener("change",()=>{s.classList.remove("wrong");btn.disabled=sels.some(x=>x.value==="");}));
+  },
+  tapseg(q,body){
+    const pts=q.pts; let locked=false;
+    body.insertAdjacentHTML("beforeend",`<div class="vis" id="gv">${fig(pts,q.segs,q.fo||{})}</div><div class="counter">${q.note||"اضغط على القطعة المطلوبة."}</div>`);
+    $("#acts").innerHTML="";
+    const svg=$("#gv svg");
+    q.segs.forEach(raw=>{ const sg=SKIND(raw)[1], [a,b]=SEGP(sg,pts); svg.insertAdjacentHTML("beforeend",`<line class="hitseg" data-s="${sg}" x1="${pts[a][0]}" y1="${pts[a][1]}" x2="${pts[b][0]}" y2="${pts[b][1]}" stroke="transparent" stroke-width="26" stroke-linecap="round"/>`); });
+    const same=(s1,s2)=>{ const p=SEGP(s1,pts), r=SEGP(s2,pts); return p&&r&&[...p].sort().join()===[...r].sort().join(); };
+    svg.querySelectorAll(".hitseg").forEach(h=>h.addEventListener("click",()=>{ if(locked) return;
+      const ln=svg.querySelector(`.sg[data-s="${h.dataset.s}"]`);
+      if(same(h.dataset.s,q.ask)){ locked=true; ln.setAttribute("stroke","var(--ok)"); ln.setAttribute("stroke-width","7"); correct(q); }
+      else { ln.setAttribute("stroke","var(--bad)"); setTimeout(()=>ln.setAttribute("stroke",(q.fo&&q.fo.col)||"var(--pink)"),700); wrong(q.hint||"اقرأ الحرفين: هما النقطتان عند طرفي القطعة."); } }));
+  },
+  /* tap a named point (centre, vertex …) */
+  tappt(q,body){
+    let locked=false;
+    body.insertAdjacentHTML("beforeend",`<div class="vis" id="gv">${fig(q.pts,q.segs||[],{...(q.fo||{}),big:true})}</div><div class="counter">اضغط على النقطة المطلوبة.</div>`);
+    $("#acts").innerHTML="";
+    const svg=$("#gv svg");
+    Object.keys(q.pts).forEach(n=>svg.insertAdjacentHTML("beforeend",`<circle class="hitpt" data-p="${n}" cx="${q.pts[n][0]}" cy="${q.pts[n][1]}" r="24" fill="transparent"/>`));
+    svg.querySelectorAll(".hitpt").forEach(h=>h.addEventListener("click",()=>{ if(locked) return;
+      const c=svg.querySelector(`.pt[data-p="${h.dataset.p}"]`);
+      if(h.dataset.p===q.ask){ locked=true; c.setAttribute("fill","var(--ok)"); c.setAttribute("r","12"); correct(q); }
+      else { c.setAttribute("fill","var(--bad)"); setTimeout(()=>c.setAttribute("fill","var(--ink)"),700); wrong(q.hint||""); } }));
+  },
+  /* sieve of the numbers 1–50 (book p.15): cross out multiples, or circle the primes */
+  sieve(q,body){
+    const n=q.n||50, pre=new Set(q.pre||[]), T=new Set(q.target), st=new Set(), circle=q.mode==="circle";
+    body.insertAdjacentHTML("beforeend",`<div class="sieve">${range(1,n).map(k=>`<button class="sv${pre.has(k)?" pre":""}" data-k="${k}"${pre.has(k)?" disabled":""}>${k}</button>`).join("")}</div>
+      <div class="counter" id="cc">${circle?"اضغط على كل عدد أولي لتضع حوله دائرة.":"اضغط على العدد لتحذفه، واضغط مرة أخرى لإرجاعه."}</div>`);
+    const btn=checkBtn(()=>{
+      const ok=st.size===T.size && [...T].every(k=>st.has(k));
+      if(ok){ body.querySelectorAll(".sv").forEach(b=>b.disabled=true); correct(q); }
+      else wrong(q.hint||"");
+    },false);
+    body.querySelectorAll(".sv:not(.pre)").forEach(b=>b.addEventListener("click",()=>{ const k=+b.dataset.k;
+      if(st.has(k)) st.delete(k); else st.add(k); b.classList.toggle(circle?"o":"x",st.has(k)); btn.disabled=st.size===0; }));
+  },
+  /* prime factor ladder (book p.35): tap the smallest prime that divides the number */
+  ladder(q,body){
+    let cur=q.n; const fs=[]; let locked=false;
+    body.insertAdjacentHTML("beforeend",`<div class="vis"><table class="ladder" id="lad"></table></div>
+      <div class="signs">${PRIMES.map(p=>`<button class="sign" data-p="${p}">${p}</button>`).join("")}</div>
+      <div class="eqline" id="lres"></div>`);
+    $("#acts").innerHTML="";
+    function paint(){
+      let rows=[q.n]; fs.forEach(f=>rows.push(rows[rows.length-1]/f));
+      $("#lad").innerHTML=rows.map((v,i)=>`<tr><td class="ln">${v}</td><td class="lp">${fs[i]||(v===1?"":"?")}</td></tr>`).join("");
+    }
+    body.querySelectorAll(".sign").forEach(b=>b.addEventListener("click",()=>{ if(locked) return; const p=+b.dataset.p;
+      if(cur%p!==0){ wrong(`العدد ${cur} لا يقبل القسمة على ${p}.`); return; }
+      const small=PRIMES.find(x=>cur%x===0);
+      if(p!==small){ wrong(`نتابع القسمة على الأعداد الأولية بالترتيب ٢ ، ٣ ، ٥ ، … ابدأ بأصغرها.`); return; }
+      fs.push(p); cur/=p; paint(); $("#fb").innerHTML="";
+      if(cur===1){ locked=true; body.querySelectorAll(".sign").forEach(x=>x.disabled=true);
+        $("#lres").innerHTML=`<span class="eq">${q.n} = ${fs.join(" × ")}</span>`; correct(q); }
+      else beep(true); }));
+    paint();
+  },
+  /* common divisors / multiples: tap a number and it lights up in every row */
+  common(q,body){
+    const st=new Set(), A=new Set(q.ans);
+    body.insertAdjacentHTML("beforeend",`<div class="crows">${q.rows.map(([lab,vals])=>`<div class="crow"><span class="clab">${lab}</span><div class="cvals">${vals.map(v=>`<button class="cv" data-v="${v}">${v}</button>`).join("")}</div></div>`).join("")}</div>
+      <div class="counter">${q.note||"اضغط على كل عدد مشترك بين الصفوف كلها."}</div>`);
+    const btn=checkBtn(()=>{
+      const ok=st.size===A.size && [...A].every(v=>st.has(v));
+      if(ok){ body.querySelectorAll(".cv").forEach(b=>b.disabled=true); correct(q); }
+      else wrong(q.hint||"العدد المشترك يظهر في كل الصفوف.");
+    },false);
+    body.querySelectorAll(".cv").forEach(b=>b.addEventListener("click",()=>{ const v=+b.dataset.v;
+      if(st.has(v)) st.delete(v); else st.add(v);
+      body.querySelectorAll(`.cv[data-v="${v}"]`).forEach(x=>x.classList.toggle("sel",st.has(v))); btn.disabled=st.size===0; }));
+  },
+  /* yes / no table: tap a cell to switch ؟ → نعم → لا */
+  ynt(q,body){
+    const st=q.rows.map(r=>r[1].map(()=>null));
+    body.insertAdjacentHTML("beforeend",`<div class="vis"><table class="ynt"><tr><th>${q.corner||""}</th>${q.cols.map(c=>`<th>${c}</th>`).join("")}</tr>
+      ${q.rows.map((r,i)=>`<tr><th>${r[0]}</th>${r[1].map((v,j)=>`<td><button class="yn" data-i="${i}" data-j="${j}">؟</button></td>`).join("")}</tr>`).join("")}</table></div>
+      <div class="counter">اضغط على الخانة لتكتب نعم أو لا.</div>`);
+    const btn=checkBtn(()=>{
+      let ok=true; body.querySelectorAll(".yn").forEach(b=>{ const i=+b.dataset.i,j=+b.dataset.j, r=st[i][j]===q.rows[i][1][j]; b.classList.toggle("wrong",!r); if(!r) ok=false; });
+      if(ok){ body.querySelectorAll(".yn").forEach(b=>{b.disabled=true;b.classList.add("right");}); correct(q); }
+      else wrong(q.hint||"الخانات الملوّنة بالأحمر تحتاج إلى تصحيح.");
+    },false);
+    body.querySelectorAll(".yn").forEach(b=>b.addEventListener("click",()=>{ const i=+b.dataset.i,j=+b.dataset.j;
+      st[i][j]= st[i][j]===null? true : st[i][j]? false : true; b.textContent=st[i][j]?"نعم":"لا"; b.classList.remove("wrong"); b.classList.toggle("yes",st[i][j]); b.classList.toggle("no",!st[i][j]);
+      btn.disabled=st.some(r=>r.some(v=>v===null)); }));
+  },
+  /* pour into a graduated jug / syringe */
+  pour(q,body){
+    const max=q.max, top=30, bot=270, hgt=bot-top, stp=hgt/max, syr=q.kind==="syringe"; let lv=0, locked=false, drag=false;
+    const x0=syr?95:55, x1=syr?135:165;
+    body.insertAdjacentHTML("beforeend",`<div class="vis" id="pv"></div>
+      <div class="nudge"><button class="sbtn" id="pm" aria-label="أنقص">−</button><span class="dirnote" style="font-weight:400">اسحب داخل الإناء أو استعمل الزرين</span><button class="sbtn" id="pp" aria-label="زِد">+</button></div>`);
+    const btn=checkBtn(check,false);
+    function draw(){
+      let s="";
+      const mid=(x0+x1)/2, sy=bot-lv*stp;
+      if(syr) s+=`<rect x="${mid-4}" y="${top-34}" width="8" height="${sy-(top-34)}" fill="#AEB5BC"/><rect x="${x0-12}" y="${top-40}" width="${x1-x0+24}" height="7" rx="3" fill="#7D858D"/>
+        <polygon points="${mid-6},${bot} ${mid+6},${bot} ${mid+2},${bot+16} ${mid-2},${bot+16}" fill="#9AA2AA"/><line x1="${mid}" y1="${bot+16}" x2="${mid}" y2="${bot+44}" stroke="#6F777F" stroke-width="2"/>`;
+      s+=`<rect x="${x0}" y="${bot-lv*stp}" width="${x1-x0}" height="${lv*stp}" fill="${q.liq||"#5DB7F0"}" opacity=".85"/>`;
+      if(syr) s+=`<rect x="${x0+2}" y="${sy-8}" width="${x1-x0-4}" height="8" fill="#39424B"/>`;
+      if(!syr) s+=`<path d="M${x1},${top+8} q26,6 22,40 q-4,30 -22,44" fill="none" stroke="var(--ink)" stroke-width="5"/>`;
+      s+=`<rect x="${x0}" y="${top}" width="${x1-x0}" height="${hgt}" rx="${syr?6:10}" fill="none" stroke="var(--ink)" stroke-width="3"/>`;
+      for(let i=1;i<=max;i++){ const y=bot-i*stp; s+=`<line x1="${x0}" y1="${y}" x2="${x0+(i===max||q.big&&i%q.big===0?26:16)}" y2="${y}" stroke="var(--ink)" stroke-width="2"/>`;
+        if(!q.every||i%q.every===0) s+=`<text x="${x0-8}" y="${y+6}" text-anchor="start" class="pmark">${q.lab(i)}</text>`; }
+      $("#pv").innerHTML=`<svg class="shape" id="psvg" viewBox="-40 -20 ${syr?260:240} 340" width="${syr?260:240}" style="max-width:100%;height:auto;touch-action:none" role="img" aria-label="إناء مدرّج">${s}</svg>`;
+      btn.disabled=locked||lv===0;
+    }
+    const lvAt=e=>{ const r=$("#psvg").getBoundingClientRect(), y=(e.clientY-r.top)*340/r.height-20; return Math.max(0,Math.min(max,Math.round((bot-y)/stp))); };
+    const set=v=>{ if(locked) return; if(v!==lv){ lv=v; draw(); } };
+    $("#pv").addEventListener("pointerdown",e=>{ if(locked) return; drag=true; set(lvAt(e)); e.preventDefault(); });
+    window.addEventListener("pointermove",e=>{ if(drag) set(lvAt(e)); });
+    window.addEventListener("pointerup",()=>{ drag=false; });
+    $("#pp").addEventListener("click",()=>set(Math.min(max,lv+1))); $("#pm").addEventListener("click",()=>set(Math.max(0,lv-1)));
+    function check(){ if(lv===q.target){ locked=true; $("#pp").disabled=$("#pm").disabled=true; draw(); correct(q); } else wrong(q.hint||(lv>q.target?"الكمية أكثر من المطلوب.":"الكمية أقل من المطلوب.")); }
+    draw();
+  },
+  /* place fractions on a number line */
+  place(q,body){
+    const den=q.den, max=q.max||1; let idx=0; const done={};
+    body.insertAdjacentHTML("beforeend",`<div class="vis" id="nv" style="direction:ltr"></div><div class="counter" id="cc"></div>`);
+    $("#acts").innerHTML="";
+    function ask(){ const a=q.ask[idx]; $("#cc").innerHTML= a.lab? `ضع الحرف <b>${a.lab}</b> على النقطة التي تمثل الكسر ${F(a.n,den)}` : `اضغط على النقطة التي تمثل الكسر ${F(a.n,den)}`; }
+    function draw(bad){ const m={...done}; $("#nv").innerHTML=NL(den,max,m,{hit:true}).replace("</svg>",bad!=null?`<circle cx="${30+bad*(460/(den*max))}" cy="70" r="9" fill="var(--bad)"/></svg>`:"</svg>");
+      $("#nv").querySelectorAll(".hit").forEach(r=>r.addEventListener("click",()=>tap(+r.dataset.k))); }
+    function tap(k){ if(idx>=q.ask.length) return; const a=q.ask[idx];
+      if(k===a.n){ done[k]=a.lab||`${a.n}/${den}`; idx++; draw(); $("#fb").innerHTML="";
+        if(idx===q.ask.length){ $("#cc").textContent="أحسنت!"; correct(q); } else { beep(true); ask(); } }
+      else { draw(k); wrong(`قسّم المسافة بين ٠ و ١ إلى ${den} أجزاء متساوية، ثم عُدّ ${a.n} من الصفر.`); } }
+    draw(); ask();
+  },
+  /* make a ratio with two kinds of counters */
+  ratio(q,body){
+    const st=[0,0], mx=q.mx||20; let locked=false;
+    body.insertAdjacentHTML("beforeend",`<div class="rboxes">${[0,1].map(i=>`<div class="rbox"><span class="slabel">${[q.la,q.lb][i]}</span><div class="rpile" id="rp${i}"></div>
+      <div class="srow"><button class="sbtn" data-i="${i}" data-d="1" aria-label="زِد">+</button><span class="sval" id="rv${i}">0</span><button class="sbtn" data-i="${i}" data-d="-1" aria-label="أنقص">−</button></div></div>`).join("")}</div>
+      <div class="counter" id="rr"></div>`);
+    const btn=checkBtn(check,false);
+    function paint(){ [0,1].forEach(i=>{ $("#rp"+i).innerHTML=rep(`<span>${[q.ea,q.eb][i]}</span>`,st[i]).join(""); $("#rv"+i).textContent=st[i]; });
+      $("#rr").innerHTML=`النسبة = ${RAT(st[0],st[1])}${q.total?` &nbsp;·&nbsp; المجموع = ${st[0]+st[1]}`:""}`; btn.disabled=locked||!st[0]||!st[1]; }
+    body.querySelectorAll(".sbtn").forEach(b=>b.addEventListener("click",()=>{ if(locked) return; const i=+b.dataset.i; st[i]=Math.max(0,Math.min(mx,st[i]+ +b.dataset.d)); paint(); }));
+    function check(){ const ok=st[0]*q.b===st[1]*q.a && (!q.total||st[0]+st[1]===q.total) && (!q.exact||st[0]===q.a);
+      if(ok){ locked=true; body.querySelectorAll(".sbtn").forEach(b=>b.disabled=true); paint(); correct(q, `${RAT(st[0],st[1])} = ${RAT(q.a,q.b)}. `); }
+      else wrong(q.total&&st[0]+st[1]!==q.total? `المجموع يجب أن يكون ${q.total}.` : `قارن: هل ${st[0]} إلى ${st[1]} تساوي ${q.a} إلى ${q.b}؟`); }
+    paint();
+  },
+  /* protractor: read an angle, or drag the arm to draw one */
+  protr(q,body){
+    const V=[200,212], Rr=172, side=q.side||"R", draw=q.mode==="draw"; let th=draw?(q.start||15):q.deg, locked=false, dragging=false;
+    const P=(phi,r)=>[V[0]+r*Math.cos(phi*Math.PI/180), V[1]-r*Math.sin(phi*Math.PI/180)];
+    const phiOf=t=> side==="R"? t : 180-t;
+    function svg(){
+      let s=`<path d="M${V[0]-Rr},${V[1]} A${Rr},${Rr} 0 0 1 ${V[0]+Rr},${V[1]} Z" fill="color-mix(in srgb,var(--yellow) 22%,transparent)" stroke="var(--ink)" stroke-width="1.5"/>`;
+      for(let d=0;d<=180;d++){ const l=d%10===0?16:d%5===0?10:5, [x1,y1]=P(d,Rr), [x2,y2]=P(d,Rr-l); s+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="var(--ink)" stroke-width="${d%10?0.8:1.4}"/>`;
+        if(d%10===0){ const [ox,oy]=P(d,Rr-28), [ix,iy]=P(d,Rr-50); s+=`<text x="${ox}" y="${oy}" class="po" text-anchor="middle" dominant-baseline="central">${d}</text><text x="${ix}" y="${iy}" class="pi" text-anchor="middle" dominant-baseline="central">${180-d}</text>`; } }
+      s+=`<line x1="${V[0]-Rr}" y1="${V[1]}" x2="${V[0]+Rr}" y2="${V[1]}" stroke="var(--ink)" stroke-width="1.5"/>`;
+      const a1=P(side==="R"?0:180,Rr+18), a2=P(phiOf(th),Rr+18);
+      s+=`<line x1="${V[0]}" y1="${V[1]}" x2="${a1[0]}" y2="${a1[1]}" stroke="var(--pink)" stroke-width="4" stroke-linecap="round"/>`;
+      s+=`<line x1="${V[0]}" y1="${V[1]}" x2="${a2[0]}" y2="${a2[1]}" stroke="${locked?"var(--ok)":"var(--pink)"}" stroke-width="4" stroke-linecap="round"/>`;
+      if(draw&&!locked) s+=`<circle id="hd" cx="${a2[0]}" cy="${a2[1]}" r="14" fill="var(--blue)" opacity=".85"/>`;
+      s+=`<circle cx="${V[0]}" cy="${V[1]}" r="5" fill="var(--ink)"/>`;
+      const L=q.L||["أ","ب","ج"]; const t1=P(side==="R"?0:180,Rr+38), t2=P(phiOf(th),Rr+40);
+      s+=`<text class="pl" x="${V[0]}" y="${V[1]+26}" text-anchor="middle">${L[1]}</text><text class="pl" x="${t1[0]}" y="${t1[1]+8}" text-anchor="middle">${L[2]}</text><text class="pl" x="${t2[0]}" y="${t2[1]+8}" text-anchor="middle">${L[0]}</text>`;
+      return `<svg class="shape geo prot" id="psvg" viewBox="-24 -26 448 270" width="448" style="max-width:100%;height:auto;touch-action:none" role="img" aria-label="منقلة">${s}</svg>`;
+    }
+    const paint=()=>{ $("#prv").innerHTML=svg(); };
+    if(draw){
+      body.insertAdjacentHTML("beforeend",`<div class="vis" id="prv" style="direction:ltr"></div>
+        <div class="nudge"><button class="sbtn" id="am" aria-label="أنقص درجة">−</button><span class="dirnote" style="font-weight:400">اسحب الدائرة الزرقاء، أو اضبط بالزرين درجةً درجة</span><button class="sbtn" id="ap" aria-label="زِد درجة">+</button></div>`);
+      checkBtn(()=>{ if(Math.abs(th-q.deg)<=1){ th=q.deg; locked=true; $("#ap").disabled=$("#am").disabled=true; paint(); correct(q); }
+        else wrong(`ابدأ العدّ من الصفر الذي على الضلع ${(q.L||["أ","ب","ج"])[1]} ${(q.L||["أ","ب","ج"])[2]}. انتبه: أي التدريجين يبدأ بالصفر عند هذا الضلع؟`); },true);
+      const at=e=>{ const r=$("#psvg").getBoundingClientRect(), x=(e.clientX-r.left)*448/r.width-24, y=(e.clientY-r.top)*270/r.height-26;
+        let phi=Math.round(Math.atan2(V[1]-y,x-V[0])*180/Math.PI); if(phi<0) phi= phi<-90?180:0; return side==="R"? phi : 180-phi; };
+      $("#prv").addEventListener("pointerdown",e=>{ if(locked) return; dragging=true; th=Math.max(1,Math.min(179,at(e))); paint(); e.preventDefault(); });
+      window.addEventListener("pointermove",e=>{ if(!dragging||locked) return; th=Math.max(1,Math.min(179,at(e))); paint(); });
+      window.addEventListener("pointerup",()=>{ dragging=false; });
+      $("#ap").addEventListener("click",()=>{ if(!locked){ th=Math.min(179,th+1); paint(); } }); $("#am").addEventListener("click",()=>{ if(!locked){ th=Math.max(1,th-1); paint(); } });
+    } else {
+      const d=q.deg, op=shuffle(uniqSort([d,180-d,d+10,Math.abs(d-10)].filter(x=>x>0&&x<180))).slice(0,4).sort((a,b)=>a-b);
+      body.insertAdjacentHTML("beforeend",`<div class="vis" id="prv" style="direction:ltr"></div>
+        <div class="eqline"><span class="eq" style="font-size:24px">قياس الزاوية = <select class="dd" id="dd0" aria-label="الدرجات"><option value="">?</option>${op.map(o=>`<option value="${o}">${o}</option>`).join("")}</select> درجة</span></div>`);
+      const s0=$("#dd0");
+      const btn=checkBtn(()=>{ if(+s0.value===d){ s0.disabled=true; s0.classList.add("right"); correct(q); } else { s0.classList.add("wrong"); wrong("مركز المنقلة على رأس الزاوية. اقرأ التدريج الذي يبدأ بالصفر على الضلع الأول للزاوية."); } },false);
+      s0.addEventListener("change",()=>{ s0.classList.remove("wrong"); btn.disabled=s0.value===""; });
+    }
+    paint();
+  },
+  /* a dotted board, 1 cm between dots: place the missing corners */
+  geo(q,body){
+    const g=40, pad=34, C=q.c, Rw=q.r, P={...q.fixed}; let k=0, locked=false;
+    const XY=([c,r])=>[pad+c*g, pad+r*g], Wd=pad*2+(C-1)*g, H=pad*2+(Rw-1)*g;
+    body.insertAdjacentHTML("beforeend",`<div class="vis" id="bv"></div><div class="counter" id="cc"></div>
+      <div class="actions"><button class="btn ghost" id="undo" type="button">تراجع</button></div>`);
+    const btn=checkBtn(check,false);
+    function paint(){
+      let s="";
+      for(let r=0;r<Rw;r++) for(let c=0;c<C;c++){ const [x,y]=XY([c,r]); s+=`<circle cx="${x}" cy="${y}" r="3.5" fill="var(--muted)"/>`; }
+      (q.segs||[]).forEach(sg=>{ const pr=SEGP(sg,{...q.fixed,...Object.fromEntries(q.place.map(n=>[n,1]))}); if(!pr) return; const [a,b]=pr; if(!P[a]||!P[b]) return;
+        const [x1,y1]=XY(P[a]),[x2,y2]=XY(P[b]); s+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${locked?"var(--ok)":"var(--pink)"}" stroke-width="4" stroke-linecap="round"/>`; });
+      Object.keys(P).forEach(n=>{ const [x,y]=XY(P[n]); const fixed=n in q.fixed; s+=`<circle cx="${x}" cy="${y}" r="9" fill="${fixed?"var(--ink)":"var(--blue)"}"/><text class="pl" x="${x+15}" y="${y-15}" text-anchor="middle" dominant-baseline="central">${n}</text>`; });
+      if(!locked) for(let r=0;r<Rw;r++) for(let c=0;c<C;c++){ const [x,y]=XY([c,r]); s+=`<rect class="dot" data-c="${c}" data-r="${r}" x="${x-g/2}" y="${y-g/2}" width="${g}" height="${g}" fill="transparent"/>`; }
+      $("#bv").innerHTML=`<svg class="shape geo board" viewBox="0 0 ${Wd} ${H}" width="${Wd}" style="max-width:100%;height:auto" role="img" aria-label="لوحة نقاط">${s}</svg>`;
+      $("#cc").innerHTML= k<q.place.length? `اضغط على النقطة التي تضع فيها الحرف <b>${q.place[k]}</b> &nbsp;·&nbsp; المسافة بين كل نقطتين متجاورتين ١ سم` : "اضغط تحقّق.";
+      btn.disabled=locked||k<q.place.length;
+      $("#bv").querySelectorAll(".dot").forEach(d=>d.addEventListener("click",()=>{ if(locked||k>=q.place.length) return; const c=+d.dataset.c, r=+d.dataset.r;
+        if(Object.values(P).some(p=>p[0]===c&&p[1]===r)) return; P[q.place[k++]]=[c,r]; paint(); }));
+    }
+    $("#undo").addEventListener("click",()=>{ if(locked||k===0) return; delete P[q.place[--k]]; $("#fb").innerHTML=""; paint(); });
+    function check(){ const res=q.check(P); if(res===true){ locked=true; $("#undo").disabled=true; paint(); correct(q); } else wrong(res); }
+    paint();
+  },
+  /* open the compass on the ruler, then it draws the circle */
+  compass(q,body){
+    const S3=3, x0=30, want=q.r*10; let mm=12, locked=false, drag=false;
+    body.insertAdjacentHTML("beforeend",`<div class="vis" id="kv" style="direction:ltr"></div>
+      <div class="nudge"><button class="sbtn" id="km" aria-label="ضيّق الفتحة">−</button><span class="dirnote" style="font-weight:400">اسحب سن القلم على المسطرة لتفتح الفرجار</span><button class="sbtn" id="kp" aria-label="وسّع الفتحة">+</button></div>`);
+    const btn=checkBtn(check,true);
+    function paint(){
+      const xp=x0+mm*S3, hx=(x0+xp)/2;
+      let s=`<g transform="translate(20,150)">${rulerSvg()}</g>`;
+      s+=`<line x1="${hx}" y1="24" x2="${x0}" y2="146" stroke="#556" stroke-width="5" stroke-linecap="round"/><line x1="${hx}" y1="24" x2="${xp}" y2="140" stroke="#556" stroke-width="5" stroke-linecap="round"/>
+        <rect x="${xp-5}" y="112" width="10" height="26" fill="#F6B92B" stroke="#7A4A22"/><polygon points="${xp-5},138 ${xp+5},138 ${xp},148" fill="#333"/>
+        <circle cx="${hx}" cy="22" r="8" fill="#889" /><rect x="${hx-4}" y="2" width="8" height="14" rx="3" fill="#889"/>
+        <polygon points="${x0-3},140 ${x0+3},140 ${x0},150" fill="#333"/>`;
+      if(!locked) s+=`<circle id="kh" cx="${xp}" cy="125" r="18" fill="var(--blue)" opacity=".25"/>`;
+      $("#kv").innerHTML=`<svg class="shape rulerbox" id="ksvg" viewBox="0 0 380 210" width="380" style="max-width:100%;height:auto;touch-action:none" role="img" aria-label="فرجار ومسطرة">${s}</svg>`+
+        (locked? `<svg class="shape geo" viewBox="0 0 240 240" width="220" role="img" aria-label="دائرة"><circle class="drawc" cx="120" cy="120" r="${q.r*22}" fill="none" stroke="var(--blue)" stroke-width="3.5"/><line x1="120" y1="120" x2="${120+q.r*22}" y2="120" stroke="var(--pink)" stroke-width="3"/><circle cx="120" cy="120" r="5" fill="var(--ink)"/><text class="pl" x="112" y="104" text-anchor="middle">م</text></svg>`:"");
+    }
+    const at=e=>{ const r=$("#ksvg").getBoundingClientRect(), x=(e.clientX-r.left)*380/r.width; return Math.max(5,Math.min(95,Math.round((x-x0)/S3))); };
+    $("#kv").addEventListener("pointerdown",e=>{ if(locked) return; drag=true; mm=at(e); paint(); e.preventDefault(); });
+    window.addEventListener("pointermove",e=>{ if(drag&&!locked){ mm=at(e); paint(); } });
+    window.addEventListener("pointerup",()=>{ drag=false; });
+    $("#kp").addEventListener("click",()=>{ if(!locked){ mm=Math.min(95,mm+1); paint(); } }); $("#km").addEventListener("click",()=>{ if(!locked){ mm=Math.max(5,mm-1); paint(); } });
+    function check(){ if(mm===want){ locked=true; $("#kp").disabled=$("#km").disabled=true; btn.disabled=true; paint(); correct(q, `رُسمت دائرة نصف قطرها ${q.r} سم. `); }
+      else wrong(`افتح الفرجار حتى يكون البعد بين السن والقلم ${q.r} سم على المسطرة.`); }
+    paint();
+  },
+};
+
+Object.assign(R,R4);
+
+/* ---------- result ---------- */
+function showResult(){
+  const n=S.list.length, p=S.score/n, st=starsFor(p), id=S.lesson.id;
+  if(st>B(id)){best[UNIT.key+"-"+id]=st;store.set("g4-best",best);}
+  beep(st>=2);
+  const msg = st===3?"ممتاز! أنت بطل الرياضيات":st===2?"أحسنت! أداء جيد جداً":st===1?"جيد، تدرّب مرة أخرى لتربح نجوماً أكثر":"لنراجع الدرس ونحاول من جديد";
+  $("#view").innerHTML=`
+    <section class="card result">
+      <span class="tab">${id===FINAL.id?"كل الدروس":"الدرس "+ORD[id-1]} · ${S.lesson.name}</span>
+      <div class="stars">${starStr(st)}</div>
+      <div class="big">${S.score} / ${n}</div>
+      <h2>${msg}</h2>
+      <p class="sub">تُحسب النقطة للسؤال الذي تُجاب عنه صحيحاً من المحاولة الأولى.</p>
+      <div class="actions">
+        <button class="btn" id="again">العب مرة أخرى</button>
+        <button class="btn ghost" id="toMap">الدروس</button>
+      </div>
+    </section>`;
+  $("#again").addEventListener("click",()=>start(id));
+  $("#toMap").addEventListener("click",showMap);
+  updateTotal();
+}
+
+/* ---------- Arabic-Indic digits everywhere on screen ---------- */
+const AD="٠١٢٣٤٥٦٧٨٩";
+function arab(node){
+  const w=document.createTreeWalker(node,NodeFilter.SHOW_TEXT);
+  let t; while((t=w.nextNode())){ if(/[0-9]/.test(t.nodeValue)) t.nodeValue=t.nodeValue.replace(/[0-9]/g,d=>AD[d]); }
+}
+new MutationObserver(ms=>ms.forEach(m=>{
+  if(m.type==="characterData"){ if(/[0-9]/.test(m.target.nodeValue)) arab(m.target.parentNode); }
+  else m.addedNodes.forEach(n=>{ if(n.nodeType===3){ if(/[0-9]/.test(n.nodeValue)) n.nodeValue=n.nodeValue.replace(/[0-9]/g,d=>AD[d]); } else if(n.nodeType===1) arab(n); });
+})).observe($("#app"),{childList:true,subtree:true,characterData:true});
+
+showHome();
+arab($("#app"));
+})();
+</script>
+
+</body>
+</html>
