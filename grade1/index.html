@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>ألعاب الرياضيات – الصف الأول</title>
+<meta name="description" content="ألعاب تعليمية تفاعلية من كتاب الرياضيات للصف الأول – المرحلة الابتدائية">
+<meta property="og:title" content="ألعاب الرياضيات التفاعلية – الصف الأول">
+<meta property="og:description" content="خمس وحدات تفاعلية: الأعداد، الجمع، الطرح، الأعداد حتى ٩٩، القياس – مع تحيات سليمان جميل">
+<meta property="og:type" content="website">
+<meta property="og:image" content="preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ar_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ألعاب الرياضيات التفاعلية – الصف الأول">
+<meta name="twitter:image" content="preview.png">
+<link rel="apple-touch-icon" href="preview.png">
+
+<meta name="theme-color" content="#ff5f8f">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎒</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--u:#ff6b6b}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0}
+body{font-family:'Cairo',Tahoma,sans-serif;background:linear-gradient(165deg,#fff9b0 0%,#ffe766 55%,#ffd43b 100%);min-height:100vh;color:#2d2d2d;overflow-x:hidden}
+button{font-family:inherit;color:inherit;cursor:pointer}
+.screen{display:none;max-width:760px;margin:0 auto;padding:14px 14px 40px}
+.screen.on{display:block}
+/* digits */
+.n{direction:ltr;unicode-bidi:embed;unicode-bidi:isolate;display:inline-flex;flex-direction:row;align-items:baseline;white-space:nowrap}
+.d2{position:relative;display:inline-block}
+.d2 svg{height:.74em;width:.46em;vertical-align:baseline;fill:none;stroke:currentColor;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;overflow:visible}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.sg{direction:ltr;unicode-bidi:embed;unicode-bidi:isolate;display:inline-block;font-weight:900}
+/* home */
+.hero{text-align:center;padding:18px 10px 8px}
+.hero-ic{font-size:64px;animation:bob 2.4s ease-in-out infinite}
+.hero h1{margin:4px 0 0;font-size:34px;font-weight:900;color:#c92a2a;text-shadow:0 3px 0 #fff}
+.hero p{margin:2px 0 0;font-size:18px;font-weight:700;color:#5c3d00}
+.units{display:grid;gap:14px;margin-top:18px}
+@media(min-width:640px){.units{grid-template-columns:1fr 1fr}}
+.ucard{display:flex;align-items:center;gap:14px;background:#fff;border:3px solid var(--c);border-radius:24px;padding:14px;box-shadow:0 7px 0 var(--c);text-align:right;transition:transform .15s}
+.ucard:active{transform:translateY(4px);box-shadow:0 3px 0 var(--c)}
+.ucard .ic{flex:none;width:72px;height:72px;border-radius:20px;background:var(--c);display:grid;place-items:center;font-size:40px}
+.ucard .tx{flex:1;display:flex;flex-direction:column}
+.ucard small{font-size:15px;font-weight:800;color:var(--c)}
+.ucard b{font-size:19px;font-weight:900;line-height:1.5}
+.ucard .go{font-size:22px;color:var(--c)}
+.credit{margin:28px auto 0;text-align:center;background:#fff;border-radius:18px;padding:12px;font-weight:800;font-size:17px;max-width:360px;box-shadow:0 5px 0 #f59f00}
+.credit a{color:#1971c2;text-decoration:none;display:inline-block;margin-top:4px}
+/* game */
+.top{display:flex;align-items:center;gap:8px}
+.ib{border:none;background:#fff;border-radius:16px;width:48px;height:48px;font-size:24px;box-shadow:0 4px 0 rgba(0,0,0,.12);flex:none}
+.gt{flex:1;font-weight:900;font-size:17px;line-height:1.35;color:#3b2a00}
+.stars{background:#fff;border-radius:16px;padding:6px 12px;font-weight:900;font-size:20px;box-shadow:0 4px 0 rgba(0,0,0,.12);white-space:nowrap}
+.pw{display:flex;align-items:center;gap:10px;margin-top:12px}
+.prog{flex:1;height:14px;background:#fff;border-radius:10px;overflow:hidden;box-shadow:inset 0 2px 3px rgba(0,0,0,.1)}
+.prog i{display:block;height:100%;width:0;background:var(--u);border-radius:10px;transition:width .5s}
+.qn{font-weight:800;font-size:15px;white-space:nowrap}
+.card{background:#fff;border:4px solid var(--u);border-radius:28px;padding:18px 12px 24px;margin-top:14px;text-align:center;box-shadow:0 9px 0 rgba(0,0,0,.08);min-height:340px}
+.card.pop{animation:pop .4s ease}
+.prompt{font-size:22px;font-weight:900;line-height:1.7;margin:2px 4px 14px;color:#212529}
+.vis{margin:4px 0 18px}
+.hint{font-size:18px;font-weight:800;color:var(--u);margin:-6px 0 12px}
+.opts{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.opt{min-width:86px;min-height:78px;font-size:40px;font-weight:900;border:none;border-radius:22px;background:#eef1ff;box-shadow:0 6px 0 #c5cbf2;padding:6px 14px;transition:transform .1s}
+.opt:active{transform:translateY(3px);box-shadow:0 3px 0 #c5cbf2}
+.opt.ok{background:#b2f2bb!important;box-shadow:0 6px 0 #51cf66!important}
+.opt.bad{background:#ffc9c9!important;box-shadow:0 6px 0 #ff8787!important}
+.opt.sel{background:#fff3bf;box-shadow:0 6px 0 #fab005;transform:translateY(-3px)}
+.opts.pad{max-width:420px;margin:0 auto}
+.opts.pad .opt{min-width:64px;min-height:64px;font-size:34px;border-radius:18px}
+.opts.grid .opt{background:#fffbe6;box-shadow:0 6px 0 #ffe066;min-width:130px;padding:10px;font-size:inherit;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:6px}
+.opts.big .opt{font-size:24px;min-width:140px}
+.opts.txt .opt{font-size:22px;min-width:130px}
+.cap{font-size:22px;font-weight:900}
+.lbl{font-size:18px;font-weight:800}
+.emo{line-height:1}
+.shake{animation:shake .45s}
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-9px)}40%{transform:translateX(9px)}60%{transform:translateX(-6px)}80%{transform:translateX(6px)}}
+@keyframes pop{0%{transform:scale(.94);opacity:.4}100%{transform:scale(1);opacity:1}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+/* equations */
+.eq{display:flex;gap:12px;justify-content:center;align-items:center;font-size:46px;font-weight:900;flex-wrap:wrap}
+.eq .op{color:var(--u)}
+.eq.sm{font-size:26px;gap:6px}
+.box{display:inline-grid;place-items:center;min-width:66px;height:66px;border:3px dashed var(--u);border-radius:16px;color:var(--u);font-size:36px;font-weight:900;padding:0 8px;background:#fff}
+.box.filled{border-style:solid;border-color:#40c057;background:#ebfbee;color:#2b8a3e;animation:pop .35s}
+.vert{display:inline-flex;flex-direction:column;direction:ltr;font-size:46px;font-weight:900;background:#f8f9ff;border-radius:20px;padding:10px 22px}
+.vr{display:flex;justify-content:space-between;align-items:center;gap:26px;min-width:150px;min-height:62px}
+.vr .op{color:var(--u);min-width:26px}
+.vl{height:5px;background:#333;border-radius:3px;margin:4px 0 8px}
+.bign{display:inline-grid;place-items:center;width:96px;height:96px;border-radius:50%;background:var(--u);color:#fff;font-size:56px;font-weight:900;box-shadow:0 6px 0 rgba(0,0,0,.15)}
+.bn{font-size:40px;font-weight:900;color:#d6336c}
+/* groups */
+.grp{display:inline-flex;flex-wrap:wrap;justify-content:center;align-content:center;gap:4px;max-width:250px;min-width:76px;min-height:76px;padding:10px;border:3px solid #ffd43b;border-radius:18px;background:#fffdf0;vertical-align:middle}
+.grp span{font-size:34px;width:44px;line-height:1.25}
+.grp.sm{max-width:136px;min-width:60px;min-height:60px;padding:6px;gap:2px}
+.grp.sm span{font-size:22px;width:28px}
+.pair{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.pair .w{font-size:28px;font-weight:900;color:var(--u)}
+/* colour shapes */
+.shapes{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:420px;margin:0 auto 18px}
+.shp{border:none;background:none;padding:2px;width:62px;height:62px}
+.shp svg{width:100%;height:100%}
+.shp svg path{fill:#fff;stroke:#333;stroke-width:3.5;transition:fill .2s}
+.shp.on svg path{fill:var(--f)}
+.btn{border:none;border-radius:20px;background:var(--u);color:#fff;font-size:24px;font-weight:900;padding:10px 34px;box-shadow:0 6px 0 rgba(0,0,0,.2)}
+.btn:active{transform:translateY(3px);box-shadow:0 3px 0 rgba(0,0,0,.2)}
+.btn.alt{background:#fff;color:#333;border:3px solid var(--u)}
+/* match */
+.mcols{display:flex;justify-content:center;gap:16px}
+.mcol{display:flex;flex-direction:column;gap:12px;flex:1;max-width:220px}
+.mi{border:3px solid #dee2e6;background:#fff;border-radius:18px;min-height:74px;padding:6px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:4px;position:relative;font-weight:900;font-size:22px}
+.mi.sel{border-color:#fab005;background:#fff9db;transform:scale(1.04)}
+.mi.done{border-color:#40c057}
+.mi.done::after{content:'✓';position:absolute;top:-10px;left:-8px;background:#40c057;color:#fff;border-radius:50%;width:26px;height:26px;font-size:16px;display:grid;place-items:center}
+.mi.bad{border-color:#fa5252;background:#fff5f5}
+.mi .grp{border:none;background:none}
+.cup{font-size:28px}
+/* order */
+.slots{display:flex;justify-content:center;gap:10px;margin-bottom:18px;flex-wrap:wrap}
+.slot{min-width:72px;min-height:72px;border:3px dashed #adb5bd;border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:900;padding:4px 8px;background:#f8f9fa}
+.slot.full{border-style:solid;border-color:#51cf66;background:#ebfbee;animation:pop .3s}
+.slots.col{flex-direction:column;align-items:stretch;max-width:330px;margin:0 auto 18px}
+.slots.col .slot{justify-content:flex-start;gap:12px;font-size:20px;min-height:64px}
+.slots.col .sl{width:34px;height:34px;border-radius:50%;background:var(--u);color:#fff;display:grid;place-items:center;font-size:20px;flex:none}
+.slots.col .sv{display:flex;align-items:center;gap:8px}
+.pool.grid .opt{flex-direction:row;justify-content:center;min-height:64px;font-size:20px;font-weight:800}
+/* cross */
+.xgrid{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:330px;margin:0 auto 18px}
+.xi{border:3px solid #ffe066;background:#fffdf0;border-radius:16px;width:62px;height:62px;font-size:34px;position:relative;padding:0}
+.xi.x::after{content:'';position:absolute;left:4px;right:4px;top:50%;height:5px;background:#e03131;border-radius:3px;transform:rotate(-45deg)}
+.xi.x{opacity:.65}
+/* number line */
+.nl{display:flex;direction:rtl;justify-content:center;position:relative;margin:6px auto 10px;max-width:520px}
+.nl::before{content:'';position:absolute;left:4px;right:4px;top:52px;height:4px;background:#495057;border-radius:2px}
+.tk{flex:1;border:none;background:none;display:flex;flex-direction:column;align-items:center;padding:0;min-width:0}
+.tk .fr{height:40px;font-size:30px;line-height:40px}
+.tk .tl{width:4px;height:18px;background:#495057;border-radius:2px;margin-top:4px}
+.tk b{font-size:22px;font-weight:900;margin-top:4px;width:30px;height:34px;border-radius:10px;display:grid;place-items:center}
+.tk.vis2 b{background:var(--u);color:#fff}
+.tk.bad b{background:#ffc9c9}
+/* abacus */
+.abac{display:flex;direction:ltr;justify-content:center;gap:18px;align-items:flex-end}
+.ab-g{display:flex;flex-direction:column;align-items:center;gap:6px}
+.rods{display:flex;gap:4px;align-items:flex-end;height:112px;border-bottom:7px solid #b07a3c;border-radius:3px;padding:0 6px}
+.rod{width:16px;height:104px;position:relative;display:flex;flex-direction:column-reverse;align-items:center;gap:1px}
+.rod::before{content:'';position:absolute;left:6px;width:4px;top:0;bottom:0;background:#d39b5b;border-radius:2px}
+.rod i{position:relative;width:16px;height:8px;border-radius:5px;display:block}
+.ab-g .cap{font-size:16px}
+/* misc visuals */
+.beads{display:flex;direction:rtl;justify-content:center;gap:4px;margin-bottom:14px;flex-wrap:wrap}
+.beads i{width:24px;height:24px;border-radius:50%;display:block;box-shadow:inset -3px -3px 0 rgba(0,0,0,.18)}
+.beads .sp{width:14px;box-shadow:none}
+.chart{display:flex;direction:rtl;justify-content:center;gap:6px;flex-wrap:wrap}
+.chart .c,.chart .box{min-width:52px;height:52px;border-radius:12px;font-size:26px;font-weight:900}
+.chart .c{background:#f3f0ff;display:grid;place-items:center}
+.toys{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:420px;margin:0 auto}
+.toy{background:#fff4e6;border-radius:16px;padding:8px 4px;font-weight:800;font-size:15px}
+.toy .emo{font-size:36px}
+.toy .pr{color:#d9480f;font-size:17px}
+.pencil{height:22px;background:linear-gradient(var(--pc),var(--pc) 60%,rgba(0,0,0,.15));border-radius:5px 0 0 5px;position:relative;display:inline-block;margin-right:22px;vertical-align:middle}
+.pencil::after{content:'';position:absolute;right:-22px;top:0;border-left:22px solid #f4c27a;border-top:11px solid transparent;border-bottom:11px solid transparent}
+.boards{display:flex;flex-direction:column;gap:2px;align-items:center}
+.boards i{width:76px;height:12px;background:linear-gradient(#e8b47a,#c58440);border-radius:3px;display:block}
+.days{display:flex;direction:rtl;justify-content:center;gap:8px;flex-wrap:wrap}
+.days .d{background:#fff4e6;border-radius:14px;padding:8px 12px;font-weight:900;font-size:19px;min-height:58px;display:grid;place-items:center;border:3px solid #ffd8a8}
+.days .box{min-width:96px;height:58px;font-size:26px}
+.ytt{display:flex;direction:rtl;justify-content:center;gap:10px;flex-wrap:wrap}
+.ytt .col{display:flex;flex-direction:column;align-items:center;gap:6px}
+.ytt small{font-size:17px;font-weight:900;color:var(--u)}
+.ytt .d{background:#fff4e6;border-radius:14px;padding:8px 12px;font-weight:900;font-size:19px;min-width:96px;min-height:58px;display:grid;place-items:center;border:3px solid #ffd8a8}
+.ytt .box{min-width:96px;height:58px;font-size:26px}
+.wp{font-size:20px;font-weight:800;line-height:1.9;background:#f8f9ff;border-radius:18px;padding:12px}
+.wp .emo{font-size:46px;display:block}
+.act{display:inline-flex;flex-direction:column;align-items:center;background:#fff9db;border-radius:22px;padding:12px 20px;gap:6px}
+.act .emo{font-size:70px}
+.act b{font-size:21px}
+/* feedback */
+.fb{position:fixed;left:50%;top:42%;transform:translate(-50%,-50%) scale(.6);opacity:0;pointer-events:none;background:#fff;border-radius:26px;padding:16px 28px;font-size:30px;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.2);transition:all .25s;z-index:20;white-space:nowrap}
+.fb.show{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.fb.g{color:#2b8a3e;border:4px solid #51cf66}
+.fb.b{color:#e8590c;border:4px solid #ffa94d}
+/* end */
+.endc{background:#fff;border-radius:30px;padding:30px 16px;text-align:center;margin-top:30px;border:4px solid var(--u);box-shadow:0 9px 0 rgba(0,0,0,.08)}
+.endc .tr{font-size:90px;animation:bob 2s infinite}
+.endc h2{font-size:22px;margin:6px 0;line-height:1.6}
+.endc .es{font-size:34px;font-weight:900;margin:8px 0}
+.endc p{font-size:21px;font-weight:800;margin:6px 0 20px}
+.endc .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cf{position:fixed;top:-20px;width:10px;height:16px;z-index:30;border-radius:3px;animation:fall linear forwards;pointer-events:none}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+/* ===== visual theme ===== */
+body{color:#2b2140;background:
+ radial-gradient(circle at 8% 12%,#ffe0ec 0 90px,transparent 92px),
+ radial-gradient(circle at 94% 26%,#dbeeff 0 120px,transparent 122px),
+ radial-gradient(circle at 12% 82%,#dcf7e3 0 110px,transparent 112px),
+ radial-gradient(circle at 90% 92%,#fff1c2 0 100px,transparent 102px),
+ radial-gradient(#f1d9b0 1.3px,transparent 1.6px) 0 0/22px 22px,
+ #fff8ec;background-attachment:fixed}
+.hero{position:relative;margin-top:6px;padding:22px 16px 26px;border-radius:34px;color:#fff;overflow:hidden;
+ background:linear-gradient(135deg,#ff9a5a 0%,#ff5f8f 50%,#9b6bff 100%);box-shadow:0 10px 0 #d9487a,0 22px 40px rgba(155,60,120,.28)}
+.hero::before,.hero::after{content:'＋ ÷ − ×';position:absolute;font-size:30px;font-weight:900;color:rgba(255,255,255,.22);letter-spacing:14px;white-space:nowrap}
+.hero::before{top:10px;right:-6px;transform:rotate(-8deg)}
+.hero::after{bottom:6px;left:-4px;transform:rotate(6deg)}
+.hero-ic{display:inline-grid;place-items:center;width:96px;height:96px;border-radius:50%;background:#fff;font-size:56px;box-shadow:0 6px 0 rgba(0,0,0,.12)}
+.hero h1{color:#fff;font-size:38px;text-shadow:0 3px 0 rgba(120,30,80,.35);margin-top:10px}
+.hero p{display:inline-block;margin-top:6px;background:rgba(255,255,255,.25);color:#fff;border-radius:999px;padding:3px 18px;font-size:18px}
+.units{margin-top:24px;gap:16px}
+.ucard{border:none;border-radius:26px;padding:12px 14px;background:#fff;box-shadow:0 7px 0 var(--c),0 14px 26px rgba(60,40,90,.10);position:relative;overflow:hidden}
+.ucard::before{content:'';position:absolute;inset:0 0 auto auto;width:8px;height:100%;background:var(--c)}
+.ucard:active{transform:translateY(5px);box-shadow:0 2px 0 var(--c),0 6px 12px rgba(60,40,90,.10)}
+.ucard .ic{width:70px;height:70px;border-radius:22px;background-color:var(--c);background-image:linear-gradient(150deg,rgba(255,255,255,.45),rgba(255,255,255,0) 60%);box-shadow:inset 0 -5px 0 rgba(0,0,0,.12);margin-right:6px}
+.ucard small{font-size:15px}
+.ucard b{color:#2b2140}
+.ucard .go{width:38px;height:38px;border-radius:50%;background:var(--c);color:#fff;display:grid;place-items:center;font-size:16px;flex:none;box-shadow:inset 0 -3px 0 rgba(0,0,0,.15)}
+.credit{background:#fff;border:3px dashed #ffb48a;box-shadow:none;border-radius:22px;color:#5c3d2e}
+/* game screen */
+.top{background:#fff;border-radius:24px;padding:8px;box-shadow:0 6px 0 rgba(60,40,90,.08),0 10px 24px rgba(60,40,90,.08)}
+.ib{background:#f4f1ff;box-shadow:inset 0 -3px 0 rgba(0,0,0,.08);border-radius:16px}
+.gt{color:var(--u);font-size:18px}
+.stars{background:linear-gradient(#ffe066,#fcc419);box-shadow:inset 0 -4px 0 rgba(0,0,0,.12);color:#5c3d00}
+.pw{background:#fff;border-radius:999px;padding:6px 14px;margin-top:12px;box-shadow:0 4px 0 rgba(60,40,90,.06)}
+.prog{height:16px;background:#f1effa;box-shadow:none}
+.prog i{background-color:var(--u);background-image:linear-gradient(45deg,rgba(255,255,255,.28) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.28) 50%,rgba(255,255,255,.28) 75%,transparent 75%);background-size:22px 22px}
+.card{border:none;border-top:10px solid var(--u);border-radius:30px;box-shadow:0 10px 0 rgba(60,40,90,.07),0 20px 40px rgba(60,40,90,.10);padding-top:16px}
+.prompt{color:#2b2140}
+.opt{background:linear-gradient(#ffffff,#eef1ff);border:3px solid #dbe2ff;box-shadow:0 6px 0 #b9c4f5;color:#1f2350}
+.opt:active{box-shadow:0 2px 0 #b9c4f5}
+.opts.grid .opt{background:linear-gradient(#fffef6,#fff6d6);border-color:#ffe48a;box-shadow:0 6px 0 #f5cf4f}
+.opt.ok{border-color:#51cf66!important}
+.opt.bad{border-color:#ff8787!important}
+.box{background:#fffdf5}
+.btn{background-color:var(--u);background-image:linear-gradient(rgba(255,255,255,.25),rgba(255,255,255,0));box-shadow:0 6px 0 rgba(0,0,0,.22)}
+.fb{border-radius:30px;padding:18px 30px}
+.fb.g{background:#ebfbee}
+.fb.b{background:#fff4e6}
+.endc{border:none;border-top:12px solid var(--u);box-shadow:0 10px 0 rgba(60,40,90,.07),0 20px 40px rgba(60,40,90,.12)}
+.endc .tr{display:inline-grid;place-items:center;width:140px;height:140px;border-radius:50%;background:radial-gradient(#fff9db,#ffe066);font-size:84px}
+</style>
+</head>
+<body>
+
+<section id="home" class="screen on">
+  <div class="hero">
+    <div class="hero-ic">🎒</div>
+    <h1>ألعاب الرياضيات</h1>
+    <p>الصف الأول – المرحلة الابتدائية</p>
+  </div>
+  <div class="units" id="units"></div>
+  <div class="credit">مع تحيات سليمان جميل<br><a href="tel:0097451085117" dir="ltr">📱 0097451085117</a></div>
+</section>
+
+<section id="game" class="screen">
+  <div class="top">
+    <button class="ib" onclick="go('home')" aria-label="الرئيسية">🏠</button>
+    <div class="gt" id="gtitle"></div>
+    <button class="ib" id="say" style="display:none" aria-label="استمع">🔊</button>
+    <button class="ib" id="mute" aria-label="الصوت">🔔</button>
+    <div class="stars" id="st"></div>
+  </div>
+  <div class="pw"><div class="prog"><i id="bar"></i></div><div class="qn" id="qn"></div></div>
+  <div class="card" id="card"></div>
+</section>
+
+<section id="end" class="screen">
+  <div class="endc">
+    <div class="tr">🏆</div>
+    <h2 id="endT"></h2>
+    <div class="es" id="endS"></div>
+    <p id="endM"></p>
+    <div class="row">
+      <button class="btn" onclick="start(st.u)">🔁 العب مرة أخرى</button>
+      <button class="btn alt" onclick="go('home')">🏠 الوحدات</button>
+    </div>
+  </div>
+</section>
+
+<div id="fb" class="fb"></div>
+
+<script>
+/* ===== helpers ===== */
+const $=s=>document.querySelector(s);
+const el=(t,c)=>{const e=document.createElement(t);if(c)e.className=c;return e};
+const AD='٠١٢٣٤٥٦٧٨٩';
+const TWO='<span class="d2"><svg viewBox="0 0 60 100" aria-hidden="true"><path d="M50 22C41 15 24 16 18 27C14 35 20 47 27 58L44 92"/></svg><span class="sr">٢</span></span>';
+const ar=x=>'<span class="n">'+String(x).replace(/\d/g,d=>d==='2'?TWO:AD[d])+'</span>';
+const sg=c=>`<span class="sg">${c==='<'?'&lt;':c==='>'?'&gt;':'='}</span>`;
+const rnd=(a,b)=>a+Math.floor(Math.random()*(b-a+1));
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+const shuf=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const range=(a,b)=>Array.from({length:b-a+1},(_,i)=>a+i);
+function near(ans,min,max,k=3,sp=3){const s=new Set([ans]);let g=0;while(s.size<k&&g<300){g++;const v=ans+rnd(-sp,sp);if(v>=min&&v<=max)s.add(v)}g=0;while(s.size<k&&g<300){g++;s.add(rnd(min,max))}return shuf([...s])}
+const nopt=(ans,min=0,max=9,k=3)=>near(ans,min,max,k).map(v=>({h:ar(v),k:v}));
+function nopt2(ans){const c=shuf([ans+1,ans-1,ans+10,ans-10,ans+2,(ans%10)*10+Math.floor(ans/10)]).filter(v=>v>=0&&v<=100&&v!==ans);const s=[...new Set(c)].slice(0,3);s.push(ans);return shuf(s).map(v=>({h:ar(v),k:v}))}
+const PAD=()=>range(0,9).map(v=>({h:ar(v),k:v}));
+const B='<span class="box">؟</span>';
+const tok=t=>t==='?'?B:typeof t==='number'?ar(t):`<span class="op">${t}</span>`;
+const eq=(...t)=>`<div class="eq">${t.map(tok).join('')}</div>`;
+const eqs=(...t)=>`<div class="eq sm">${t.map(tok).join('')}</div>`;
+const vert=(a,op,b)=>`<div class="vert"><div class="vr"><span class="op"></span>${ar(a)}</div><div class="vr"><span class="op">${op}</span>${ar(b)}</div><div class="vl"></div><div class="vr"><span class="op"></span>${B}</div></div>`;
+function group(n,e,c=''){let s='';for(let i=0;i<n;i++)s+=`<span>${e}</span>`;return `<div class="grp ${c}">${s}</div>`}
+const OBJ=['⚽','🧸','🦆','🪁','🎈','🚗','✈️','🎒','🦋','✏️','🐔','🌴','🍎','🍌','🍓','🔑','🌸','🐟','⛵','🏀','🐱','⭐','🎾','🥭','🍊'];
+const DOT=['🔴','🟢','🔵','🟡','🟣','🟠'];
+const things=n=>n===1?'شيء واحد':n===2?'شيئان':'أشياء';
+const SHAPE={
+ circle:'<svg viewBox="0 0 60 60"><path d="M55 30A25 25 0 1 1 5 30A25 25 0 1 1 55 30Z"/></svg>',
+ tri:'<svg viewBox="0 0 60 60"><path d="M30 6L55 53H5Z"/></svg>',
+ moon:'<svg viewBox="0 0 60 60"><path d="M38 5A26 26 0 1 0 55 44A21 21 0 1 1 38 5Z"/></svg>',
+ star:'<svg viewBox="0 0 60 60"><path d="M30 4l7.6 16.5 18 2-13.4 12.3 3.8 17.7L30 43.6 14 52.5l3.8-17.7L4.4 22.5l18-2Z"/></svg>'
+};
+const RAIN=['#e03131','#ffd43b','#22b8cf','#364fc7','#94d82d','#862e9c','#adb5bd','#15aabf','#f08c00','#f3a6d6'];
+const qSign=(a,b,va,vb,grp)=>({t:'choice',p:'اختر الإشارة المناسبة',
+ v:(grp?`<div class="pair">${group(a,pick(DOT),'sm')}${group(b,pick(DOT),'sm')}</div>`:'')+`<div class="eq">${va||ar(a)}${B}${vb||ar(b)}</div>`,
+ o:[{h:sg('<'),k:'g'},{h:sg('>'),k:'l'},{h:sg('='),k:'e'}],a:a>b?'g':a<b?'l':'e'});
+const exprH=(a,op,b)=>`${ar(a)}<span class="op">${op}</span>${ar(b)}`;
+
+/* ===== sound ===== */
+let AC,MUTE=false;
+function sfx(t){if(MUTE)return;try{AC=AC||new(window.AudioContext||window.webkitAudioContext)();
+ const S={ok:[[660,0],[880,.1],[1175,.2]],no:[[230,0],[175,.16]],tap:[[540,0]],pair:[[700,0],[930,.08]],hop:[[480,0],[760,.07]],win:[[523,0],[659,.15],[784,.3],[1047,.45],[1319,.6]]}[t];
+ S.forEach(([f,d])=>{const o=AC.createOscillator(),g=AC.createGain(),T=AC.currentTime+d;o.type=t==='no'?'square':'triangle';o.frequency.value=f;g.gain.setValueAtTime(.0001,T);g.gain.exponentialRampToValueAtTime(t==='no'?.07:.2,T+.02);g.gain.exponentialRampToValueAtTime(.0001,T+.24);o.connect(g).connect(AC.destination);o.start(T);o.stop(T+.26)})}catch(e){}}
+$('#mute').onclick=()=>{MUTE=!MUTE;$('#mute').textContent=MUTE?'🔕':'🔔'};
+let arVoice=null;
+if('speechSynthesis' in window){const lv=()=>{arVoice=speechSynthesis.getVoices().find(v=>/^ar/i.test(v.lang))||null;$('#say').style.display=arVoice?'':'none'};lv();speechSynthesis.onvoiceschanged=lv;
+ $('#say').onclick=()=>{const p=$('#card .prompt');if(!p||!arVoice)return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(p.textContent);u.voice=arVoice;u.lang=arVoice.lang;u.rate=.85;speechSynthesis.speak(u)}}
+
+/* ===== engine ===== */
+let st={};
+function go(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('on'));$('#'+id).classList.add('on');scrollTo(0,0)}
+function start(i){const U=UNITS[i];document.documentElement.style.setProperty('--u',U.c);st={u:i,qs:U.g(),i:0,stars:0,lock:false};$('#gtitle').innerHTML=U.k;go('game');render()}
+function render(){const q=st.qs[st.i];q.ft=true;st.lock=false;
+ $('#bar').style.width=(st.i/st.qs.length*100)+'%';$('#qn').innerHTML=`${ar(st.i+1)} من ${ar(st.qs.length)}`;$('#st').innerHTML='⭐ '+ar(st.stars);
+ const c=$('#card');c.innerHTML=`<div class="prompt">${q.p}</div>`;c.classList.remove('pop');void c.offsetWidth;c.classList.add('pop');R[q.t](q,c);scrollTo(0,0)}
+function ok(){if(st.lock)return;st.lock=true;const q=st.qs[st.i];if(q.ft)st.stars++;$('#st').innerHTML='⭐ '+ar(st.stars);sfx('ok');fb(true);
+ setTimeout(()=>{st.i++;st.i>=st.qs.length?finish():render()},1400)}
+function no(...els){st.qs[st.i].ft=false;sfx('no');fb(false);els.forEach(e=>{if(!e)return;e.classList.remove('shake');void e.offsetWidth;e.classList.add('shake','bad');setTimeout(()=>e.classList.remove('bad'),700)})}
+function fill(c,h){const b=c.querySelector('.box:not(.filled)');if(b){b.innerHTML=h;b.classList.add('filled')}}
+const GOOD=['أحسنت! 🌟','ممتاز! 🎉','رائع! 👏','بطل! 🏆','عمل جميل! 💯'],BAD=['حاول مرة أخرى 💪','فكّر جيداً وحاول 🤔','لا بأس، حاول مرة أخرى 🙂'];
+function fb(g){const f=$('#fb');f.textContent=pick(g?GOOD:BAD);f.className='fb show '+(g?'g':'b');clearTimeout(fb.t);fb.t=setTimeout(()=>f.className='fb',g?1150:950)}
+function finish(){$('#bar').style.width='100%';sfx('win');const n=st.qs.length,s=st.stars;
+ $('#endT').innerHTML='أنهيت '+UNITS[st.u].k+'<br>'+UNITS[st.u].t;$('#endS').innerHTML=`⭐ ${ar(s)} من ${ar(n)}`;
+ $('#endM').textContent=s===n?'ممتاز! أنت بطل الرياضيات 🏆':s>=n*.7?'أحسنت! عمل رائع 🎉':'جيد! تدرّب مرة أخرى لتصبح أفضل 💪';go('end');confetti()}
+function confetti(){const C=['#ff6b6b','#4dabf7','#51cf66','#fcc419','#9775fa','#ff922b'];for(let i=0;i<60;i++){const d=el('div','cf');d.style.left=Math.random()*100+'vw';d.style.background=pick(C);d.style.animationDuration=(2+Math.random()*2)+'s';d.style.animationDelay=Math.random()*.8+'s';document.body.appendChild(d);setTimeout(()=>d.remove(),5000)}}
+function optsEl(q,c,list,ans,lay){const w=el('div','opts '+(lay||''));list.forEach(o=>{const b=el('button','opt');b.innerHTML=o.h;
+ b.onclick=()=>{if(st.lock)return;if(o.k===ans){b.classList.add('ok');if(!q.nofill){fill(c,q.fh||o.h);if(q.f2)fill(c,q.fh||o.h)}ok()}else no(b)};w.appendChild(b)});return w}
+
+/* ===== renderers ===== */
+const R={
+ choice(q,c){c.insertAdjacentHTML('beforeend',`<div class="vis">${q.v||''}</div>`);c.appendChild(optsEl(q,c,q.o,q.a,q.lay))},
+ color(q,c){const tot=Math.min(10,Math.max(5,q.n+2)),col=pick(['#ff6b6b','#4dabf7','#69db7c','#ffa94d','#b197fc','#f783ac']);
+  c.insertAdjacentHTML('beforeend',`<div class="vis"><div class="bign">${ar(q.n)}</div></div>`);const w=el('div','shapes');
+  for(let i=0;i<tot;i++){const s=el('button','shp');s.innerHTML=SHAPE[q.s];s.style.setProperty('--f',col);s.onclick=()=>{if(st.lock)return;s.classList.toggle('on');sfx('tap')};w.appendChild(s)}
+  c.appendChild(w);const b=el('button','btn');b.textContent='تحقّق ✔';b.onclick=()=>{if(st.lock)return;w.querySelectorAll('.shp.on').length===q.n?ok():no(w)};c.appendChild(b)},
+ match(q,c){const n=q.pairs.length,wrap=el('div','mcols'),A=el('div','mcol'),Bc=el('div','mcol'),PAL=['#ffe3e3','#d3f9d8','#d0ebff','#fff3bf'];let sel=null,done=0;
+  const mk=(h,i,side)=>{const d=el('button','mi');d.innerHTML=h;d.dataset.i=i;d.dataset.s=side;
+   d.onclick=()=>{if(st.lock||d.classList.contains('done'))return;sfx('tap');
+    if(!sel||sel.dataset.s===side){if(sel)sel.classList.remove('sel');sel=d;d.classList.add('sel');return}
+    const a=sel;sel=null;a.classList.remove('sel');
+    if(a.dataset.i===d.dataset.i){[a,d].forEach(x=>{x.classList.add('done');x.style.background=PAL[done%4]});done++;done===n?ok():sfx('pair')}else no(a,d)};return d};
+  shuf(range(0,n-1)).forEach(i=>A.appendChild(mk(q.pairs[i][0],i,'a')));shuf(range(0,n-1)).forEach(i=>Bc.appendChild(mk(q.pairs[i][1],i,'b')));wrap.append(A,Bc);c.appendChild(wrap)},
+ order(q,c){const exp=[...q.items].sort((x,y)=>x.v-y.v),sl=el('div','slots'+(q.col?' col':''));
+  const ss=exp.map((_,i)=>{const s=el('div','slot');s.innerHTML=(q.col?`<b class="sl">${ar(i+1)}</b>`:'')+'<div class="sv"></div>';sl.appendChild(s);return s});
+  c.appendChild(sl);let k=0;const pool=el('div','opts pool'+(q.col?' grid':''));
+  shuf(q.items).forEach(it=>{const b=el('button','opt');b.innerHTML=it.h;b.onclick=()=>{if(st.lock)return;
+   if(it.v===exp[k].v){ss[k].querySelector('.sv').innerHTML=it.h;ss[k].classList.add('full');b.style.display='none';k++;sfx('tap');if(k===exp.length)ok()}else no(b)};pool.appendChild(b)});c.appendChild(pool)},
+ pick2(q,c){c.insertAdjacentHTML('beforeend',`<div class="vis">${eq('?','+','?','=',q.n)}</div>`);const w=el('div','opts');let sel=[];
+  q.cards.forEach(v=>{const b=el('button','opt');b.innerHTML=ar(v);b.onclick=()=>{if(st.lock)return;
+   if(b.classList.contains('sel')){b.classList.remove('sel');sel=sel.filter(x=>x.b!==b);return}
+   sfx('tap');b.classList.add('sel');sel.push({b,v});
+   if(sel.length===2){const[x,y]=sel;sel=[];if(x.v+y.v===q.n){fill(c,ar(x.v));fill(c,ar(y.v));x.b.classList.add('ok');y.b.classList.add('ok');ok()}
+    else{setTimeout(()=>{x.b.classList.remove('sel');y.b.classList.remove('sel')},400);no(x.b,y.b)}}};w.appendChild(b)});c.appendChild(w)},
+ cross(q,c){c.insertAdjacentHTML('beforeend',`<div class="vis">${eq(q.n,'−',q.k,'=','?')}</div><div class="hint"></div>`);const h=c.querySelector('.hint'),g=el('div','xgrid');
+  for(let i=0;i<q.n;i++){const s=el('button','xi');s.textContent=q.e;s.onclick=()=>{if(st.lock)return;s.classList.toggle('x');sfx('tap');upd()};g.appendChild(s)}
+  c.appendChild(g);const w=optsEl(q,c,nopt(q.n-q.k),q.n-q.k);w.style.display='none';c.appendChild(w);
+  function upd(){const x=g.querySelectorAll('.x').length;w.style.display=x===q.k?'flex':'none';
+   h.innerHTML=x===q.k?'كم بقي؟ اختر الإجابة 👇':x>q.k?'شطبت أكثر من اللازم، اضغط مرة أخرى لإزالة الشطب':`اضغط على ${ar(q.k)} لتشطبها ✂️`}upd()},
+ numline(q,c){c.insertAdjacentHTML('beforeend',`<div class="vis">${eq(q.a,'+',q.b,'=','?')}</div><div class="hint"></div>`);const h=c.querySelector('.hint'),L=el('div','nl'),T=[];let cur=q.s,done=0;
+  for(let i=0;i<=10;i++){const t=el('button','tk');t.innerHTML=`<span class="fr"></span><span class="tl"></span><b>${ar(i)}</b>`;t.onclick=()=>{if(st.lock||done>=q.h)return;
+   if(i===cur+1){cur=i;done++;place();sfx('hop');upd();if(done===q.h){fill(c,ar(cur));ok()}}else if(i!==cur)no(t)};T.push(t);L.appendChild(t)}
+  c.appendChild(L);function place(){T.forEach(t=>t.querySelector('.fr').textContent='');T[cur].querySelector('.fr').textContent='🐸';T[cur].classList.add('vis2')}
+  function upd(){h.innerHTML=`القفزات: ${ar(done)} من ${ar(q.h)}`}place();upd()}
+};
+
+/* ===== Unit 1: الأعداد ٠–٩ ===== */
+function u1(){const Q=[];
+ shuf(range(1,9)).slice(0,3).forEach(n=>Q.push({t:'choice',p:'عُدَّ الأشياء واختر العدد المناسب',v:group(n,pick(OBJ)),o:nopt(n),a:n}));
+ {const n=rnd(2,9),e=pick(OBJ);Q.push({t:'choice',p:`ضع إصبعك على المجموعة التي فيها ${ar(n)} ${things(n)}`,o:near(n,1,9,3,2).map(x=>({h:group(x,e,'sm'),k:x})),a:n,lay:'grid'})}
+ Q.push({t:'color',p:'لوّن بقدر العدد ثم اضغط تحقّق',n:rnd(2,6),s:pick(Object.keys(SHAPE))});
+ {const e=pick(OBJ);Q.push({t:'match',p:'صِل بين العدد والمجموعة المناسبة',pairs:shuf(range(0,9)).slice(0,3).map(n=>[`<span class="bn">${ar(n)}</span>`,group(n,e,'sm')])})}
+ Q.push({t:'color',p:'لوّن بقدر العدد ثم اضغط تحقّق',n:pick([0,rnd(6,9)]),s:pick(Object.keys(SHAPE))});
+ {const[a,b]=shuf(range(1,9));Q.push({t:'choice',p:'اضغط على عدد المجموعة الأكبر',o:[a,b].map(x=>({h:group(x,pick(DOT),'sm')+`<div class="cap">${ar(x)}</div>`,k:x})),a:Math.max(a,b),lay:'grid'})}
+ {const[a,b]=shuf(range(1,9));Q.push({t:'choice',p:'اضغط على عدد المجموعة الأصغر',o:[a,b].map(x=>({h:group(x,pick(DOT),'sm')+`<div class="cap">${ar(x)}</div>`,k:x})),a:Math.min(a,b),lay:'grid'})}
+ {const a=rnd(1,8),b=pick([a,rnd(1,8)]);Q.push(qSign(a,b,0,0,true))}
+ {const[a,b]=shuf(range(0,9));Q.push(qSign(a,b))}
+ {const n=rnd(1,9);Q.push({t:'choice',p:`ما العدد السابق للعدد ${ar(n)}؟`,v:`<div class="eq">${B}${ar(n)}</div>`,o:nopt(n-1),a:n-1})}
+ {const n=rnd(0,8);Q.push({t:'choice',p:`ما العدد التالي للعدد ${ar(n)}؟`,v:`<div class="eq">${ar(n)}${B}</div>`,o:nopt(n+1),a:n+1})}
+ {const n=rnd(1,8);Q.push({t:'choice',p:'اختر العدد الذي يقع بين العددين',v:`<div class="eq">${ar(n-1)}${B}${ar(n+1)}</div>`,o:nopt(n),a:n})}
+ Q.push({t:'order',p:'رتّب الأعداد تصاعدياً (من الأصغر إلى الأكبر)',items:shuf(range(0,9)).slice(0,3).map(n=>({h:ar(n),v:n}))});
+ Q.push({t:'order',p:'رتّب الأعداد تنازلياً (من الأكبر إلى الأصغر)',items:shuf(range(0,9)).slice(0,3).map(n=>({h:ar(n),v:-n}))});
+ {const r=pick(['g','l','e']),a=r==='g'?rnd(0,7):r==='l'?rnd(2,9):rnd(1,9);let ans,bad;
+  if(r==='g'){ans=rnd(a+1,9);bad=shuf(range(0,a)).slice(0,2)}else if(r==='l'){ans=rnd(0,a-1);bad=shuf(range(a,9)).slice(0,2)}else{ans=a;bad=shuf(range(0,9).filter(x=>x!==a)).slice(0,2)}
+  Q.push({t:'choice',p:'اختر عدداً مناسباً للمربع',v:`<div class="eq">${B}${sg(r==='g'?'<':r==='l'?'>':'=')}${ar(a)}</div>`,o:shuf([ans,...bad]).map(x=>({h:ar(x),k:x})),a:ans})}
+ return Q}
+
+/* ===== Unit 2: الجمع ضمن ٩ ===== */
+function u2(){const Q=[];
+ for(let r=0;r<2;r++){const a=rnd(1,5),b=rnd(1,Math.min(4,9-a)),e=pick(OBJ);Q.push({t:'choice',p:'عُدَّ واجمع',v:`<div class="pair">${group(a,e,'sm')}<span class="w">و</span>${group(b,e,'sm')}</div>${eq(a,'+',b,'=','?')}`,o:nopt(a+b),a:a+b})}
+ for(let r=0;r<2;r++){const a=rnd(0,6),b=rnd(0,9-a);Q.push({t:'choice',p:'اكتب ناتج الجمع',v:eq(a,'+',b,'=','?'),o:PAD(),a:a+b,lay:'pad'})}
+ {const s=rnd(3,9),a=rnd(0,s);Q.push({t:'choice',p:'اختر العدد المناسب للمربع',v:eq(a,'+','?','=',s),o:PAD(),a:s-a,lay:'pad'})}
+ for(let r=0;r<2;r++){const n=rnd(4,9),x=rnd(0,n);Q.push({t:'pick2',p:`مكوّنات العدد ${ar(n)}: اختر عددين جمعهما يساوي ${ar(n)}`,n,cards:shuf([x,n-x,rnd(0,9),rnd(0,9),rnd(0,9)])})}
+ for(let r=0;r<2;r++){const a=rnd(1,6),b=rnd(0,9-a);Q.push({t:'choice',p:'اجمع رأسياً',v:vert(a,'+',b),o:PAD(),a:a+b,lay:'pad'})}
+ {const used=new Set(),pr=[];while(pr.length<3){const a=rnd(0,8),b=rnd(0,9-a);const key=Math.min(a,b)+'-'+Math.max(a,b);if(a===b||used.has(key))continue;used.add(key);pr.push([eqs(a,'+',b),eqs(b,'+',a)])}
+  Q.push({t:'match',p:'التبديل والجمع: صِل بين الجمع الذي ناتجه يساوي جمعاً آخر',pairs:pr})}
+ for(let r=0;r<2;r++){const big=rnd(4,7),sm=rnd(1,Math.min(3,9-big)),f=Math.random()<.5;
+  Q.push({t:'numline',p:`الجمع التصاعدي: ابدأ بالعدد الأكبر ${ar(big)} ثم اقفز ${ar(sm)} إلى الأمام، اضغط على الأعداد واحداً بعد الآخر`,a:f?big:sm,b:f?sm:big,s:big,h:sm})}
+ for(let r=0;r<2;r++){const a=rnd(1,3),b=rnd(1,3),c=rnd(0,Math.min(3,9-a-b));Q.push({t:'choice',p:'اجمع الأعداد الثلاثة',v:eq(a,'+',b,'+',c,'=','?'),o:PAD(),a:a+b+c,lay:'pad'})}
+ {const a=rnd(0,5),b=rnd(0,4),s=a+b,c=Math.max(0,Math.min(9,pick([s,s+1,s-1,rnd(0,9)])));const q=qSign(s,c,exprH(a,'+',b));Q.push(q)}
+ return Q}
+
+/* ===== Unit 3: الطرح ضمن ٩ ===== */
+function u3(){const Q=[];
+ for(let r=0;r<3;r++){const n=rnd(4,9),k=rnd(1,n-1);Q.push({t:'cross',p:'اشطب ثم اكتب ناتج الطرح',n,k,e:pick(OBJ)})}
+ for(let r=0;r<2;r++){const a=rnd(3,9),b=rnd(0,a);Q.push({t:'choice',p:'جد باقي الطرح',v:eq(a,'−',b,'=','?'),o:PAD(),a:a-b,lay:'pad'})}
+ for(let r=0;r<2;r++){const a=rnd(4,9),b=rnd(0,a);Q.push({t:'choice',p:'اطرح رأسياً',v:vert(a,'−',b),o:PAD(),a:a-b,lay:'pad'})}
+ {const a=rnd(5,9),r=rnd(0,a);Q.push({t:'choice',p:'جد قيمة الطرح: اختر العدد المناسب للمربع',v:eq(a,'−','?','=',r),o:PAD(),a:a-r,lay:'pad'})}
+ {const rs=shuf(range(0,7)).slice(0,3);Q.push({t:'match',p:'صِل الفنجان بالصحن المناسب',pairs:rs.map(r=>{const a=rnd(r+1,9);return[`<span class="cup">☕</span>${eqs(a,'−',a-r)}`,`<span class="cup">🍽️</span><span class="bn">${ar(r)}</span>`]})})}
+ {const a=rnd(3,9),b=rnd(0,a),d=a-b,c=Math.max(0,Math.min(9,pick([d,d+1,d-1,rnd(0,9)])));Q.push(qSign(d,c,exprH(a,'−',b)))}
+ for(let r=0;r<3;r++){if(Math.random()<.5){const a=rnd(0,6),b=rnd(0,9-a);Q.push({t:'choice',p:'مراجعة: جد الناتج',v:vert(a,'+',b),o:PAD(),a:a+b,lay:'pad'})}else{const a=rnd(2,9),b=rnd(0,a);Q.push({t:'choice',p:'مراجعة: جد الناتج',v:vert(a,'−',b),o:PAD(),a:a-b,lay:'pad'})}}
+ return Q}
+
+/* ===== Unit 4: الأعداد ١٠–٩٩ ===== */
+const UW=['','واحد','اثنان','ثلاثة','أربعة','خمسة','ستة','سبعة','ثمانية','تسعة'];
+const TW=['','عشرة','عشرون','ثلاثون','أربعون','خمسون','ستون','سبعون','ثمانون','تسعون'];
+const TEEN={11:'أحد عشر',12:'اثنا عشر',13:'ثلاثة عشر',14:'أربعة عشر',15:'خمسة عشر',16:'ستة عشر',17:'سبعة عشر',18:'ثمانية عشر',19:'تسعة عشر'};
+const word=n=>n<10?UW[n]:n===10?'عشرة':n<20?TEEN[n]:(n%10?`${UW[n%10]} و${TW[Math.floor(n/10)]}`:TW[n/10]);
+const rod=k=>{let d='';for(let i=0;i<k;i++)d+=`<i style="background:${RAIN[i]}"></i>`;return `<div class="rod">${d}</div>`};
+const abacus=(t,u)=>`<div class="abac"><div class="ab-g"><div class="rods">${range(1,t).map(()=>rod(10)).join('')}</div><div class="cap">عشرات</div></div><div class="ab-g"><div class="rods">${rod(u)}</div><div class="cap">آحاد</div></div></div>`;
+const beads=(a,b)=>`<div class="beads">${'<i style="background:#e03131"></i>'.repeat(a)}<i class="sp"></i>${'<i style="background:#1c7ed6"></i>'.repeat(b)}</div>`;
+const TOYS={car:['🚗','عربة',65],horse:['🐴','حصان',43],bike:['🚲','عجلة',63],fish:['🐟','سمكة',32],plane:['✈️','طائرة',16]};
+const TOYQ=[['car','plane'],['bike','fish'],['horse','fish'],['plane','horse'],['bike','plane']];
+const WP=[
+ ()=>({p:`عند علي ${ar(12)} برتقالة وعند محمد ${ar(15)} برتقالة، كم عدد ما عندهما من برتقال؟`,e:'🍊',a:27}),
+ ()=>({p:`عند معتز ${ar(25)} جنيهاً وعند معاذ ${ar(13)} جنيهاً، كم مجموع ما عندهما؟`,e:'💵',a:38}),
+ ()=>({p:`يملك الطيب ${ar(25)} خروفاً، باع منها ${ar(13)} خروفاً، كم خروفاً بقي له؟`,e:'🐑',a:12}),
+ ()=>({p:`عند رجل ${ar(37)} بقرة، وعند رجل آخر ${ar(12)} بقرة، كم مجموع ما عند الرجلين؟`,e:'🐄',a:49}),
+ ()=>({p:`ذهب إلى حديقة الحيوان ${ar(42)} تلميذاً من الصف الأول و${ar(35)} تلميذاً من الصف الثاني، كم تلميذاً ذهب لحديقة الحيوان؟`,e:'🦁',a:77}),
+ ()=>({p:`عند مي ${ar(45)} جنيهاً تصدّقت منها بـ ${ar(15)} جنيهاً، كم بقي عندها؟`,e:'💵',a:30}),
+ ()=>({p:`مع ملاذ ${ar(47)} جنيهاً، اشترت منها كتاباً بمبلغ ${ar(20)} جنيهاً، كم تبقّى لها؟`,e:'📕',a:27}),
+ ()=>({p:`مع إسلام ${ar(27)} جنيهاً، اشترت منها كتاباً بمبلغ ${ar(12)} جنيهاً وقلماً بمبلغ ${ar(3)} جنيهات، فكم تبقّى لها؟`,e:'✏️',a:12})
+];
+function u4(){const Q=[];
+ {const e=pick(OBJ);Q.push({t:'choice',p:'حدّد المجموعة التي بها عشرة أشياء',o:shuf([10,pick([8,9]),pick([11,12])]).map(x=>({h:group(x,e,'sm'),k:x})),a:10,lay:'grid'})}
+ for(let r=0;r<2;r++){const a=rnd(1,9);Q.push({t:'choice',p:'مكوّنات العدد ١٠: اختر العدد المناسب للمربع'.replace('١٠',ar(10)),v:beads(a,10-a)+eq(a,'+','?','=',10),o:nopt(10-a,0,10),a:10-a})}
+ {const x=rnd(1,9);Q.push({t:'choice',p:'اكتب الناتج',v:eq(x,'+',10,'=','?'),o:nopt2(10+x),a:10+x})}
+ {const n=rnd(11,99);Q.push({t:'choice',p:`اختر العدد: <span style="color:var(--u)">${word(n)}</span>`,o:nopt2(n),a:n})}
+ for(let r=0;r<2;r++){const t=rnd(1,9),u=rnd(0,9);Q.push({t:'choice',p:'اكتب العدد الذي يمثّله العدّاد',v:abacus(t,u),o:nopt2(t*10+u),a:t*10+u})}
+ {let t,u;do{t=rnd(1,9);u=rnd(0,9)}while(t===u);const n=t*10+u,w=Math.random()<.5;const ans=w?t:u;
+  const o=shuf([t,u,pick(range(0,9).filter(x=>x!==t&&x!==u))]).map(x=>({h:ar(x),k:x}));
+  Q.push({t:'choice',p:`حدّد الخانات: كم عدد ${w?'العشرات':'الآحاد'} في العدد ${ar(n)}؟`,v:`<div class="bign">${ar(n)}</div>`,o,a:ans,nofill:1})}
+ {const odd=pick([7,5,11,15,13,23,9]),ev=shuf([4,8,14,18,22,12,6]).slice(0,3);Q.push({t:'choice',p:'اختر العدد الفردي',o:shuf([odd,...ev]).map(x=>({h:ar(x),k:x})),a:odd})}
+ {const n=pick([2,4,6,8,10]);Q.push({t:'choice',p:`العدد الزوجي له مكوّنان متساويان: أكمل بعددين متساويين`,v:eq('?','+','?','=',n),o:nopt(n/2,0,9),a:n/2,f2:1})}
+ {const s=rnd(1,94),m=rnd(1,4);Q.push({t:'choice',p:'أكمل الأماكن الفارغة',v:`<div class="chart">${range(s,s+5).map((x,i)=>i===m?B:`<span class="c">${ar(x)}</span>`).join('')}</div>`,o:near(s+m,1,100,3,2).map(x=>({h:ar(x),k:x})),a:s+m})}
+ {const b=rnd(10,78);Q.push({t:'order',p:'رتّب الأعداد ترتيباً تصاعدياً',items:shuf(range(b,b+20)).slice(0,4).map(n=>({h:ar(n),v:n}))})}
+ {const b=rnd(10,78);Q.push({t:'order',p:'رتّب الأعداد ترتيباً تنازلياً',items:shuf(range(b,b+20)).slice(0,4).map(n=>({h:ar(n),v:-n}))})}
+ {const a=rnd(12,98);let b=pick([a+rnd(1,6),a-rnd(1,6),(a%10)*10+Math.floor(a/10)]);if(b<10||b>99||b===a)b=a+(a<90?3:-3);Q.push(qSign(a,b))}
+ {if(Math.random()<.5){const a=10*rnd(1,8),b=10*rnd(1,9-a/10);Q.push({t:'choice',p:'العدّ بالعشرات: أكمل',v:eq(a,'+',b,'=','?'),o:near((a+b)/10,1,10,3,2).map(x=>({h:ar(x*10),k:x*10})),a:a+b})}
+  else{const a=10*rnd(2,10),b=10*rnd(1,a/10);Q.push({t:'choice',p:'العدّ بالعشرات: أكمل',v:eq(a,'−',b,'=','?'),o:near((a-b)/10,0,10,3,2).map(x=>({h:ar(x*10),k:x*10})),a:a-b})}}
+ for(let r=0;r<2;r++){const t1=rnd(1,7),t2=rnd(1,9-t1),u1=rnd(0,8),u2=rnd(0,9-u1),a=t1*10+u1,b=t2*10+u2;Q.push({t:'choice',p:'اجمع (بدون حمل)',v:vert(a,'+',b),o:nopt2(a+b),a:a+b})}
+ {const t1=rnd(2,9),t2=rnd(1,t1),u1=rnd(1,9),u2=rnd(0,u1),a=t1*10+u1,b=t2*10+u2;Q.push({t:'choice',p:'اطرح (بدون استلاف)',v:eq(a,'−',b,'=','?'),o:nopt2(a-b),a:a-b})}
+ {const t1=rnd(2,9),t2=rnd(1,t1),u1=rnd(1,9),u2=rnd(0,u1),a=t1*10+u1,b=t2*10+u2;Q.push({t:'choice',p:'اطرح رأسياً (بدون استلاف)',v:vert(a,'−',b),o:nopt2(a-b),a:a-b})}
+ {const[x,y]=pick(TOYQ),X=TOYS[x],Y=TOYS[y];Q.push({t:'choice',p:`كم ثمن شراء ${X[1]} + ${Y[1]}؟`,v:`<div class="toys">${Object.values(TOYS).map(t=>`<div class="toy"><div class="emo">${t[0]}</div>${t[1]}<div class="pr">${ar(t[2])} جنيهاً</div></div>`).join('')}</div>`,o:nopt2(X[2]+Y[2]),a:X[2]+Y[2]})}
+ shuf(WP).slice(0,2).forEach(f=>{const w=f();Q.push({t:'choice',p:'مسألة لفظية',v:`<div class="wp"><span class="emo">${w.e}</span>${w.p}</div>`,o:nopt2(w.a),a:w.a})});
+ Q.push({t:'choice',p:'مسألة لفظية',v:`<div class="wp"><span class="emo">🏫</span>الفصل الأول به ${ar(35)} تلميذاً، والفصل الثاني به ${ar(34)} تلميذاً، أيّ الفصلين به عدد أكبر من التلاميذ؟</div>`,o:[{h:'الفصل الأول',k:1},{h:'الفصل الثاني',k:2}],a:1,lay:'txt'});
+ Q.push({t:'choice',p:'لغز 🤔: أنا أصغر عدد زوجي من رقمين، فمن أنا؟',o:shuf([10,12,20,2]).map(x=>({h:ar(x),k:x})),a:10});
+ return Q}
+
+/* ===== Unit 5: القياس ===== */
+const LEN=[['🦒','الزرافة','🐴','الحمار'],['🌴','النخلة','🌳','الشجرة'],['👨','الرجل','👦','الولد'],['🌳','',' 🌳',''],['🪑','','🪑','']];
+const WT=[['🐘','الفيل','🐜','النملة'],['🦆','البطة','🪶','الريشة'],['⚽','الكرة','🎈','البالون'],['🚢','السفينة','🚲','الدراجة'],['🐴','الحصان','🐜','النملة'],['🚆','القطار','🚲','الدراجة'],['🚚','الشاحنة','🚲','الدراجة']];
+const ANI=[['🐘','الفيل',5],['🐴','الحمار',4],['🐇','الأرنب',3],['🕊️','الحمامة',2],['🐥','الكتكوت',1]];
+const ME=[['🪥','استعمال السواك','ص'],['☕','شرب شاي الصباح','ص'],['🏫','الطابور الصباحي','ص'],['👨‍💼','الأب يستعد للخروج إلى العمل','ص'],['😴','النوم','م'],['📖','المذاكرة','م'],['📺','مشاهدة التلفزيون','م']];
+const ROUT=[['🪥','السواك'],['☕','شرب الشاي'],['🚶','الذهاب إلى المدرسة'],['🏫','الطابور الصباحي']];
+const DAYS=['الجمعة','السبت','الأحد','الإثنين','الثلاثاء','الأربعاء','الخميس'];
+const card=(e,l,sz)=>`<div class="emo" style="font-size:${sz||56}px">${e}</div>${l?`<div class="lbl">${l}</div>`:''}`;
+function u5(){const Q=[];
+ shuf(LEN).slice(0,3).forEach((p,i)=>{const longer=i<2;Q.push({t:'choice',p:longer?'الطول: اختر الأطول':'الطول: اختر الأقصر',o:shuf([{h:card(p[0],p[1],96),k:'b'},{h:card(p[2].trim(),p[3],52),k:'s'}]),a:longer?'b':'s',lay:'grid'})});
+ {const L=shuf([70,110,150,190]).slice(0,3),C=['#fa5252','#4dabf7','#51cf66'];Q.push({t:'order',p:'رتّب الأقلام من الأطول إلى الأقصر',col:1,items:L.map((l,i)=>({h:`<span class="pencil" style="width:${l}px;--pc:${C[i]}"></span>`,v:-l}))})}
+ shuf(WT).slice(0,4).forEach((p,i)=>{const heavy=i<2;Q.push({t:'choice',p:heavy?'الوزن: اختر الأثقل':'الوزن: اختر الأخف',o:shuf([{h:card(p[0],p[1]),k:'h'},{h:card(p[2],p[3]),k:'l'}]),a:heavy?'h':'l',lay:'grid'})});
+ Q.push({t:'order',p:'رتّب من الأثقل إلى الأخف',col:1,items:shuf(ANI).slice(0,4).map(a=>({h:`<span class="emo" style="font-size:30px">${a[0]}</span> ${a[1]}`,v:-a[2]}))});
+ Q.push({t:'order',p:'رتّب من الأثقل إلى الأخف (عدد الألواح)',col:1,items:shuf([1,2,3,4,5]).slice(0,4).map(n=>({h:`<div class="boards">${'<i></i>'.repeat(n)}</div>`,v:-n}))});
+ shuf(ME).slice(0,3).forEach(m=>Q.push({t:'choice',p:'الوقت: متى نقوم بهذا النشاط عادةً؟',v:`<div class="act"><span class="emo">${m[0]}</span><b>${m[1]}</b></div>`,o:[{h:'☀️ الصباح',k:'ص'},{h:'🌙 المساء',k:'م'}],a:m[2],lay:'big'}));
+ Q.push({t:'order',p:'في يوم دراسي: رتّب الأنشطة من الصباح',col:1,items:ROUT.map((r,i)=>({h:`<span class="emo" style="font-size:28px">${r[0]}</span> ${r[1]}`,v:i}))});
+ for(let r=0;r<2;r++){const d=rnd(0,6),tm=r===0;const ans=DAYS[(d+(tm?1:6))%7];
+  Q.push({t:'choice',p:`إذا كان اليوم هو ${DAYS[d]} فما هو ${tm?'الغد':'الأمس'}؟`,v:`<div class="ytt"><div class="col"><small>الأمس</small>${tm?'<div class="d">…</div>':B}</div><div class="col"><small>اليوم</small><div class="d">${DAYS[d]}</div></div><div class="col"><small>الغد</small>${tm?B:'<div class="d">…</div>'}</div></div>`,
+   o:shuf([ans,DAYS[(d+(tm?6:1))%7],DAYS[(d+3)%7]]).map(x=>({h:x,k:x})),a:ans,lay:'txt'})}
+ {const s=rnd(0,3),m=rnd(0,3),ans=DAYS[s+m];Q.push({t:'choice',p:'أيام الأسبوع: املأ الفراغ',v:`<div class="days">${range(s,s+3).map((x,i)=>i===m?B:`<div class="d">${DAYS[x]}</div>`).join('')}</div>`,o:shuf([ans,...shuf(DAYS.filter(x=>x!==ans)).slice(0,2)]).map(x=>({h:x,k:x})),a:ans,lay:'txt'})}
+ {const s=rnd(0,3);Q.push({t:'order',p:'رتّب الأيام كما تأتي في الأسبوع',col:1,items:range(s,s+3).map(i=>({h:DAYS[i],v:i}))})}
+ Q.push({t:'choice',p:'كم عدد أيام الأسبوع؟',v:`<div class="act"><span class="emo">📅</span></div>`,o:[5,6,7,8].map(x=>({h:ar(x),k:x})),a:7,nofill:1});
+ return Q}
+
+/* ===== units ===== */
+const UNITS=[
+ {k:'الوحدة الأولى',t:`الأعداد (${ar(0)} – ${ar(9)})`,i:'🔢',c:'#ff6b6b',g:u1},
+ {k:'الوحدة الثانية',t:`الجمع ضمن العدد ${ar(9)}`,i:'➕',c:'#339af0',g:u2},
+ {k:'الوحدة الثالثة',t:`الطرح ضمن العدد ${ar(9)}`,i:'➖',c:'#40c057',g:u3},
+ {k:'الوحدة الرابعة',t:`الأعداد (${ar(10)} – ${ar(99)}) وعمليات الجمع والطرح عليها`,i:'💯',c:'#9775fa',g:u4},
+ {k:'الوحدة الخامسة',t:'القياس: الطول، الوزن، الوقت، أيام الأسبوع',i:'📏',c:'#ff922b',g:u5}
+];
+$('#units').innerHTML=UNITS.map((u,i)=>`<button class="ucard" style="--c:${u.c}" onclick="start(${i})"><span class="ic">${u.i}</span><span class="tx"><small>${u.k}</small><b>${u.t}</b></span><span class="go">◀</span></button>`).join('');
+</script>
+</body>
+</html>
